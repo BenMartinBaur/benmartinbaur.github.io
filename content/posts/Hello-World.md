@@ -4,7 +4,7 @@ date: 2025-03-16T13:38:37+01:00
 description: ""
 draft: false
 author: ""
-cover: ""
+cover: "/images/avatar.jpg"
 tags: [""]
 theme: "light"
 ---

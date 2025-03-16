@@ -1,7 +1,7 @@
 (() => {
   // ns-hugo-params:<stdin>
   var baseURL = "http://localhost:1313/";
-  var params = { css: [{ url: "cookieconsent.css" }, { url: "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css" }], js: [{ url: "cookieconsent-config.js" }], showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/BenMartinBaur" }] };
+  var params = { css: [{ url: "https://benmartinbaur.github.io/cookieconsent.css" }, { url: "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css" }], js: [{ url: "https://benmartinbaur.github.io/cookieconsent-config.js" }], showcopyright: true, showmore: true, showrss: true, socialmedia: [{ name: "Github", url: "https://github.com/BenMartinBaur" }] };
 
   // <stdin>
   var { appid, appkey, searchindex: indexName, enabled } = params.algolia;

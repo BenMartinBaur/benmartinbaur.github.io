@@ -59,3 +59,4 @@ hugo new posts/ACD.md
     ---
 ```
 
+https://playground.cookieconsent.orestbida.com/
