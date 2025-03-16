@@ -16,8 +16,8 @@ defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see t
     url = 'https://benmartinbaur.github.io/cookieconsent.css'
   [[params.css]]
    url = 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css'
-  [[params.js]] # custom javascript, you can add one or more, url is relative in 'static' folder
-    url = 'https://benmartinbaur.github.io/cookieconsent-config.js'
+  #[[params.js]] # custom javascript, you can add one or more, url is relative in 'static' folder
+    #url = 'https://benmartinbaur.github.io/cookieconsent-config.js'
   # [[params.js]]
     # url = 'js2.js'
   [[params.socialMedia]] # custom social links display in the footer, you can add one or more

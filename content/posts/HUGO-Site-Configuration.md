@@ -1,7 +1,7 @@
 ---
     title: 'HUGO Site Configuration'
     date: '2022-10-27T13:06:38+08:00'
-    draft: true
+    draft: false
     description: 'some description of the article'
     author: 'author of this article'
     cover: '/images/default2.jpg' #// if not set cover, it will use the 'defaultCover' in site configuration
