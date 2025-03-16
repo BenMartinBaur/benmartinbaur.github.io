@@ -50,5 +50,5 @@ theme = 'dream'
   motto = "Madness"
 
 [params.advanced]
-  # customCSS = ["cookieconsent.css"]
-  # customJS = ["cookieconsent-config.js"]
+  customCSS = ["cookieconsent.css"]
+  customJS = ["cookieconsent.umd.js"]
