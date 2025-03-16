@@ -1,10 +1,10 @@
 baseURL = 'https://benmartinbaur.github.io/'
 languageCode = 'en-us'
 title = 'Welcome to Ben Baur'
-theme = 'hugo-theme-itheme'
+theme = 'dream'
 
-defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see the 'i18n' folder
-[params]
+# defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see the 'i18n' folder
+# [params]
   # defaultCover = 'https://example.com/cover.jpg' # default cover image for post not setting cover
   # email = 'ben.baur@gmx.com' # the email address display in the footer
   # [params.algolia] # Algolia search configuration
@@ -12,17 +12,17 @@ defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see t
     # appId = 'YOUR_KEY' # appid for Algolia search
     # appKey = 'YOUR_APP_KEY' # appkey for Algolia search
     # searchIndex = 'YOUR_INDEX' # index for Algolia search
-  [[params.css]] # custom css stylesheet, you can add one or more, url is relative in 'static' folder
-    url = 'https://benmartinbaur.github.io/cookieconsent.css'
-  [[params.css]]
-   url = 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css'
+  # [[params.css]] # custom css stylesheet, you can add one or more, url is relative in 'static' folder
+    # url = 'https://benmartinbaur.github.io/cookieconsent.css'
+  # [[params.css]]
+   # url = 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css'
   #[[params.js]] # custom javascript, you can add one or more, url is relative in 'static' folder
     #url = 'https://benmartinbaur.github.io/cookieconsent-config.js'
   # [[params.js]]
     # url = 'js2.js'
-  [[params.socialMedia]] # custom social links display in the footer, you can add one or more
-    name = 'Github'
-    url = 'https://github.com/BenMartinBaur'
+  # [[params.socialMedia]] # custom social links display in the footer, you can add one or more
+    # name = 'Github'
+    # url = 'https://github.com/BenMartinBaur'
   # [[params.socialMedia]]
     # name = 'Twitter'
     # url = 'https://twitter.com/some-one'
@@ -32,3 +32,23 @@ defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see t
   # [[params.blogroll]]
     # name = 'Google'
     # url = 'https://Google.com/'
+[params]
+  # zenMode = true
+  
+  lightTheme = "emerald"
+  darkTheme = "forest"
+  
+  # backgroundImage = "img/global-background.jpg"
+  # backgroundImageDark = ""
+  
+  # images = ["img/global-background.jpg"]
+  
+  author = "Ben Martin Baur"
+  description = "Ben"
+  avatar = "/images/avatar.jpg"
+  headerTitle = "Ben's Blog"
+  motto = "Madness"
+
+[params.advanced]
+  # customCSS = ["cookieconsent.css"]
+  # customJS = ["cookieconsent-config.js"]
