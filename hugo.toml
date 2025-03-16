@@ -6,18 +6,18 @@ theme = 'hugo-theme-itheme'
 defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see the 'i18n' folder
 [params]
   # defaultCover = 'https://example.com/cover.jpg' # default cover image for post not setting cover
-  email = 'ben.baur@gmx.com' # the email address display in the footer
+  # email = 'ben.baur@gmx.com' # the email address display in the footer
   # [params.algolia] # Algolia search configuration
     # enabled = true # enable Algolia search
     # appId = 'YOUR_KEY' # appid for Algolia search
     # appKey = 'YOUR_APP_KEY' # appkey for Algolia search
     # searchIndex = 'YOUR_INDEX' # index for Algolia search
-  # [[params.css]] # custom css stylesheet, you can add one or more, url is relative in 'static' folder
-    # url = 'css1.css'
-  # [[params.css]]
-    # url = 'css2.css'
+  [[params.css]] # custom css stylesheet, you can add one or more, url is relative in 'static' folder
+    url = 'cookieconsent.css'
+  [[params.css]]
+   url = 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css'
   [[params.js]] # custom javascript, you can add one or more, url is relative in 'static' folder
-    url = 'static/cookie-consent.js'
+    url = 'cookieconsent-config.js'
   # [[params.js]]
     # url = 'js2.js'
   [[params.socialMedia]] # custom social links display in the footer, you can add one or more

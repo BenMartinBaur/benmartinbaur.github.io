@@ -1,12 +1,12 @@
 ---
-title: "HUGO Site Configuration"
-date: 2025-03-16T19:37:45+01:00
-description: ""
-draft: true
-author: ""
-cover: ""
-tags: [""]
-theme: "light"
+    title: 'HUGO Site Configuration'
+    date: '2022-10-27T13:06:38+08:00'
+    draft: true
+    description: 'some description of the article'
+    author: 'author of this article'
+    cover: '/images/default2.jpg' #// if not set cover, it will use the 'defaultCover' in site configuration
+    tags: ["tag1", "tag2", "tag3"]
+    theme: "dark" #// you can set 'light' or 'dark' here
 ---
 
 Site COnfiguation

@@ -10,13 +10,15 @@
     <meta name="keyword" content=""><meta property="og:url" content="http://localhost:1313/posts/hugo-site-configuration/">
   <meta property="og:site_name" content="Welcome to Ben Baur">
   <meta property="og:title" content="HUGO Site Configuration">
-  <meta property="og:description" content="Site COnfiguation
-defaultContentLanguage = “en” # current only supported ’en’ and ‘zh-hans’, see the ‘i18n’ folder [params] defaultCover = ‘https://example.com/cover.jpg&#39; # default cover image for post not setting cover email = ‘floyd.li@outlook.com’ # the email address display in the footer [params.algolia] # Algolia search configuration enabled = true # enable Algolia search appId = ‘YOUR_KEY’ # appid for Algolia search appKey = ‘YOUR_APP_KEY’ # appkey for Algolia search searchIndex = ‘YOUR_INDEX’ # index for Algolia search [[params.css]] # custom css stylesheet, you can add one or more, url is relative in ‘static’ folder url = ‘css1.css’ [[params.css]] url = ‘css2.css’ [[params.js]] # custom javascript, you can add one or more, url is relative in ‘static’ folder url = ‘js1.js’ [[params.js]] url = ‘js2.js’ [[params.socialMedia]] # custom social links display in the footer, you can add one or more name = ‘Github’ url = ‘https://github.com/floyd-li&#39; [[params.socialMedia]] name = ‘Twitter’ url = ‘https://twitter.com/some-one&#39; [[params.blogroll]] # blogroll links display in the footer, you can add one or more name = ‘Apple’ url = ‘https://Apple.com/&#39; [[params.blogroll]] name = ‘Google’ url = ‘https://Google.com/&#39;">
+  <meta property="og:description" content="some description of the article">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-16T19:37:45+01:00">
-    <meta property="article:modified_time" content="2025-03-16T19:37:45+01:00">
+    <meta property="article:published_time" content="2022-10-27T13:06:38+08:00">
+    <meta property="article:modified_time" content="2022-10-27T13:06:38+08:00">
+    <meta property="article:tag" content="Tag1">
+    <meta property="article:tag" content="Tag2">
+    <meta property="article:tag" content="Tag3">
 <title>HUGO Site Configuration</title>
 
     <link rel="canonical" href="/posts/hugo-site-configuration/">
@@ -32,10 +34,14 @@ defaultContentLanguage = “en” # current only supported ’en’ and ‘zh-ha
 
     
     
+    <link rel="stylesheet" href="/cookieconsent.css" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css" />
+    
 
 </head>
   </head>
-  <body class=" page-article   ">
+  <body class=" page-article    theme-dark ">
     <header>
       <nav class="nav">
   <div class="nav-wrapper">
@@ -91,11 +97,11 @@ defaultContentLanguage = “en” # current only supported ’en’ and ‘zh-ha
                   <span class="category-eyebrow__category category_original">
                     
                       
-                        
+                        tag1
                       
                     
                   </span>
-                  <span class="category-eyebrow__date">March 16, 2025</span>
+                  <span class="category-eyebrow__date">October 27, 2022</span>
                 </div>
               </div>
             </div>
@@ -105,15 +111,25 @@ defaultContentLanguage = “en” # current only supported ’en’ and ‘zh-ha
               </div>
             </div>
             <div class="component  article-subhead ">
-              <div class="component-content"></div>
+              <div class="component-content">some description of the article</div>
             </div>
 
             <div class="tagssheet component">
               <div class="component-content">
                 
                   
-                  <a href="/tags/" class="tag">
-                    
+                  <a href="/tags/tag1" class="tag">
+                    tag1
+                  </a>
+                
+                  
+                  <a href="/tags/tag2" class="tag">
+                    tag2
+                  </a>
+                
+                  
+                  <a href="/tags/tag3" class="tag">
+                    tag3
                   </a>
                 
               </div>
@@ -182,8 +198,8 @@ url = &lsquo;<a href="https://Google.com/'">https://Google.com/'</a></p>
                 <p class="content">
                   Copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>
                 </p>
-                <p class="content">Author:   </p>
-                <p class="content">Posted on:  March 16, 2025</p>
+                <p class="content">Author:  author of this article </p>
+                <p class="content">Posted on:  October 27, 2022</p>
               </div>
             </div>
           </div></article>
@@ -196,14 +212,14 @@ url = &lsquo;<a href="https://Google.com/'">https://Google.com/'</a></p>
   </script>
 
     
-    <div class="footer-main ">
+    <div class="footer-main  footer-dark ">
   <div class="content-body footer-wraper">
     <div class="footer-box">
       <div class="foot-nav">
         <div class="foot-nav-items">
           <div class="item">
             <div class="logo"></div>
-            <div class="email">Email: <a href="mailto:ben.baur@gmx.com">ben.baur@gmx.com</a></div>
+            <div class="email">Email: <a href="mailto:"></a></div>
           </div>
 
           <div class="item community">
@@ -235,6 +251,6 @@ url = &lsquo;<a href="https://Google.com/'">https://Google.com/'</a></p>
 
     
     
-        <script src="/static/cookie-consent.js"></script>
+        <script src="/cookieconsent-config.js"></script>
     
 </html>
