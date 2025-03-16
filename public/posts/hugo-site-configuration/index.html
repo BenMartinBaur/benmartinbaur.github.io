@@ -7,17 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="/img/favicon.ico">
 
-    <meta name="keyword" content=""><meta property="og:url" content="http://localhost:1313/posts/getting-started-with-hugo/">
+    <meta name="keyword" content=""><meta property="og:url" content="http://localhost:1313/posts/hugo-site-configuration/">
   <meta property="og:site_name" content="Welcome to Ben Baur">
-  <meta property="og:title" content="Getting Started With HUGO">
+  <meta property="og:title" content="HUGO Site Configuration">
+  <meta property="og:description" content="Site COnfiguation
+defaultContentLanguage = “en” # current only supported ’en’ and ‘zh-hans’, see the ‘i18n’ folder [params] defaultCover = ‘https://example.com/cover.jpg&#39; # default cover image for post not setting cover email = ‘floyd.li@outlook.com’ # the email address display in the footer [params.algolia] # Algolia search configuration enabled = true # enable Algolia search appId = ‘YOUR_KEY’ # appid for Algolia search appKey = ‘YOUR_APP_KEY’ # appkey for Algolia search searchIndex = ‘YOUR_INDEX’ # index for Algolia search [[params.css]] # custom css stylesheet, you can add one or more, url is relative in ‘static’ folder url = ‘css1.css’ [[params.css]] url = ‘css2.css’ [[params.js]] # custom javascript, you can add one or more, url is relative in ‘static’ folder url = ‘js1.js’ [[params.js]] url = ‘js2.js’ [[params.socialMedia]] # custom social links display in the footer, you can add one or more name = ‘Github’ url = ‘https://github.com/floyd-li&#39; [[params.socialMedia]] name = ‘Twitter’ url = ‘https://twitter.com/some-one&#39; [[params.blogroll]] # blogroll links display in the footer, you can add one or more name = ‘Apple’ url = ‘https://Apple.com/&#39; [[params.blogroll]] name = ‘Google’ url = ‘https://Google.com/&#39;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-16T13:38:55+01:00">
-    <meta property="article:modified_time" content="2025-03-16T13:38:55+01:00">
-<title>Getting Started With HUGO</title>
+    <meta property="article:published_time" content="2025-03-16T19:37:45+01:00">
+    <meta property="article:modified_time" content="2025-03-16T19:37:45+01:00">
+<title>HUGO Site Configuration</title>
 
-    <link rel="canonical" href="/posts/getting-started-with-hugo/">
+    <link rel="canonical" href="/posts/hugo-site-configuration/">
 
     <link rel="stylesheet" href="/css/global.css">
 
@@ -99,7 +101,7 @@
             </div>
             <div class="pagetitle component">
               <div class="component-content">
-                <h1 class="hero-headline">Getting Started With HUGO</h1>
+                <h1 class="hero-headline">HUGO Site Configuration</h1>
               </div>
             </div>
             <div class="component  article-subhead ">
@@ -127,7 +129,53 @@
             
             
             
-            
+            <p class="component-content component">Site COnfiguation</p>
+<p class="component-content component">defaultContentLanguage = &ldquo;en&rdquo; # current only supported &rsquo;en&rsquo; and &lsquo;zh-hans&rsquo;, see the &lsquo;i18n&rsquo; folder
+[params]
+defaultCover = &lsquo;<a href="https://example.com/cover.jpg'">https://example.com/cover.jpg'</a> # default cover image for post not setting cover
+email = &lsquo;<a href="mailto:floyd.li@outlook.com">floyd.li@outlook.com</a>&rsquo; # the email address display in the footer
+[params.algolia] # Algolia search configuration
+enabled = true # enable Algolia search
+appId = &lsquo;YOUR_KEY&rsquo; # appid for Algolia search
+appKey = &lsquo;YOUR_APP_KEY&rsquo; # appkey for Algolia search
+searchIndex = &lsquo;YOUR_INDEX&rsquo; # index for Algolia search
+[[params.css]] # custom css stylesheet, you can add one or more, url is relative in &lsquo;static&rsquo; folder
+url = &lsquo;css1.css&rsquo;
+[[params.css]]
+url = &lsquo;css2.css&rsquo;
+[[params.js]] # custom javascript, you can add one or more, url is relative in &lsquo;static&rsquo; folder
+url = &lsquo;js1.js&rsquo;
+[[params.js]]
+url = &lsquo;js2.js&rsquo;
+[[params.socialMedia]] # custom social links display in the footer, you can add one or more
+name = &lsquo;Github&rsquo;
+url = &lsquo;<a href="https://github.com/floyd-li'">https://github.com/floyd-li'</a>
+[[params.socialMedia]]
+name = &lsquo;Twitter&rsquo;
+url = &lsquo;<a href="https://twitter.com/some-one'">https://twitter.com/some-one'</a>
+[[params.blogroll]] # blogroll links display in the footer, you can add one or more
+name = &lsquo;Apple&rsquo;
+url = &lsquo;<a href="https://Apple.com/'">https://Apple.com/'</a>
+[[params.blogroll]]
+name = &lsquo;Google&rsquo;
+url = &lsquo;<a href="https://Google.com/'">https://Google.com/'</a></p>
+<p class="component-content component">hugo new posts/ACD.md</p>
+<div class="component-content pagebody component code">
+  
+  
+  
+  <pre><code class="">---
+    title: &#39;Some Article&#39;
+    date: &#39;2022-10-27T13:06:38&#43;08:00&#39;
+    draft: true
+    description: &#39;some description of the article&#39;
+    author: &#39;author of this article&#39;
+    cover: &#39;https://example.com/cover.jpg&#39; // if not set cover, it will use the &#39;defaultCover&#39; in site configuration
+    tags: [&#34;tag1&#34;, &#34;tag2&#34;, &#34;tag3&#34;]
+    theme: &#34;dark&#34; // you can set &#39;light&#39; or &#39;dark&#39; here
+    ---</code></pre>
+  
+</div>
           </div><div class="component">
             <div class="component-content">
               <div class="article-copyright">
