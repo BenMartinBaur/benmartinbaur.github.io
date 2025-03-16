@@ -1,0 +1,4 @@
+baseURL = 'https://benmartinbaur.github.io'
+languageCode = 'en-us'
+title = 'Welcome to Ben Baur'
+theme = 'hugo-theme-itheme'
