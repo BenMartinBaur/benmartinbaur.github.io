@@ -49,6 +49,6 @@ theme = 'dream'
   headerTitle = "Ben's Blog"
   motto = "Madness"
 
-[params.advanced]
-  customCSS = ["cookieconsent.css"]
-  customJS = ["cookieconsent.umd.js"]
+# [params.advanced]
+  # customCSS = ["cookieconsent.css"]
+  # customJS = ["js/cookieconsent.umd.js"]
