@@ -1,4 +1,21 @@
 baseURL = 'https://benmartinbaur.github.io/'
 languageCode = 'en-us'
 title = 'Welcome to Ben Baur'
-theme = 'hugo-theme-itheme'
+theme = 'dream'
+
+[params]
+# zenMode = true
+ 
+lightTheme = "emerald"
+darkTheme = "forest"
+ 
+# backgroundImage = "img/global-background.jpg"
+# backgroundImageDark = ""
+ 
+# images = ["img/global-background.jpg"]
+ 
+author = "Ben Martin Baur"
+description = "Ben Baur Blog"
+avatar = "img/personal/avatar.jpg"
+headerTitle = "Ben's Blog"
+motto = "Learn IT all"
