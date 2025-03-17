@@ -1,6 +1,6 @@
 baseURL = 'https://benmartinbaur.github.io/'
 languageCode = 'en-us'
-title = 'Welcome to Ben Baur'
+title = 'Welcome to the Windows Cloud Academy'
 theme = 'dream'
 
 # defaultContentLanguage = "en" # current only supported 'en' and 'zh-hans', see the 'i18n' folder
@@ -46,8 +46,8 @@ theme = 'dream'
   author = "Ben Martin Baur"
   description = "Ben"
   avatar = "/images/avatar.jpg"
-  headerTitle = "Ben's Blog"
-  motto = "Madness"
+  headerTitle = "Windows Cloud Academy Blog"
+  motto = "Windows 365, Azure Virtual Desktop and Microsoft DevBox"
 
 # [params.advanced]
   # customCSS = ["cookieconsent.css"]
