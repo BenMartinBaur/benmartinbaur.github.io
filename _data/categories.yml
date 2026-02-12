@@ -1,0 +1,8 @@
+- name: "AI & ML"
+  slug: "ai"
+- name: "Research"
+  slug: "research"
+- name: "Guides"
+  slug: "guide"
+- name: "Social"
+  slug: "social"

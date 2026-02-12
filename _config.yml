@@ -1,0 +1,53 @@
+# Jekyll Configuration for Dream Blog
+# https://jekyllrb.com/docs/configuration/
+
+# Site settings
+title: Dream Blog
+description: Thoughts on AI, technology, and digital transformation
+author: Dream Blog
+url: "" # Update this when you have a custom domain
+baseurl: "" # Set to "/repo-name" if not using custom domain
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+
+# Kramdown settings (Markdown processor)
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Collections for organizing content
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Dream Blog
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "Blog Post Idears"
+
+# Include hidden files
+include:
+  - _pages
+
+# Plugins (supported by GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

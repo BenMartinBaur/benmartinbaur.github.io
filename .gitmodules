@@ -1,9 +1,0 @@
-[submodule "themes/hugo-theme-itheme"]
-	path = themes/hugo-theme-itheme
-	url = https://github.com/floyd-li/hugo-theme-itheme.git
-[submodule "themes/dream"]
-	path = themes/dream
-	url = https://github.com/g1eny0ung/hugo-theme-dream.git
-[submodule "themes/LoveIt"]
-	path = themes/LoveIt
-	url = https://github.com/dillonzq/LoveIt.git
