@@ -1,6 +1,6 @@
 # Assets Directory
 
-This folder contains static assets for the Dream Blog.
+This folder contains static assets for AVDPunks <3 AI.
 
 ## Structure
 

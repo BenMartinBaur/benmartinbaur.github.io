@@ -1,5 +1,5 @@
 /**
- * Dream Blog - Main Stylesheet
+ * AVDPunks <3 AI - Main Stylesheet
  * A modern, responsive blog theme with dark/light mode support
  */
 
@@ -111,13 +111,19 @@ body {
 .sidebar-logo {
     width: 40px;
     height: 40px;
-    background: var(--gradient-1);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.sidebar-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .sidebar-nav {

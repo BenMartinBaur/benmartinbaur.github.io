@@ -1,4 +1,4 @@
-# Dream Blog
+# AVDPunks <3 AI
 
 A modern, responsive blog powered by Jekyll for GitHub Pages. Features dark/light theme toggle, masonry grid layout, and Markdown-based content authoring.
 

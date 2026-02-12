@@ -1,10 +1,10 @@
-# Jekyll Configuration for Dream Blog
+# Jekyll Configuration for AVDPunks <3 AI
 # https://jekyllrb.com/docs/configuration/
 
-# Site settings
-title: Dream Blog
-description: Thoughts on AI, technology, and digital transformation
-author: Dream Blog
+# Site Settings
+title: "AVDPunks <3 AI"
+description: "Thoughts on AI, technology, and digital transformation"
+author: AVDPunks
 url: "" # Update this when you have a custom domain
 baseurl: "" # Set to "/repo-name" if not using custom domain
 
@@ -32,7 +32,7 @@ defaults:
       type: posts
     values:
       layout: post
-      author: Dream Blog
+      author: AVDPunks
 
 # Exclude files from build
 exclude:

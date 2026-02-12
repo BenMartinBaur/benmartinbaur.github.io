@@ -1,5 +1,5 @@
 /**
- * Dream Blog - Main JavaScript
+ * AVDPunks <3 AI - Main JavaScript
  * Handles theme toggling, filtering, and search functionality
  */
 
