@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Windows Cloud Academy</title>
-        <link>http://localhost:50500/</link>
+        <link>http://localhost:1313/</link>
         <description>Windows 365, Azure Virtual Desktop and Microsoft DevBox</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 &#43;0000</lastBuildDate>
-            <atom:link href="http://localhost:50500/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         </channel>
 </rss>
