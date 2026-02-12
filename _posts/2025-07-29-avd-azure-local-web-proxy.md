@@ -9,9 +9,12 @@ tags:
   - Azure Local
   - PowerShell
 reading_time: "5 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/virtual-desktop-azure-local-1-1024x576.png"
 source_url: "https://avdpunks.com/2025/07/29/enabling-azure-virtual-desktop-avd-on-azure-local-vms-with-powershell/"
 source_title: "AVDPunks Original Post"
 ---
+
+![Low-level design of AVD on Azure Local with a web proxy](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/virtual-desktop-azure-local-1-1024x576.png)
 
 Do you use a mandatory web proxy for Internet traffic in your environment and want to enable Azure Virtual Desktop (AVD) on your Azure Local VMs?
 

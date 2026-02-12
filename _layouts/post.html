@@ -8,6 +8,11 @@ layout: default
 </a>
 
 <article>
+    {% if page.featured_image %}
+    <div class="article-featured-image">
+        <img src="{{ page.featured_image }}" alt="{{ page.title }}" loading="lazy">
+    </div>
+    {% endif %}
     <header class="article-header">
         <div class="article-meta">
             <span class="article-tag {{ page.category | downcase }}">{{ page.category | default: "Post" }}</span>

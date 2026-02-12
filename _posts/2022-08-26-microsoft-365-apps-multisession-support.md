@@ -9,6 +9,7 @@ tags:
   - Azure Stack HCI
   - Office
 reading_time: "5 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-08-26-001.png"
 source_url: "https://avdpunks.com/2022/08/26/how-to-support-microsoft-365-apps-on-multi-session-os-from-2026/"
 source_title: "AVDPunks Original Post"
 ---
@@ -16,6 +17,8 @@ source_title: "AVDPunks Original Post"
 ## Introduction
 
 It's hard to read, but support for Microsoft 365 Apps on Windows Server 2019 ends in October 2025 and on Windows Server 2022 ends in October 2026.
+
+![Flowchart to determine if multisession solution is needed](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-08-26-001.png)
 
 Here are the official statements from Microsoft:
 
@@ -38,6 +41,8 @@ If your answer is: "Yes, I need a multisession solution for my virtual desktops 
 Otherwise, there is no future support for Microsoft 365 Apps or Office LTSC on Windows Server 2019/2022.
 
 ## What are the options?
+
+![Options flowchart for Windows 11 Multisession](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-08-26-002.png)
 
 If your Windows 11 Multisession virtual machines are running on **Azure** or **Azure Stack HCI**, everything is fine and supported.
 

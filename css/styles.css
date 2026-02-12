@@ -601,8 +601,28 @@ body {
     line-height: 1.6;
 }
 
+.article-featured-image {
+    margin: -24px -32px 32px -32px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.article-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .article-content {
     line-height: 1.8;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: block;
 }
 
 .article-content h2 {

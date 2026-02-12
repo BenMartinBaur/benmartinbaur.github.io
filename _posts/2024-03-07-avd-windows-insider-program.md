@@ -9,6 +9,7 @@ tags:
   - Windows365
   - Windows Insider Program
 reading_time: "3 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024-03-07-001.png"
 source_url: "https://avdpunks.com/2024/03/07/azure-virtual-desktop-windows-365-windows-insider-program/"
 source_title: "AVDPunks Original Post"
 ---

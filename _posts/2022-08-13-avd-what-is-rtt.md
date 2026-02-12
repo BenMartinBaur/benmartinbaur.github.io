@@ -8,6 +8,7 @@ tags:
   - AVD
   - networking
 reading_time: "10 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-000.png"
 source_url: "https://avdpunks.com/2022/08/13/azure-virtual-desktop-avd-x-what-is-rtt/"
 source_title: "AVDPunks Original Post"
 ---
@@ -21,6 +22,8 @@ A real life example: you send a package by mail to your friend and he sends this
 There are many network hops along the way that can affect processing, and each additional hop can increase the RTT. Another influence is the distance a packet has to travel between sender and receiver.
 
 Network quality issues like packet loss (from moving trains or crowded WiFi hotspots) can also increase RTT.
+
+![Diagram showing the communication between sender and receiver](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-000.png)
 
 ## How to find the Azure region with the best RTT for your users
 
@@ -42,6 +45,8 @@ Invoke-RestMethod -Uri "https://rdweb.wvd.microsoft.com/api/health" | Select-Obj
 
 If your RTT or latency is more than **200 ms**, it can affect the user experience with disconnections and slowness in the session.
 
+![Round trip time from the remote desktop client to the session host and back](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-001.png)
+
 > Microsoft quotes an RTT of up to **150 ms** for a stable session for office applications. For use cases involving rendering or videos, lower is better.
 
 What is the path for the outgoing AVD traffic? Maybe there is a web proxy involved?
@@ -62,6 +67,8 @@ Microsoft's RDP shortpath for public networks is gatewayless and improves sessio
 
 It uses the Universal Rate Control Protocol (URCP) and STUN/ICE method to establish a direct connection between client and session host.
 
+![Remote Desktop connection information showing round-trip time value](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-002.png)
+
 Documentation: [https://aka.ms/AVDShortPathPublic](https://aka.ms/AVDShortPathPublic)
 
 ## Troubleshooting
@@ -81,6 +88,8 @@ RemoteFX Network(*)Current UDP Bandwidth
 RemoteFX Network(*)Current UDP RTT
 ```
 
+![Performance counters of the Log Analytics workspace required for network data](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-003.png)
+
 Query for TCP RTT:
 
 ```kusto
@@ -97,6 +106,8 @@ Perf
 2. Add diagnostics settings and select **allLogs** (NetworkData is required for RTT/Bandwidth)
 3. Select **Send to Log Analytics workspace**
 
+![How to enable the diagnostic setting for Azure Virtual Desktop for network data](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-004.png)
+
 Query for AVD NetworkData:
 
 ```kusto
@@ -112,6 +123,8 @@ WVDConnectionNetworkData
   by UserName
 | order by ["Avg. RTT"] desc
 ```
+
+![Example for log analytics kusto query output](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2022-04-13-005.png)
 
 ## Resources
 

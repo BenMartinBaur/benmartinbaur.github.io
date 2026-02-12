@@ -112,8 +112,12 @@ description: "Thoughts on AI, technology, and digital transformation. Discover i
                     {% for post in site.posts %}
                     {% assign gradient_index = forloop.index0 | modulo: 6 %}
                     <article class="card{% if forloop.first %} featured{% endif %}" data-category="{{ post.category }}" onclick="window.location.href='{{ post.url | relative_url }}'">
+                        {% if post.featured_image %}
+                        <div class="card-image" style="background-image: url('{{ post.featured_image }}'); background-size: cover; background-position: center;">
+                        {% else %}
                         <div class="card-image {{ gradients[gradient_index] }}">
                             <div class="wave-pattern"></div>
+                        {% endif %}
                             <span class="card-tag">{% if forloop.first %}Featured{% else %}{{ post.category | capitalize }}{% endif %}</span>
                             <span class="card-date">{{ post.date | date: "%b %d, %Y" }}</span>
                         </div>

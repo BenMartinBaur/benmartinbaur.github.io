@@ -9,6 +9,7 @@ tags:
   - Windows365
   - Remote Desktop
 reading_time: "2 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-01-05-001.png"
 source_url: "https://avdpunks.com/2023/05/05/remote-desktop-client-for-windows-quick-start-guide/"
 source_title: "AVDPunks Original Post"
 ---
@@ -25,7 +26,11 @@ Feel free to use and share this Quick Start Guide, and if you miss something, fe
 
 **Page one** shows how to subscribe to an AVD workspace in the Remote Desktop client for Windows.
 
+![Quick Start Guide page one - subscribe to AVD workspace](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-01-05-001.png)
+
 **Page two** shows all options and functions if you have subscribed to an AVD workspace.
+
+![Quick Start Guide page two - options and functions after subscribing](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-01-05-002.png)
 
 You can download the Quick Start Guide from the [AVDPunks GitHub repository](https://github.com/avdpunks/public/blob/main/AVD_QuickStartGuide_v1.0.pdf)!
 

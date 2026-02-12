@@ -10,6 +10,7 @@ tags:
   - Cost optimization
   - Azure Monitor
 reading_time: "15 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-01-06-001-1.png"
 source_url: "https://avdpunks.com/2023/01/12/avd-shutdown-and-deallocate-session-host-at-logoff/"
 source_title: "AVDPunks Original Post"
 ---
@@ -25,6 +26,8 @@ In this article, we'll explain how to automatically deallocate unused personal V
 > **Note:** If you are optimizing pooled or multi session deployments, please take a closer look at the AVD Scaling Plan feature.
 
 ## Components and workflow
+
+![Deallocation workflow diagram](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-01-06-001-1.png)
 
 To deallocate virtual machines we use:
 - Windows Task Scheduler

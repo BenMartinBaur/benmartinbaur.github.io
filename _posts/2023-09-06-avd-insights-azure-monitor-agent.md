@@ -8,6 +8,7 @@ tags:
   - AVD
   - Azure Monitor
 reading_time: "12 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-08-31-100.png"
 source_url: "https://avdpunks.com/2023/09/06/next-level-avd-insights-leveraging-azure-monitor-agents-advanced-capabilities/"
 source_title: "AVDPunks Original Post"
 ---
@@ -23,6 +24,8 @@ On August 31, 2024, Microsoft retired the Log Analytics agent. This means we nee
 This blog post describes how to enable AVD Insight with Azure Monitor Agent (AMA).
 
 ## Understanding the Function of Azure Monitor Agent
+
+![Diagram of AVD Insights with Azure Monitor](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-08-31-100.png)
 
 Azure Monitor Agent serves as a bridge between AVD deployments and Azure Monitor, enabling administrators to gain real-time insights into the performance and health of their virtual desktop environments.
 

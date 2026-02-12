@@ -9,6 +9,7 @@ tags:
   - RemoteFX
   - USB Redirection
 reading_time: "8 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-12-21-000.png"
 source_url: "https://avdpunks.com/2024/01/04/19/"
 source_title: "AVDPunks Original Post"
 ---
@@ -45,10 +46,15 @@ However, there are many devices like the spacemouse, printers, webcams, scanners
 2. Navigate to: Computer Configuration > Administrative Templates > Windows Components > Remote Desktop Services > Remote Desktop Session Host > Device and Resource Redirection
 3. Open "Do not allow supported Plug and Play device redirection" and select **Disabled**
 
+![Do not allow supported Plug and Play device redirection GPO setting](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-12-21-000.png)
+
 > **Note:** Yes, it's Disabled. Double negative. 🫣
 
 4. Navigate to: Computer Configuration > Administrative Templates > Windows Components > Remote Desktop Services > Remote Desktop Session Host > Remote Session Environment > RemoteFX for Windows Server 2008 R2
 5. Open "Configure RemoteFX" and select **Enabled**
+
+![Configure RemoteFX GPO setting enabled](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-12-21-004.png)
+
 6. Restart your session host or Cloud PC
 
 Or you can set this via PowerShell:
@@ -78,6 +84,8 @@ Restart-Computer -Force
 ### Step 3: Testing
 
 Connect via Windows App to your Cloud PC. You will see a new icon in the connection bar to connect your USB device. Make sure the device is not in use by any local application.
+
+![Windows App connection bar with USB device icon](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/2024/02/2023-12-21-003.png)
 
 Devices can't be used on both local devices and the remote session simultaneously.
 

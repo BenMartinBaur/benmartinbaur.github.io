@@ -11,6 +11,7 @@ tags:
   - automation
   - Windows365
 reading_time: "8 min read"
+featured_image: "https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/image-1-1024x609.png"
 source_url: "https://avdpunks.com/2025/05/14/no-sas-no-stress-access-blob-scripts-in-avd-image-templates-using-managed-identity/"
 source_title: "AVDPunks Original Post"
 ---
@@ -23,9 +24,13 @@ First, you need to have followed the Microsoft documentation on how to use custo
 
 Second, you need an Azure storage account with a blob container for your custom script files. You must ensure that public network access is enabled in the network settings of the storage account.
 
+![Storage Account networking settings ensure that public network access is activated](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/image-1-1024x609.png)
+
 > **Note:** There is no way to enable network access from selected virtual networks or via private endpoint connections, as the image creation service will not be able to connect to the storage account.
 
 The access level of the blob container can be set to private (no anonymous access).
+
+![Blob container access level can be set to private](https://avdpunksco24ce0ba4dc.blob.core.windows.net/blobavdpunksco24ce0ba4dc/wp-content/uploads/image-2.png)
 
 Short list of what you need:
 - Managed Identity
