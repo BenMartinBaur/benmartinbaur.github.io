@@ -1,10 +1,62 @@
 /**
  * AVDPunks <3 AI - Main JavaScript
- * Handles theme toggling, filtering, and search functionality
+ * Handles theme toggling, filtering, search, and cookie consent
  */
 
 (function() {
     'use strict';
+
+    /* ==========================================================================
+       Cookie Consent
+       ========================================================================== */
+
+    /**
+     * Check if user has already made a cookie choice
+     */
+    function checkCookieConsent() {
+        const consent = localStorage.getItem('cookieConsent');
+        if (!consent) {
+            showCookieBanner();
+        }
+    }
+
+    /**
+     * Show the cookie consent banner
+     */
+    function showCookieBanner() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) {
+            banner.style.display = 'block';
+        }
+    }
+
+    /**
+     * Hide the cookie consent banner
+     */
+    function hideCookieBanner() {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) {
+            banner.style.display = 'none';
+        }
+    }
+
+    /**
+     * User accepts cookies
+     */
+    window.acceptCookies = function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        hideCookieBanner();
+    };
+
+    /**
+     * User declines cookies - clear localStorage except consent
+     */
+    window.declineCookies = function() {
+        const consent = 'declined';
+        localStorage.clear();
+        localStorage.setItem('cookieConsent', consent);
+        hideCookieBanner();
+    };
 
     /* ==========================================================================
        Theme Management
@@ -143,6 +195,7 @@
      * Initialize all components when DOM is ready
      */
     function init() {
+        checkCookieConsent();
         loadSavedTheme();
         initFilters();
         initSearch();
