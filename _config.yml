@@ -3,7 +3,7 @@
 
 # Site Settings
 title: "AVDPunks <3 AI"
-description: "Thoughts on AI, technology, and digital transformation"
+description: "Technical guides and insights on Azure Virtual Desktop, Windows 365, and cloud technologies"
 author: AVDPunks
 url: "" # Update this when you have a custom domain
 baseurl: "" # Set to "/repo-name" if not using custom domain
