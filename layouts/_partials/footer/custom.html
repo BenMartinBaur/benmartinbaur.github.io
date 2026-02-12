@@ -1,0 +1,133 @@
+<!-- Cookie Consent Banner for GDPR Compliance -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+<script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        CookieConsent.run({
+            guiOptions: {
+                consentModal: {
+                    layout: 'box wide',
+                    position: 'bottom center',
+                    equalWeightButtons: true,
+                    flipButtons: false
+                },
+                preferencesModal: {
+                    layout: 'box',
+                    position: 'right',
+                    equalWeightButtons: true,
+                    flipButtons: false
+                }
+            },
+
+            categories: {
+                necessary: {
+                    readOnly: true,
+                    enabled: true
+                },
+                analytics: {
+                    autoClear: {
+                        cookies: [
+                            { name: /^_ga/ },
+                            { name: '_gid' }
+                        ]
+                    }
+                },
+                marketing: {}
+            },
+
+            language: {
+                default: 'en',
+                autoDetect: 'browser',
+                translations: {
+                    en: {
+                        consentModal: {
+                            title: 'We use cookies',
+                            description: 'This website uses cookies to ensure you get the best experience. By clicking "Accept all", you agree to the storing of cookies on your device to enhance site navigation and analyze site usage.',
+                            acceptAllBtn: 'Accept all',
+                            acceptNecessaryBtn: 'Reject all',
+                            showPreferencesBtn: 'Manage preferences',
+                            footer: '<a href="/privacy">Privacy Policy</a>'
+                        },
+                        preferencesModal: {
+                            title: 'Cookie preferences',
+                            acceptAllBtn: 'Accept all',
+                            acceptNecessaryBtn: 'Reject all',
+                            savePreferencesBtn: 'Save preferences',
+                            closeIconLabel: 'Close',
+                            serviceCounterLabel: 'Service|Services',
+                            sections: [
+                                {
+                                    title: 'Cookie Usage',
+                                    description: 'We use cookies to ensure the basic functionalities of this website and to enhance your online experience.'
+                                },
+                                {
+                                    title: 'Strictly Necessary Cookies <span class="pm__badge">Always Enabled</span>',
+                                    description: 'These cookies are essential for the proper functioning of the website. Without these cookies, the website would not work properly.',
+                                    linkedCategory: 'necessary'
+                                },
+                                {
+                                    title: 'Analytics Cookies',
+                                    description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All data is anonymized and cannot be used to identify you.',
+                                    linkedCategory: 'analytics'
+                                },
+                                {
+                                    title: 'Marketing Cookies',
+                                    description: 'These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user.',
+                                    linkedCategory: 'marketing'
+                                },
+                                {
+                                    title: 'More information',
+                                    description: 'For any questions regarding our cookie policy, please <a class="cc__link" href="/about">contact us</a>.'
+                                }
+                            ]
+                        }
+                    },
+                    de: {
+                        consentModal: {
+                            title: 'Wir verwenden Cookies',
+                            description: 'Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. Mit "Alle akzeptieren" stimmen Sie der Speicherung von Cookies auf Ihrem Gerät zu, um die Navigation zu verbessern und die Nutzung der Website zu analysieren.',
+                            acceptAllBtn: 'Alle akzeptieren',
+                            acceptNecessaryBtn: 'Alle ablehnen',
+                            showPreferencesBtn: 'Einstellungen verwalten',
+                            footer: '<a href="/privacy">Datenschutzerklärung</a>'
+                        },
+                        preferencesModal: {
+                            title: 'Cookie-Einstellungen',
+                            acceptAllBtn: 'Alle akzeptieren',
+                            acceptNecessaryBtn: 'Alle ablehnen',
+                            savePreferencesBtn: 'Einstellungen speichern',
+                            closeIconLabel: 'Schließen',
+                            serviceCounterLabel: 'Dienst|Dienste',
+                            sections: [
+                                {
+                                    title: 'Cookie-Nutzung',
+                                    description: 'Wir verwenden Cookies, um die grundlegenden Funktionen dieser Website zu gewährleisten und Ihr Online-Erlebnis zu verbessern.'
+                                },
+                                {
+                                    title: 'Notwendige Cookies <span class="pm__badge">Immer aktiv</span>',
+                                    description: 'Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich. Ohne diese Cookies würde die Website nicht richtig funktionieren.',
+                                    linkedCategory: 'necessary'
+                                },
+                                {
+                                    title: 'Analyse-Cookies',
+                                    description: 'Diese Cookies sammeln Informationen darüber, wie Sie die Website nutzen, welche Seiten Sie besucht haben und auf welche Links Sie geklickt haben. Alle Daten sind anonymisiert.',
+                                    linkedCategory: 'analytics'
+                                },
+                                {
+                                    title: 'Marketing-Cookies',
+                                    description: 'Diese Cookies werden verwendet, um Besucher auf Websites zu verfolgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Nutzer sind.',
+                                    linkedCategory: 'marketing'
+                                },
+                                {
+                                    title: 'Weitere Informationen',
+                                    description: 'Bei Fragen zu unserer Cookie-Richtlinie <a class="cc__link" href="/about">kontaktieren Sie uns</a>.'
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>

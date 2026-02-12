@@ -1,209 +1,67 @@
-baseURL = "https://benmartinbaur.github.io/"
-languageCode = "en-us"
-title = "The Architect"
-theme = "LoveIt"
+baseURL = 'https://benmartinbaur.github.io/'
+languageCode = 'en-us'
+title = 'The Architect | Ben Martin Baur'
+theme = 'hugo-theme-stack'
 
-# Default content language
-defaultContentLanguage = "en"
+[pagination]
+  pagerSize = 5
 
-# Enable emoji support
-enableEmoji = true
-
-# Enable robots.txt generation
-enableRobotsTXT = true
-
-# Hugo outputs
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# Menu configuration
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 1
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 2
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 4
-
-# Site parameters
 [params]
-  # Site title (displayed in browser tab)
-  title = "Windows Cloud Academy"
-  # Site description
-  description = "Windows 365, Azure Virtual Desktop and Microsoft DevBox"
-  # Site keywords
-  keywords = ["Windows 365", "Azure Virtual Desktop", "Microsoft DevBox", "Cloud"]
-  # Site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
-  # Date format
-  dateFormat = "2006-01-02"
-  # Website images for Open Graph and Twitter Cards
-  images = ["/images/avatar.jpg"]
+  mainSections = ['posts']
+  featuredImageField = 'image'
+  rssFullContent = true
 
-  # Header config
-  [params.header]
-    # Desktop header mode ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # Mobile header mode ("fixed", "normal", "auto")
-    mobileMode = "auto"
-    # Header title config
-    [params.header.title]
-      # URL of the logo
-      logo = ""
-      # Title name
-      name = "Windows Cloud Academy"
-      # Typing animation switcher
-      typeit = false
+[params.dateFormat]
+  published = 'Jan 02, 2006'
+  lastUpdated = 'Jan 02, 2006 15:04 MST'
 
-  # Footer config
-  [params.footer]
-    enable = true
-    # Custom content
-    custom = ""
-    # Show Hugo and theme info
-    hugo = true
-    # Show copyright info
-    copyright = true
-    # Show author
-    author = true
-    # Site creation time
-    since = 2024
+[params.sidebar]
+  emoji = '🏗️'
+  subtitle = 'Thoughts and ideas by Ben Martin Baur'
+  avatar = 'img/avatar.jpg'
 
-  # Home page config
-  [params.home]
-    # RSS articles count
-    rss = 10
-    # Home page profile
-    [params.home.profile]
-      enable = true
-      # Gravatar Email for avatar
-      gravatarEmail = ""
-      # URL of avatar
-      avatarURL = "/images/avatar.jpg"
-      # Title shown in home page
-      title = "Ben Martin Baur"
-      # Subtitle shown in home page
-      subtitle = "Windows 365, Azure Virtual Desktop and Microsoft DevBox"
-      # Whether to enable typing animation
-      typeit = true
-      # Social links config in home page
-      social = true
-    # Home page posts
-    [params.home.posts]
-      enable = true
-      # Page count on home page
-      paginate = 6
+[params.article]
+  math = false
+  toc = true
+  readingTime = true
 
-  # Social config in home page
-  [params.social]
-    GitHub = "BenMartinBaur"
-    LinkedIn = ""
-    Twitter = ""
-    Email = ""
+[params.comments]
+  enabled = false
 
-  # Page config
-  [params.page]
-    # Hide URL in post
-    hiddenFromHomePage = false
-    # Hide URL in search
-    hiddenFromSearch = false
-    # Enable twemoji
-    twemoji = false
-    # Enable lightgallery
-    lightgallery = false
-    # Enable fraction
-    fraction = true
-    # Font used in code block
-    fontawesome = true
-    # License info (markdown)
-    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-    # Table of contents config
-    [params.page.toc]
-      # Enable table of contents
-      enable = true
-      # Keep TOC on the same side
-      keepStatic = false
-      # Position on the side
-      auto = true
-    # Code config
-    [params.page.code]
-      # Max lines when collapsed
-      maxShownLines = 30
-    # Share config
-    [params.page.share]
-      enable = true
-      Twitter = true
-      LinkedIn = true
+[params.widgets]
+  homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "tag-cloud", params = { limit = 10 } },
+  ]
+  page = [{ type = "toc" }]
 
-  # Search config
-  [params.search]
-    enable = true
-    # Type of search engine ("lunr", "algolia")
-    type = "lunr"
-    # Max results length
-    maxResultLength = 10
-    # Snippet length
-    snippetLength = 30
-    # Highlight searched keywords
-    highlightTag = "em"
-    # Absolute URL path
-    absoluteURL = false
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = 1
+  [menu.main.params]
+    icon = 'home'
 
-  # Cookie consent config (required for GDPR compliance in Germany)
-  [params.cookieconsent]
-    enable = true
-    [params.cookieconsent.content]
-      message = "Diese Website verwendet Cookies, um Ihre Erfahrung zu verbessern."
-      dismiss = "Zustimmen"
-      link = "Erfahren Sie mehr"
+[[menu.social]]
+  identifier = 'github'
+  name = 'GitHub'
+  url = 'https://github.com/benmartinbaur'
+  weight = 1
+  [menu.social.params]
+    icon = 'brand-github'
 
-# Markup config
-[markup]
-  # Syntax highlighting
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = false
-  # Goldmark (default markdown parser)
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.renderer]
-      unsafe = true
-  # Table of contents settings
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 6
+[markup.goldmark.renderer]
+  unsafe = true
 
-# Privacy config
-[privacy]
-  [privacy.x]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
+[markup.highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNoStart = 1
+  lineNos = true
+  lineNumbersInTable = true
+  tabWidth = 4
 
-# [params.advanced]
-  # customCSS = ["cookieconsent.css"]
-  # customJS = ["js/cookieconsent.umd.js"]
+enableGitInfo = true

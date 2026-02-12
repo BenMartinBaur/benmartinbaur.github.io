@@ -1,16 +1,19 @@
 ---
 title: "About"
+description: "About Ben Martin Baur"
 date: 2024-01-01
-draft: false
+layout: "page"
+menu:
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
 
 ## About Me
 
-Welcome to Windows Cloud Academy! I'm Ben Martin Baur.
+Welcome to **The Architect**! I'm Ben Martin Baur.
 
-This blog covers topics on:
-- Windows 365
-- Azure Virtual Desktop
-- Microsoft DevBox
+This blog is where I share my thoughts, insights, and experiences.
 
 Stay tuned for more content!
