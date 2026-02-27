@@ -1,0 +1,7 @@
+by Susan Finerty (Author), Tony Thelen (Foreword), Harry Kraemer (Foreword) 
+
+Cross-functional Work: Getting Out of Our Siloes
+
+Whether we are in a formal matrix structure, a matrix role or work through a web of people to get things done, today’s work requires us to work side to side, across the organization. For our own careers and for the success of the organization, we can’t remain in the comfortable confines of our functional, geographical or product siloes. The complex solutions and decisions that move businesses forward are found in the lateral work—with partners scattered across the organization and around the globe.
+
+Master the Matrix, 2nd Edition, is based on the discussions, questions and ideas of thousands of participants and clients who have used this powerful, practical framework to make sense of cross-functional work. It is backed by the quantitative results from Finerty Consulting’s Matrix180 and Cross-Functional Influence 180 assessment tools, interviews and surveys. Structured around the stories of practioners and considered the gold standard of “how to” in our matrixed, cross-functional organizations, this book is as relatable as it is reliable. Bonus material includes making it work in virtual work environments and what to look for when hiring for cross-functional roles.
