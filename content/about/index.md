@@ -3,11 +3,6 @@ title: "About"
 description: "About Ben Martin Baur — Technical Architect at Microsoft Innovation Hub Germany"
 date: 2026-02-28
 layout: "page"
-menu:
-  main:
-    weight: -90
-    params:
-      icon: user
 ---
 
 # Ben Martin Baur
