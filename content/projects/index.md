@@ -10,8 +10,3 @@ layout: "page"
 A collection of projects I'm working on or have contributed to.
 
 ---
-
-- [Project I](project-i/) — 
-- [Project II](project-ii/) — 
-- [Project Alpha](project-Alpha/) — 
-- [Project Beta](project-Beta/) — 
