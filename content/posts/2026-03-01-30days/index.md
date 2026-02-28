@@ -15,4 +15,8 @@ source_url: ""
 source_title: "RAND Corporation Research Report RRA2680-1"
 ---
 
-My frist 30 days as an architect
+My frist 30 days as an architect#
+
+--- content/gallery/my-first-gallery/index.md ---
+![Image 1](IMG1.png) ![Image 2](IMG2.png)
+![Image 3](featured.jpg)

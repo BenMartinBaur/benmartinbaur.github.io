@@ -52,6 +52,14 @@ theme = 'hugo-theme-stack'
   [menu.social.params]
     icon = 'brand-github'
 
+[[menu.social]]
+  identifier = 'linkedin'
+  name = 'LinkedIn'
+  url = 'https://www.linkedin.com/in/ben-martin-baur/'
+  weight = 2
+  [menu.social.params]
+    icon = 'brand-linkedin'
+
 [markup.goldmark.renderer]
   unsafe = true
 
