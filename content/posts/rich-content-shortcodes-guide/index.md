@@ -1,7 +1,7 @@
 ---
 title: "Rich Content & Shortcodes Guide"
 description: "A reference for Hugo shortcodes and rich content features available in the Stack theme."
-date: 2026-02-12
+date: 2026-02-01
 image: featured.jpg
 tags:
   - Shortcodes
