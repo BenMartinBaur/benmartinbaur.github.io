@@ -11,8 +11,6 @@ tags:
   - Social Media
   - Leadership
 reading_time: "2 min read"
-source_url: ""
-source_title: "RAND Corporation Research Report RRA2680-1"
 ---
 
 My frist 30 days as an architect#
