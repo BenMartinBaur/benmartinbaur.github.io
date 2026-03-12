@@ -1,0 +1,125 @@
+{
+  "tenantId": "<YOUR-TENANT-ID>",
+  "namingPrefix": {
+    "group": "GRP",
+    "configProfile": "CFG",
+    "compliancePolicy": "CMP",
+    "conditionalAccess": "CA",
+    "updateRing": "UPD",
+    "provisioningPolicy": "PP",
+    "filter": "FLT",
+    "securityBaseline": "SBL",
+    "scopeTag": "TAG"
+  },
+  "platform": "W365",
+  "region": "WEU",
+  "groups": [
+    {
+      "displayName": "GRP-All-W365-Enterprise",
+      "description": "All Windows 365 Enterprise licensed users",
+      "membershipType": "Dynamic",
+      "membershipRule": "(user.assignedPlans -any (assignedPlan.servicePlanId -eq \"YOUR-W365-PLAN-ID\" -and assignedPlan.capabilityStatus -eq \"Enabled\"))"
+    },
+    {
+      "displayName": "GRP-IT-W365-Pilot",
+      "description": "Pilot group for Windows 365 Cloud PC rollout",
+      "membershipType": "Assigned",
+      "membershipRule": null
+    },
+    {
+      "displayName": "GRP-All-W365-Frontline",
+      "description": "All Windows 365 Frontline licensed users",
+      "membershipType": "Dynamic",
+      "membershipRule": "(user.assignedPlans -any (assignedPlan.servicePlanId -eq \"YOUR-W365-FRONTLINE-PLAN-ID\" -and assignedPlan.capabilityStatus -eq \"Enabled\"))"
+    }
+  ],
+  "assignmentFilters": [
+    {
+      "displayName": "FLT-W365-Model-CloudPC",
+      "description": "Filter for Cloud PC devices by model",
+      "platform": "windows10AndLater",
+      "rule": "(device.model -contains \"Cloud PC\")"
+    }
+  ],
+  "compliancePolicies": [
+    {
+      "displayName": "CMP-W365-Standard",
+      "description": "Standard compliance policy for Windows 365 Cloud PCs. BitLocker excluded.",
+      "settings": {
+        "passwordRequired": true,
+        "passwordMinimumLength": 8,
+        "passwordRequiredType": "alphanumeric",
+        "osMinimumVersion": "10.0.19045.0",
+        "firewallEnabled": true,
+        "antivirusRequired": true,
+        "defenderEnabled": true,
+        "bitLockerEnabled": false
+      }
+    }
+  ],
+  "deviceConfigurations": [
+    {
+      "displayName": "CFG-W365-Restrictions-USB",
+      "description": "Block USB storage on Cloud PCs",
+      "omaSettings": [
+        {
+          "displayName": "Block USB Storage",
+          "omaUri": "./Device/Vendor/MSFT/Policy/Config/Storage/RemovableDiskDenyWriteAccess",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "displayName": "CFG-W365-Security-CredentialGuard",
+      "description": "Enable Credential Guard on Cloud PCs",
+      "omaSettings": [
+        {
+          "displayName": "Enable Credential Guard",
+          "omaUri": "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "updateRings": [
+    {
+      "displayName": "UPD-W365-Pilot",
+      "description": "Pilot update ring for Cloud PCs - 1 day deferral",
+      "deferQualityUpdatesDays": 1,
+      "deferFeatureUpdatesDays": 5,
+      "targetGroup": "GRP-IT-W365-Pilot"
+    },
+    {
+      "displayName": "UPD-W365-Fast",
+      "description": "Fast update ring for Cloud PCs - 7 day deferral",
+      "deferQualityUpdatesDays": 7,
+      "deferFeatureUpdatesDays": 14,
+      "targetGroup": null
+    },
+    {
+      "displayName": "UPD-W365-Broad",
+      "description": "Broad update ring for Cloud PCs - 14 day deferral",
+      "deferQualityUpdatesDays": 14,
+      "deferFeatureUpdatesDays": 30,
+      "targetGroup": "GRP-All-W365-Enterprise"
+    }
+  ],
+  "conditionalAccessPolicies": [
+    {
+      "displayName": "CA-101-RequireMFA-CloudPC",
+      "description": "Require MFA for all Cloud PC connections",
+      "state": "enabledForReportingButNotEnforced",
+      "grantControls": ["mfa"],
+      "includeApplications": ["0af06dc6-e4b5-4f28-818e-e78e62d137a5"],
+      "includeGroups": "GRP-All-W365-Enterprise"
+    },
+    {
+      "displayName": "CA-102-RequireCompliance-CloudPC",
+      "description": "Require device compliance for Cloud PC access",
+      "state": "enabledForReportingButNotEnforced",
+      "grantControls": ["compliantDevice"],
+      "includeApplications": ["0af06dc6-e4b5-4f28-818e-e78e62d137a5"],
+      "includeGroups": "GRP-All-W365-Enterprise"
+    }
+  ]
+}
