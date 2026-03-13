@@ -407,9 +407,10 @@ function Invoke-OutboundAccessAudit {
                 }
             }
 
-            # Check defaultOutboundAccess property
+            # Check defaultOutboundAccess property (may not exist on older API versions)
             $isPrivateSubnet = $false
-            if ($null -ne $subnet.DefaultOutboundAccess) {
+            $subnetProps = $subnet | Get-Member -MemberType Properties -ErrorAction SilentlyContinue
+            if ($subnetProps.Name -contains 'DefaultOutboundAccess' -and $null -ne $subnet.DefaultOutboundAccess) {
                 $isPrivateSubnet = -not $subnet.DefaultOutboundAccess
             }
 
@@ -552,17 +553,35 @@ function Deploy-NatGatewayToExistingSubnet {
     Write-Host "  -- Deploy NAT Gateway to Existing Subnet --" -ForegroundColor Yellow
     Write-Host ""
 
-    # Select resource group
-    $rg = Get-ResourceGroupSelection -Prompt "Select the resource group containing the VNet"
-    $rgName = $rg.ResourceGroupName
-    $location = $rg.Location
-
-    # Select VNet
-    $vnets = @(Get-AzVirtualNetwork -ResourceGroupName $rgName -ErrorAction Stop)
-    if ($vnets.Count -eq 0) {
-        Write-Host "  No VNets found in resource group '$rgName'." -ForegroundColor Red
+    # Fetch all VNets and derive resource groups that contain them
+    Write-Host "  Loading virtual networks..." -ForegroundColor DarkGray
+    $allVnets = @(Get-AzVirtualNetwork -ErrorAction Stop)
+    if ($allVnets.Count -eq 0) {
+        Write-Host "  No virtual networks found in this subscription." -ForegroundColor Red
         return
     }
+
+    $vnetRgNames = @($allVnets | ForEach-Object { $_.ResourceGroupName } | Sort-Object -Unique)
+    Write-Host ""
+    Write-Host "  Resource Groups with VNets:" -ForegroundColor Yellow
+    Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
+    for ($i = 0; $i -lt $vnetRgNames.Count; $i++) {
+        $rgVnetCount = @($allVnets | Where-Object { $_.ResourceGroupName -eq $vnetRgNames[$i] }).Count
+        Write-Host "  [$($i + 1)] $($vnetRgNames[$i]) ($rgVnetCount VNet(s))" -ForegroundColor White
+    }
+    Write-Host ""
+    do {
+        $rgSel = Read-Host "  Select resource group (enter number)"
+        $parsed = $null
+        $valid = [int]::TryParse($rgSel, [ref]$parsed) -and $parsed -ge 1 -and $parsed -le $vnetRgNames.Count
+        if (-not $valid) { Write-Host "  Invalid selection." -ForegroundColor Red }
+    } while (-not $valid)
+    $rgName = $vnetRgNames[$parsed - 1]
+    $rg = Get-AzResourceGroup -Name $rgName -ErrorAction Stop
+    $location = $rg.Location
+
+    # Select VNet within chosen resource group
+    $vnets = @($allVnets | Where-Object { $_.ResourceGroupName -eq $rgName })
 
     Write-Host ""
     Write-Host "  Available VNets:" -ForegroundColor Yellow
@@ -592,16 +611,30 @@ function Deploy-NatGatewayToExistingSubnet {
         $addrPrefix = $subnets[$i].AddressPrefix -join ', '
         Write-Host "  [$($i + 1)] $($subnets[$i].Name) ($addrPrefix)$natInfo" -ForegroundColor White
     }
+    if ($subnets.Count -gt 1) {
+        Write-Host "  [A] All subnets" -ForegroundColor White
+    }
     do {
         $subnetSel = Read-Host "  Select subnet"
+        $selectAll = ($subnetSel -eq 'A' -or $subnetSel -eq 'a') -and $subnets.Count -gt 1
         $parsed = $null
-        $valid = [int]::TryParse($subnetSel, [ref]$parsed) -and $parsed -ge 1 -and $parsed -le $subnets.Count
+        $valid = $selectAll -or ([int]::TryParse($subnetSel, [ref]$parsed) -and $parsed -ge 1 -and $parsed -le $subnets.Count)
+        if (-not $valid) { Write-Host "  Invalid selection." -ForegroundColor Red }
     } while (-not $valid)
-    $selectedSubnet = $subnets[$parsed - 1]
 
-    if ($selectedSubnet.NatGateway) {
-        Write-Host "  This subnet already has a NAT Gateway attached." -ForegroundColor Yellow
-        if (-not (Confirm-Action "Continue and replace the existing NAT Gateway?")) { return }
+    if ($selectAll) {
+        $targetSubnets = $subnets
+    }
+    else {
+        $targetSubnets = @($subnets[$parsed - 1])
+    }
+
+    # Check for existing NAT Gateways on target subnets
+    $subsWithNat = @($targetSubnets | Where-Object { $_.NatGateway })
+    if ($subsWithNat.Count -gt 0) {
+        $names = ($subsWithNat | ForEach-Object { $_.Name }) -join ', '
+        Write-Host "  NAT Gateway already attached on: $names" -ForegroundColor Yellow
+        if (-not (Confirm-Action "Continue and replace on those subnets?")) { return }
     }
 
     # Naming
@@ -614,13 +647,15 @@ function Deploy-NatGatewayToExistingSubnet {
     $pipName = "pip-natgw-$baseName"
     $natGwName = "natgw-$baseName"
 
+    $subnetLabel = if ($selectAll) { "All ($($targetSubnets.Count) subnets)" } else { $targetSubnets[0].Name }
+
     Write-Host ""
     Write-Host "  Deployment Plan:" -ForegroundColor Yellow
     Write-Host "  - Public IP:    $pipName" -ForegroundColor White
     Write-Host "  - NAT Gateway:  $natGwName" -ForegroundColor White
     Write-Host "  - Location:     $location" -ForegroundColor White
     Write-Host "  - VNet:         $($selectedVnet.Name)" -ForegroundColor White
-    Write-Host "  - Subnet:       $($selectedSubnet.Name)" -ForegroundColor White
+    Write-Host "  - Subnet(s):    $subnetLabel" -ForegroundColor White
 
     if (-not (Confirm-Action "Deploy these resources?")) { return }
 
@@ -652,11 +687,15 @@ function Deploy-NatGatewayToExistingSubnet {
     $natGw = New-AzNatGateway @natGwParams
     Write-Host "  [OK] NAT Gateway created: $natGwName" -ForegroundColor Green
 
-    # Associate with subnet
-    Write-Host "  Associating NAT Gateway with subnet..." -ForegroundColor DarkGray
-    $selectedSubnet.NatGateway = $natGw
+    # Associate with subnet(s)
+    foreach ($targetSubnet in $targetSubnets) {
+        Write-Host "  Associating NAT Gateway with subnet '$($targetSubnet.Name)'..." -ForegroundColor DarkGray
+        $targetSubnet.NatGateway = $natGw
+    }
     $selectedVnet | Set-AzVirtualNetwork -ErrorAction Stop | Out-Null
-    Write-Host "  [OK] NAT Gateway associated with subnet '$($selectedSubnet.Name)'" -ForegroundColor Green
+    foreach ($targetSubnet in $targetSubnets) {
+        Write-Host "  [OK] NAT Gateway associated with subnet '$($targetSubnet.Name)'" -ForegroundColor Green
+    }
 
     Write-Host ""
     Write-Host "  Deployment complete." -ForegroundColor Green
