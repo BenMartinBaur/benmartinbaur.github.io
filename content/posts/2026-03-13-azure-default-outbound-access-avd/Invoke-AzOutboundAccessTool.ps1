@@ -212,9 +212,9 @@ function Show-Menu {
 function Select-Subscription {
     Write-Host ""
     Write-Host "  Fetching available subscriptions..." -ForegroundColor DarkGray
-    $subscriptions = Get-AzSubscription -ErrorAction Stop |
+    $subscriptions = @(Get-AzSubscription -ErrorAction Stop |
         Where-Object { $_.State -eq 'Enabled' } |
-        Sort-Object Name
+        Sort-Object Name)
 
     if ($subscriptions.Count -eq 0) {
         Write-Host "  No enabled subscriptions found. Check your Azure login." -ForegroundColor Red
@@ -252,7 +252,11 @@ function Get-ResourceGroupSelection {
     )
 
     Write-Host ""
-    $resourceGroups = Get-AzResourceGroup -ErrorAction Stop | Sort-Object ResourceGroupName
+    $resourceGroups = @(Get-AzResourceGroup -ErrorAction Stop | Sort-Object ResourceGroupName)
+    if ($resourceGroups.Count -eq 0) {
+        Write-Host "  No resource groups found in this subscription." -ForegroundColor Red
+        return $null
+    }
     Write-Host "  Available Resource Groups:" -ForegroundColor Yellow
     Write-Host "  $('-' * 60)" -ForegroundColor DarkGray
 
@@ -301,7 +305,7 @@ function Invoke-OutboundAccessAudit {
 
     Write-Host ""
     Write-Host "  Scanning virtual networks..." -ForegroundColor Cyan
-    $vnets = Get-AzVirtualNetwork -ErrorAction Stop
+    $vnets = @(Get-AzVirtualNetwork -ErrorAction Stop)
     if ($vnets.Count -eq 0) {
         Write-Host "  No virtual networks found in this subscription." -ForegroundColor Yellow
         return @()
@@ -339,8 +343,10 @@ function Invoke-OutboundAccessAudit {
 
             # Check Azure Firewall (in same VNet)
             foreach ($fw in $allFirewalls) {
-                foreach ($ipConfig in $fw.IpConfigurations) {
-                    if ($ipConfig.Subnet.Id -and $ipConfig.Subnet.Id.StartsWith($vnet.Id, [System.StringComparison]::OrdinalIgnoreCase)) {
+                $fwIpConfigs = $fw.IpConfigurations
+                if (-not $fwIpConfigs) { continue }
+                foreach ($ipConfig in $fwIpConfigs) {
+                    if ($ipConfig.Subnet -and $ipConfig.Subnet.Id -and $ipConfig.Subnet.Id.StartsWith($vnet.Id, [System.StringComparison]::OrdinalIgnoreCase)) {
                         $hasFirewall = $true
                         break
                     }
@@ -354,7 +360,7 @@ function Invoke-OutboundAccessAudit {
                 $rtRgName = $rtParts[4]
                 $rtName = $rtParts[-1]
                 $rt = Get-AzRouteTable -ResourceGroupName $rtRgName -Name $rtName -ErrorAction SilentlyContinue
-                if ($rt) {
+                if ($rt -and $rt.Routes) {
                     foreach ($route in $rt.Routes) {
                         if ($route.AddressPrefix -eq '0.0.0.0/0' -and $route.NextHopType -eq 'VirtualAppliance') {
                             $hasUdrToNva = $true
@@ -374,9 +380,10 @@ function Invoke-OutboundAccessAudit {
 
             # Check Public IPs on NICs in this subnet
             $subnetNics = @($allNics | Where-Object {
-                $_.IpConfigurations | Where-Object { $_.Subnet.Id -eq $subnet.Id }
+                $_.IpConfigurations | Where-Object { $_.Subnet -and $_.Subnet.Id -eq $subnet.Id }
             })
             foreach ($nic in $subnetNics) {
+                if (-not $nic.IpConfigurations) { continue }
                 foreach ($ipConfig in $nic.IpConfigurations) {
                     if ($ipConfig.PublicIpAddress) {
                         $hasPublicIP = $true
@@ -392,7 +399,9 @@ function Invoke-OutboundAccessAudit {
                 $subnetNicIds = @($subnetNics | ForEach-Object { $_.Id })
                 foreach ($lb in $allLBs) {
                     if ($lb.Sku.Name -ne 'Standard') { continue }
+                    if (-not $lb.BackendAddressPools) { continue }
                     foreach ($bePool in $lb.BackendAddressPools) {
+                        if (-not $bePool.BackendIpConfigurations) { continue }
                         foreach ($beConfig in $bePool.BackendIpConfigurations) {
                             $nicId = ($beConfig.Id -split '/ipConfigurations/')[0]
                             if ($nicId -in $subnetNicIds) {
