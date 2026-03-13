@@ -123,7 +123,7 @@ If you use **RDP Shortpath (UDP over STUN)**, be aware that NAT Gateway uses sym
 ```mermaid
 flowchart TD
     A[New VNet after March 31, 2026] --> B{AVD / W365 ANC workload?}
-    B -->|Yes| C{Can use Microsoft Hosted Network?}
+    B -->|Yes| C{Can use Microsoft Hosted Network? - Does not apply for AVD}
     C -->|Yes| D[Use MHN - No action needed]
     C -->|No| E[Explicit outbound required - without it AVD/W365 will break]
     E --> F{Need RDP Shortpath via STUN?}
