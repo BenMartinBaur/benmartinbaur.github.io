@@ -125,15 +125,18 @@ flowchart TD
     A[New VNet after March 31, 2026] --> B{AVD / W365 ANC workload?}
     B -->|Yes| C{Can use Microsoft Hosted Network?}
     C -->|Yes| D[Use MHN - No action needed]
-    C -->|No| E{Need RDP Shortpath via STUN?}
-    E -->|Yes| F[Deploy Standard Load Balancer + NAT Gateway]
-    E -->|No| G[Deploy NAT Gateway]
-    B -->|No| H{Needs outbound internet?}
-    H -->|Yes| G
-    H -->|No| I[Private subnet is fine]
-    G --> J[Configure NSG with AVD service tags]
-    F --> J
-    J --> K[Validate with AVD Agent URL Tool]
+    C -->|No| E[Explicit outbound required - without it AVD/W365 will break]
+    E --> F{Need RDP Shortpath via STUN?}
+    F -->|Yes| G[Deploy Standard Load Balancer + NAT Gateway]
+    F -->|No| H[Deploy NAT Gateway]
+    G --> I[Configure NSG with AVD service tags]
+    H --> I
+    I --> J[Validate with AVD Agent URL Tool]
+    B -->|No| K{Needs outbound internet?}
+    K -->|Yes| H
+    K -->|No| L[Private subnet is fine]
+
+    style E fill:#d32f2f,color:#fff,stroke:#b71c1c
 ```
 
 ---
