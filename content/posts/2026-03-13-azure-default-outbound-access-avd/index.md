@@ -44,7 +44,6 @@ Microsoft is retiring DOA because:
 | **Clarity** | Explicit connectivity is always preferred over implicit access |
 | **Stability** | The default outbound IP isn't customer-owned and can change; platform updates may affect behavior |
 | **Consistency** | Multiple NICs on a VM can yield inconsistent outbound IPs; VMSS instances may get different IPs |
-| **Protocol gaps** | Default outbound IPs don't support fragmented packets or ICMP pings |
 
 ---
 
@@ -119,7 +118,7 @@ If you use **RDP Shortpath (UDP over STUN)**, be aware that NAT Gateway uses sym
 
 ---
 
-## The Decision Framework
+## The Decision Framework for Windows 365 and Azure Virtual Desktop
 
 ```mermaid
 flowchart TD
@@ -205,61 +204,7 @@ The tool can deploy a Network Security Group pre-configured with outbound rules 
 
 > ⚠️ The NSG rules use Azure **Service Tags** wherever possible. Service tags are automatically updated by Microsoft when IP ranges change — you do not need to maintain IP lists manually.
 
----
-
-## Step-by-Step: Manual Remediation
-
-If you prefer to remediate manually or need to understand what the tool does under the hood:
-
-### Deploy a NAT Gateway (Azure CLI)
-
-```bash
-# Create a public IP for NAT Gateway
-az network public-ip create \
-  --resource-group myRG \
-  --name myNatGatewayIP \
-  --sku Standard \
-  --allocation-method Static
-
-# Create the NAT Gateway
-az network nat gateway create \
-  --resource-group myRG \
-  --name myNatGateway \
-  --public-ip-addresses myNatGatewayIP \
-  --idle-timeout 10
-
-# Associate with subnet
-az network vnet subnet update \
-  --resource-group myRG \
-  --vnet-name myVNet \
-  --name mySubnet \
-  --nat-gateway myNatGateway
-```
-
-### Create an NSG with AVD Service Tags
-
-```bash
-# Create NSG
-az network nsg create --resource-group myRG --name myAVD-NSG
-
-# Allow AVD service traffic
-az network nsg rule create --resource-group myRG --nsg-name myAVD-NSG \
-  --name Allow-AVD-ServiceTraffic --priority 100 --direction Outbound \
-  --access Allow --protocol Tcp --destination-port-ranges 443 \
-  --destination-address-prefixes WindowsVirtualDesktop
-
-# Allow AAD authentication
-az network nsg rule create --resource-group myRG --nsg-name myAVD-NSG \
-  --name Allow-AAD --priority 110 --direction Outbound \
-  --access Allow --protocol Tcp --destination-port-ranges 443 \
-  --destination-address-prefixes AzureActiveDirectory
-
-# Allow KMS activation
-az network nsg rule create --resource-group myRG --nsg-name myAVD-NSG \
-  --name Allow-KMS --priority 120 --direction Outbound \
-  --access Allow --protocol Tcp --destination-port-ranges 1688 \
-  --destination-address-prefixes Internet
-```
+> ⚠️ **Read** and **Test** before apply and run in **production**
 
 ---
 
