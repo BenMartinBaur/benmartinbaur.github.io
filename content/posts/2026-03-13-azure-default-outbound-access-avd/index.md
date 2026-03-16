@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Azure Default Outbound Access Retirement — What It Means for AVD and What You Should Do Now"
+title: "Azure Default Outbound Access Retirement — What It Means for AVD & Windows 365 and What You Should Do Now"
 description: "On March 31, 2026, Azure retires default outbound access for new VNets. This post explains the impact on Azure Virtual Desktop, Windows 365 ANC, and provides a ready-to-use PowerShell tool to audit your networks and deploy NAT Gateways with AVD-ready NSGs."
 date: 2026-03-13
 image: featured.jpg
@@ -122,21 +122,25 @@ If you use **RDP Shortpath (UDP over STUN)**, be aware that NAT Gateway uses sym
 
 ```mermaid
 flowchart TD
-    A[New VNet after March 31, 2026] --> B{AVD / W365 ANC workload?}
-    B -->|Yes| C{Can use Microsoft Hosted Network? - Does not apply for AVD}
-    C -->|Yes| D[Use MHN - No action needed]
-    C -->|No| E[Explicit outbound required - without it AVD/W365 will break]
-    E --> F{Need RDP Shortpath via STUN?}
+    A[New VNet after March 31, 2026] --> B{Workload type?}
+    B -->|Azure Virtual Desktop| AVD[Explicit outbound required]
+    B -->|Windows 365 with ANC| W365{Can migrate to Microsoft Hosted Network?}
+    B -->|Other workload| K{Needs outbound internet?}
+    W365 -->|Yes| MHN[Use MHN — no VNet egress config needed]
+    W365 -->|No| ANC[Explicit outbound required]
+    AVD --> F{Need RDP Shortpath via STUN?}
+    ANC --> F
     F -->|Yes| G[Deploy Standard Load Balancer + NAT Gateway]
     F -->|No| H[Deploy NAT Gateway]
-    G --> I[Configure NSG with AVD service tags]
+    G --> I[Configure NSG with required service tags]
     H --> I
-    I --> J[Validate with AVD Agent URL Tool]
-    B -->|No| K{Needs outbound internet?}
+    I -->|AVD| J1[Validate with AVD Agent URL Tool]
+    I -->|Windows 365 ANC| J2[Validate with ANC health check]
     K -->|Yes| H
-    K -->|No| L[Private subnet is fine]
+    K -->|No| L[Private subnet — no action needed]
 
-    style E fill:#d32f2f,color:#fff,stroke:#b71c1c
+    style AVD fill:#d32f2f,color:#fff,stroke:#b71c1c
+    style ANC fill:#d32f2f,color:#fff,stroke:#b71c1c
 ```
 
 ---
