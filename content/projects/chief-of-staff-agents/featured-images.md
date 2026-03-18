@@ -31,22 +31,27 @@ Every post on B3N.B4UR_ gets a branded featured image at **1200×630px** (standa
 
 ```
 ┌─────────────────────────────────────────────┐
-│ 🏗️ BUILD (pillar badge, top-left)          │
-│                                             │
-│                         (decorative element │
-│                          top-right, subtle) │
-│                                             │
+│ B3N.B4UR_ | 🏗️ BUILD (logo + badge, top)  │
 │                                             │
 │ Post Title                                  │
 │ Line Two If Needed                          │
 │ Subtitle in smaller text, lower opacity     │
-│ B3N.B4UR_ | Ben Martin Baur                │
+│                                             │
+│                                             │
+│                         (decorative element │
+│                          bottom-right)      │
+│                                             │
+│ Ben Martin Baur (bottom-left, subtle)       │
 └─────────────────────────────────────────────┘
 ```
 
-- **Title**: Space Grotesk, 44–52pt bold, white, max 2 lines
-- **Subtitle**: Inter, 16px, white at 45–70% opacity
-- **Logo + name**: Bottom-left, separated by a 1px divider line
+**IMPORTANT: All text content must be in the TOP portion of the image.** The Hugo Stack theme crops featured images to show only the top ~40% as card thumbnails. Title, subtitle, logo, and pillar badge must all be above the midline.
+
+- **Logo + pillar badge**: Top-left, first element, flex row with 1px divider
+- **Title**: Space Grotesk, 44–52pt bold, white, max 2 lines, directly below logo
+- **Subtitle**: Inter, 16px, white at 45–70% opacity, below title
+- **Attribution**: "Ben Martin Baur" bottom-left, 13px, very low opacity (visible on full image only)
+- **Decorative elements**: Bottom-right (visible on full image, won't clutter the card crop)
 - **Padding**: 60px vertical, 70px horizontal
 - **Content area**: max-width 700–750px (left-aligned)
 
@@ -54,9 +59,9 @@ Every post on B3N.B4UR_ gets a branded featured image at **1200×630px** (standa
 
 | Pillar | Decoration |
 |--------|------------|
-| **Build** | Subtle grid overlay (40px squares, ~4% opacity blue lines). Faint terminal commands top-right in JetBrains Mono. `> ssh build@b3n.b4ur_` |
-| **Strategy** | Subtle concentric circles top-right (2px white border, ~5-8% opacity). Radial light bloom at 80% 20% |
-| **Real** | Soft `✦` symbol top-right at ~8% opacity. Radial light bloom at 75% 25% |
+| **Build** | Subtle grid overlay (40px squares, ~4% opacity blue lines). Faint terminal commands **bottom-right** in JetBrains Mono. |
+| **Strategy** | Subtle concentric circles **bottom-right** (2px white border, ~5-8% opacity). Radial light bloom at 80% 20% |
+| **Real** | Soft `✦` symbol **bottom-right** at ~6% opacity. Radial light bloom at 75% 25% |
 
 ---
 
@@ -74,23 +79,23 @@ Create a branded featured image for a blog post using the B3N.B4UR_ visual ident
 
 **Specifications:**
 - Dimensions: 1200×630px
+- CRITICAL: All text (logo, badge, title, subtitle) must be in the TOP HALF of the image. The Hugo Stack theme crops to show only the top ~40% as card thumbnails.
 - Background: Use the pillar gradient:
   - Build: linear-gradient(135deg, #0C1824 0%, #12293D 30%, #1E3A52 60%, #2A4B6A 100%) with subtle 40px grid overlay at 4% opacity
-  - Strategy: linear-gradient(135deg, #F96167 0%, #E04470 30%, #C5389E 60%, #8B44AD 100%) with subtle concentric circles top-right
+  - Strategy: linear-gradient(135deg, #F96167 0%, #E04470 30%, #C5389E 60%, #8B44AD 100%) with subtle concentric circles bottom-right
   - Real: linear-gradient(135deg, #89B4E8 0%, #A8A0E0 30%, #D4A0D0 60%, #E8C0D4 100%) with soft radial light bloom
-- Pillar badge: Top-left, emoji + pillar name, 13px uppercase, letter-spacing .12em
-  - Build colour: #64B5F6
-  - Strategy colour: #FFD54F
-  - Real colour: rgba(255,255,255,.85)
-- Title: Space Grotesk Bold, 44-52px, white, bottom-left, max 2 lines, line-height 1.15
-- Subtitle: Inter 16px, white at 45-70% opacity depending on pillar, below title
-- Logo: "B3N.B4UR_" in Space Grotesk Bold 16px, white, letter-spacing .06em
+- Logo + Pillar badge: TOP-LEFT, first row. Logo "B3N.B4UR_" then 1px divider then pillar badge. 
+  - Logo: Space Grotesk Bold 16px, white, letter-spacing .06em
   - Numbers 3 and 4 in accent colour (#F96167 for Build/Real, #FFD54F for Strategy)
   - Underscore in same accent colour
-- Divider: 1px white line at 15-25% opacity between logo and name
-- Attribution: "Ben Martin Baur" in Inter 13px, white at 30-50% opacity
+  - Pillar badge: 13px uppercase, letter-spacing .12em
+  - Build colour: #64B5F6 | Strategy colour: #FFD54F | Real colour: rgba(255,255,255,.85)
+- Title: Space Grotesk Bold, 44-52px, white, TOP-LEFT below logo, max 2 lines, line-height 1.15
+- Subtitle: Inter 16px, white at 45-70% opacity depending on pillar, below title
+- Attribution: "Ben Martin Baur" in Inter 13px, white at 25-40% opacity, BOTTOM-LEFT
+- Decorative elements: BOTTOM-RIGHT only (won't interfere with card crop)
 - Padding: 60px top/bottom, 70px left/right
-- Content max-width: 750px, aligned bottom-left
+- Content max-width: 750px, aligned top-left
 
 The background template images (without text) are available at:
 - assets/img/featured_build_dark.jpg
