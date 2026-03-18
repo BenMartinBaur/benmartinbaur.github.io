@@ -71,8 +71,8 @@ This is where it got uncomfortable. AI found issues I'd been blind to:
 | **27 tags, no hierarchy** | Tags like "Hugo", "Markdown", "Shortcodes" alongside "AI" and "Strategy" — noise | ✅ Done |
 | **No CTA anywhere** | No newsletter, no follow prompt, no engagement loop on any post | 📋 Planned |
 | **LinkedIn gap** | 8K followers but last article was March 2022 — a 4-year content gap | 📋 Planned |
-| **No visual brand identity** | No logo, no consistent color palette, no branded imagery across posts | 📋 Planned |
-| **Generic blog name** | "The Architect" is good but undifferentiated — hundreds of blogs share this name | 📋 Planned |
+| **No visual brand identity** | No logo, no consistent color palette, no branded imagery across posts | ✅ Done → Coral accent, three-pillar image system |
+| **Generic blog name** | "The Architect" is good but undifferentiated — hundreds of blogs share this name | ✅ Done → **B3N.B4UR_** |
 
 The broken post and typos were the worst. I'd been sharing links to a blog where raw markdown was visible to anyone who scrolled to page 2. AI caught it in minutes. I'd missed it for weeks.
 

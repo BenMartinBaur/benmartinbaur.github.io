@@ -4,6 +4,36 @@ All changes made by the AI Chief of Staff team to the blog, documented in revers
 
 ---
 
+## 2026-03-18 — Brand Name & Visual Identity
+
+### Brand Name Changed
+- **Old:** "The Architect | Ben Baur"
+- **New:** "B3N.B4UR_"
+- File: `hugo.toml` line 3 (`title`)
+- Leet speak treatment: numbers 3 & 4 displayed in Coral Energy (#F96167) accent colour
+- Logo font: Space Grotesk Bold
+- Favicon: BB (Ben Baur)
+
+### Tagline Updated
+- **Old:** "Thoughts and ideas by Ben"
+- **New:** "From the server room to the boardroom"
+- File: `hugo.toml` line 20
+
+### Colour Scheme Approved
+| Element | Value | Notes |
+|---------|-------|-------|
+| Primary | `#34495e` (Slate) | Keep existing — no change |
+| Accent | `#F96167` (Coral Energy) | Blockquotes, hovers, highlights |
+| Dark mode accent | `#7B8CDE` (Soft Lavender) | Links, tags in dark mode |
+
+### Featured Image System Approved
+Three distinct visual styles per content pillar:
+- 🏗️ **Build** — Dark blue/gray terminal gradient
+- 🗺️ **Strategy** — Coral→purple gradient (existing BXT style)
+- 🎤 **Real** — Light blue/lavender watercolour (existing Vegan style)
+
+---
+
 ## 2026-03-18 — Initial Audit & Restructure
 
 ### Blog Post Created

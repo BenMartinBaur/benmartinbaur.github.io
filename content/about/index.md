@@ -83,7 +83,7 @@ A decade building the foundation: from nearly 8 years designing cloud infrastruc
 
 - **Author** — Principal Author of the [Multi-Region BCDR guidance for Azure Virtual Desktop](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr) and other Azure Well-Architected Framework, Cloud Adoption Framework, and Architecture Center contributions
 - **Co-founder** — [AVD Punks](https://www.avdpunks.com/) technical community blog
-- **Writer** — [The Architect](/) blog on AI strategy, leadership, and hands-on technology
+- **Writer** — [B3N.B4UR_](/) blog on AI strategy, leadership, and hands-on technology
 
 ---
 
@@ -103,7 +103,7 @@ I care about making complex technology accessible and useful — not just techni
 
 ## About This Blog
 
-**The Architect** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring — from AI project strategy and leadership in technical roles to hands-on experiments with tools like GitHub Copilot.
+**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring — from AI project strategy and leadership in technical roles to hands-on experiments with tools like GitHub Copilot.
 
 I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
 

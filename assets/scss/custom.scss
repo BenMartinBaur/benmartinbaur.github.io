@@ -1,0 +1,60 @@
+/* ==========================================================================
+   B3N.B4UR_ — Custom Brand Styles
+   Accent: Coral Energy (#F96167) | Dark Accent: Soft Lavender (#7B8CDE)
+   Primary: #34495e (Slate) — unchanged from theme default
+   ========================================================================== */
+
+/* --- Light Mode Accent Overrides --- */
+
+/* Blockquote left border */
+.article-content blockquote {
+    border-left-color: #F96167;
+}
+
+/* Link hover */
+a:hover {
+    color: #F96167;
+}
+
+/* Tag cloud hover */
+.tagCloud .tagCloud-tags a:hover {
+    color: #F96167 !important;
+}
+
+/* Category highlights */
+.article-category a {
+    color: #F96167;
+}
+
+/* Widget section title accent */
+.section-card .section-title::after {
+    background-color: #F96167;
+}
+
+/* --- Dark Mode Overrides --- */
+
+[data-scheme="dark"] {
+    /* Links */
+    a {
+        color: #7B8CDE;
+    }
+
+    a:hover {
+        color: #9FAAE8;
+    }
+
+    /* Blockquote */
+    .article-content blockquote {
+        border-left-color: #F96167;
+        background: rgba(249, 97, 103, 0.06);
+    }
+
+    /* Tags */
+    .tagCloud .tagCloud-tags a:hover {
+        color: #7B8CDE !important;
+    }
+
+    .article-category a {
+        color: #7B8CDE;
+    }
+}

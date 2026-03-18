@@ -1,6 +1,6 @@
 baseURL = 'https://benmartinbaur.github.io/'
 languageCode = 'en-us'
-title = 'The Architect | Ben Baur'
+title = 'B3N.B4UR_'
 theme = 'hugo-theme-stack'
 
 [pagination]

@@ -32,10 +32,12 @@ Items the AI Chief of Staff team will execute, ordered by priority.
 - Apply to all existing and future posts
 - **Why:** Posts currently have inconsistent visual identity in feeds
 
-### Add tagline to blog header
-- Add "Where Strategy Meets the Stack" as subtitle in hugo.toml
-- Update `[params.sidebar]` subtitle from "Thoughts and ideas by Ben" to tagline
-- **Why:** Differentiates "The Architect" from hundreds of generic blogs
+### ~~Add tagline to blog header~~ ✅ DONE
+- ~~Add "Where Strategy Meets the Stack" as subtitle in hugo.toml~~
+- Brand renamed from "The Architect" to **B3N.B4UR_**
+- Tagline set to "From the server room to the boardroom"
+- Logo: Space Grotesk Bold, numbers 3 & 4 in Coral Energy (#F96167)
+- Favicon: BB
 
 ### Write anchor post
 - Title: "What This Blog Is About & Who It's For"

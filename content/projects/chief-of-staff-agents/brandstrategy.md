@@ -1,6 +1,6 @@
 # Chief of Staff Agents — Brand Strategy
 
-The authoritative brand strategy document for **The Architect** blog by Ben Martin Baur.
+The authoritative brand strategy document for **B3N.B4UR_** by Ben Martin Baur.
 
 ---
 
@@ -81,13 +81,24 @@ New tags may be added for genuinely new topics. Do not recreate removed tags (Li
 
 | Element | Specification |
 |---------|--------------|
-| **Primary colour** | `#1E2761` (Midnight Navy) |
-| **Accent colour** | `#F96167` (Coral Energy) |
-| **Secondary** | `#F5F5F5` (Off-white) |
-| **Font — headings** | Inter or DM Sans (modern, clean) |
-| **Font — body** | Inter (highly legible) |
-| **Blog tagline** | "Where Strategy Meets the Stack" |
-| **Featured images** | Branded template: dark navy gradient + coral accent line + white title text |
+| **Brand name** | B3N.B4UR_ |
+| **Logo font** | Space Grotesk Bold |
+| **Logo treatment** | Numbers 3 & 4 in Coral Energy (#F96167), dot dimmed, underscore in coral (blinking cursor on web) |
+| **Favicon** | BB (Ben Baur) in Space Grotesk Bold |
+| **Primary colour** | `#34495e` (Slate — existing, unchanged) |
+| **Accent colour** | `#F96167` (Coral Energy) — blockquotes, hovers, highlights, logo numbers |
+| **Dark mode accent** | `#7B8CDE` (Soft Lavender) — links, tags in dark mode |
+| **Background** | `#f5f5fa` (existing, unchanged) |
+| **Body font** | Lato (existing theme default, unchanged) |
+| **Blog tagline** | "From the server room to the boardroom" |
+
+### Featured Image System — Three Pillar Styles
+
+| Pillar | Style | Gradient |
+|--------|-------|----------|
+| 🏗️ **Build** | Dark blue/gray terminal aesthetic. No photo — the code speaks. | `#0C1824` → `#1E3A52` → `#2A4B6A` |
+| 🗺️ **Strategy** | Warm coral→purple gradient. Photo on right. Bold white title. | `#F96167` → `#C5389E` → `#8B44AD` |
+| 🎤 **Real** | Light blue/lavender/pink watercolour. Photo. Softer, personal. | `#89B4E8` → `#D4A0D0` → `#E8C0D4` |
 
 ---
 
