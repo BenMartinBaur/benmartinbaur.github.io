@@ -32,6 +32,32 @@ Three distinct visual styles per content pillar:
 - 🗺️ **Strategy** — Coral→purple gradient (existing BXT style)
 - 🎤 **Real** — Light blue/lavender watercolour (existing Vegan style)
 
+### Featured Images Generated
+Branded featured images (1200×630, B3N.B4UR_ watermark) created for posts that were missing them:
+
+| Post | Pillar | File |
+|------|--------|------|
+| Intune & W365 Naming | 🏗️ Build | `2026-04-10-intune-w365-naming-best-practices/featured.jpg` |
+| CAF vs AI Adoption Framework | 🗺️ Strategy | `2026-03-06-caf-vs-ai-adoption-framework/featured.jpg` |
+| Welcome to the Boardroom | 🗺️ Strategy | `2026-03-15-welcome-to-the-boardroom/featured.jpg` |
+| Business Envisioning Cheatsheet | 🗺️ Strategy | `2026-04-01-business-envisioning-cheatsheet/featured.jpg` |
+| AI Chief of Staff | 🎤 Real | `2026-03-18-ai-chief-of-staff/featured.jpg` |
+
+### Clean Template Backgrounds Created
+Watermark-free gradient backgrounds for reuse by any AI or design tool:
+- `assets/img/featured_build_dark.jpg` — Dark blue/gray terminal gradient with grid overlay
+- `assets/img/featured_strategy_coral.jpg` — Coral→purple gradient with radial blooms
+- `assets/img/featured_real_blue.jpg` — Light blue→lavender→pink gradient
+
+### Featured Image Guide Created
+- `content/projects/chief-of-staff-agents/featured-images.md`
+- Contains: template specs, layout rules, decorative elements per pillar, and a **copy-paste prompt** for generating new featured images with any AI
+
+### Custom SCSS Created
+- File: `assets/scss/custom.scss`
+- Coral Energy (#F96167) accent for blockquotes, hovers, category labels
+- Soft Lavender (#7B8CDE) for dark mode links and tags
+
 ---
 
 ## 2026-03-18 — Initial Audit & Restructure
