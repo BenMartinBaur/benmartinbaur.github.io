@@ -18,7 +18,7 @@ theme = 'hugo-theme-stack'
 [params.sidebar]
   emoji = '🏗️'
   subtitle = 'From the server room to the boardroom'
-  avatar = 'img/avatar.jpg'
+  avatar = 'img/avatar.png'
 
 [params.article]
   math = false
