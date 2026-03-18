@@ -4,13 +4,12 @@ title: "How a Frontier Center of Excellence Works Together with a Cloud Center o
 description: "The CCoE builds the runway; the Frontier CoE flies the plane. Here's how the two work together — and where the tension points are."
 date: 2026-03-05
 image: featured.jpg
-category: ai
+category: strategy
 tags:
   - AI
-  - Cloud
-  - Leadership
   - Strategy
   - Center of Excellence
+  - Leadership
 reading_time: "5 min read"
 ---
 

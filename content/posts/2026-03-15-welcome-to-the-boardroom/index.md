@@ -4,11 +4,10 @@ title: "Welcome to the boardroom"
 description: ""
 date: 2026-02-15
 image: featured.jpg
-category: social
+category: strategy
 tags:
   - AI
-  - LinkedIn
-  - Social Media
+  - Strategy
   - Leadership
 reading_time: "2 min read"
 ---

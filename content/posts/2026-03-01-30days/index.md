@@ -4,17 +4,17 @@ title: "First 30 days"
 description: ""
 date: 2026-02-06
 image: featured.jpg
-category: social
+category: real
 tags:
   - AI
-  - LinkedIn
-  - Social Media
   - Leadership
 reading_time: "2 min read"
 ---
 
-My frist 30 days as an architect#
+## My First 30 Days as an Architect
 
---- content/gallery/my-first-gallery/index.md ---
-![Image 1](IMG1.png) ![Image 2](IMG2.png)
-![Image 3](featured.jpg)
+![First impressions](IMG1.png)
+
+![In the Innovation Hub](IMG2.png)
+
+![Ready to build](featured.jpg)

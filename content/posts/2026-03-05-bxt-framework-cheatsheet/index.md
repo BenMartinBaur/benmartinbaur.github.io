@@ -4,13 +4,12 @@ title: "The BXT Framework Cheatsheet — Business, Experience, Technology"
 description: "A practical cheatsheet for applying Microsoft's BXT Framework in customer engagements. Score viability, desirability, and feasibility before you build."
 date: 2026-03-05
 image: featured.jpg
-category: ai
+category: strategy
 tags:
   - AI
   - Strategy
-  - Leadership
   - Framework
-  - Customer Engagement
+  - Consulting
 reading_time: "7 min read"
 ---
 

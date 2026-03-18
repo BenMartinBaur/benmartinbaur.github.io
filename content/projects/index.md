@@ -7,6 +7,9 @@ layout: "page"
 
 # Projects
 
-A collection of projects I'm working on or have contributed to.
+| Name | Description |
+|----------|------|
+| 🏗️ `Learnings from Squad` | Hands-on Engineering | Deep technical content with real tools and architectures | PowerShell tools, Azure walkthroughs, architecture patterns, IaC templates |
+| [🗺️ `My Chief of Staff Team`]() | Frameworks & Thinking | Strategic frameworks, comparisons, and decision tools | CAF/AI frameworks, BXT, CoE models, cheatsheets, decision trees |
 
 ---

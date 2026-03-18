@@ -4,17 +4,15 @@ title: "Vegan my story"
 description: ""
 date: 2026-02-06
 image: featured.jpg
-category: social
+category: real
 tags:
-  - LinkedIn
-  - Social Media
   - Leadership
 reading_time: "2 min read"
 ---
 
 # VEGAN – MY STORY
 
-When I first embraced veganism with my wife, it wasn’t because someone told me I should. It wasn’t because of a trend or a fleeting guilt after watching a documentary. We were in Australia and out of a sudden we noticed that there were hundreds of plat-based options, even in the most remote location, there was a plat-based option. A t the same time it was fairly hard to travel with fresh animal products in a campervan. So we though, let’s try this!
+When I first embraced veganism with my wife, it wasn’t because someone told me I should. It wasn’t because of a trend or a fleeting guilt after watching a documentary. We were in Australia and out of a sudden we noticed that there were hundreds of plant-based options, even in the most remote location, there was a plant-based option. At the same time it was fairly hard to travel with fresh animal products in a campervan. So we thought, let’s try this!
 
 Welcome to the rabbit-hole. At the same time I started to read a lot about physical performance, nutrition and overall wellbeing and realized something essential about myself: My values couldn’t align with a system that profits from suffering, environmental degradation, and inefficiency. The more I learned, the less I could justify looking the other way. 
 And one of my core values in every aspect of life is to stay brutally honest and true to myself and who I am.

@@ -19,6 +19,10 @@ Born on premise — living in the cloud. I started my career racking servers and
 
 ![AboutMe](aboutme.png) 
 
+## My Unfair Advantage
+
+Most tech bloggers are either deep engineers or strategy consultants. I am both — and I am sitting in Microsoft's CTO office with direct customer access. 🤯🤯🤯. Every piece of content I create (should) reinforce: "I've been in the room, I've built the thing, and here's what actually works."
+
 ---
 
 ## 🗻 Impact at a Glance 
@@ -85,7 +89,7 @@ A decade building the foundation: from nearly 8 years designing cloud infrastruc
 
 ## 🏎️ What Drives Me
 
-Most AI transformations fail not because the technology isn't ready — but because they jump directly on a solution without understanding adn defining their problem and then design the architecture. They jump to models and demos without solving for data gravity, governance, or change management. I've made it my job to fix that gap.
+Most AI transformations fail not because the technology isn't ready — but because they jump directly on a solution without understanding and defining their problem and then design the architecture. They jump to models and demos without solving for data gravity, governance, or change management. I've made it my job to fix that gap.
 
 My leadership philosophy is simple: 
 

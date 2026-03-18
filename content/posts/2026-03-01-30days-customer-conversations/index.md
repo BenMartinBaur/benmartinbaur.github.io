@@ -4,12 +4,11 @@ title: "First 30 days"
 description: ""
 date: 2026-02-06
 image: featured.jpg
-category: social
+category: real
 tags:
   - AI
-  - LinkedIn
-  - Social Media
   - Leadership
+  - Strategy
 reading_time: "5 min read"
 ---
 

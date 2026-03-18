@@ -4,13 +4,12 @@ title: "Azure Default Outbound Access Retirement — What It Means for AVD & Win
 description: "On March 31, 2026, Azure retires default outbound access for new VNets. This post explains the impact on Azure Virtual Desktop, Windows 365 ANC, and provides a ready-to-use PowerShell tool to audit your networks and deploy NAT Gateways with AVD-ready NSGs."
 date: 2026-03-13
 image: featured.jpg
-category: cloud
+category: build
 tags:
   - Azure
   - Azure Virtual Desktop
   - Windows 365
   - Networking
-  - NAT Gateway
   - PowerShell
   - Security
   - Best Practices

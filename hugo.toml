@@ -17,7 +17,7 @@ theme = 'hugo-theme-stack'
 
 [params.sidebar]
   emoji = '🏗️'
-  subtitle = 'Thoughts and ideas by Ben'
+  subtitle = 'From the server room to the boardroom'
   avatar = 'img/avatar.jpg'
 
 [params.article]

@@ -12,7 +12,7 @@ This Privacy Policy describes how your personal information is collected, used, 
 
 ### Cookies
 
-This website uses cookies. Cookies are small text files that are stored on your device when you visit a website. We use the following types of cookies:
+This website does not use cookies. Cookies are small text files that are stored on your device when you visit a website. We use the following types of cookies:
 
 #### Strictly Necessary Cookies
 These cookies are essential for the proper functioning of the website. Without these cookies, the website would not work properly.

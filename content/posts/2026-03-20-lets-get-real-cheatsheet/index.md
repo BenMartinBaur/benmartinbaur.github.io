@@ -4,12 +4,11 @@ title: "Let's get Real or Let's Not Play - Checklist"
 description: ""
 date: 2026-02-20
 image: featured.jpg
-category: social
+category: strategy
 tags:
-  - AI
-  - LinkedIn
-  - Social Media
-  - Leadership
+  - Strategy
+  - Framework
+  - Consulting
 reading_time: "2 min read"
 ---
 
