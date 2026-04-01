@@ -1,5 +1,5 @@
 ---
-title: "Ben's Cosio — Innovation Hub Agent"
+title: "Ben's Cosio"
 description: "A Copilot Studio agent system that orchestrates structured consulting frameworks across customer engagements for Microsoft Innovation Hub architects."
 date: 2026-03-01
 image: ""
