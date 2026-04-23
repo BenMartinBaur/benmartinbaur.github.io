@@ -1,31 +1,24 @@
 ---
 layout: post
-title: "Principles Over Preferences: Why the Best Architects Lead with Conviction"
-description: "Great architecture decisions don't come from tools or trends. They come from principles. Here's why having a personal operating philosophy is the architect's superpower."
+title: "Principles Over Preferences — How I Make Architecture Decisions Under Pressure"
+description: "Great architecture decisions don't come from tools or trends — they come from principles. Here's the personal operating philosophy that guides every call I make under pressure."
 date: 2026-03-19
-category: leadership
+draft: true
+image: featured.jpg
+category: real
 tags:
   - Leadership
-  - Architecture Principles
-  - Decision Making
-  - Personal Philosophy
-  - Michael Gervais
+  - Strategy
+  - Best Practices
 reading_time: "7 min read"
-pillar: leadership
-series: "Architects in the Age of Agentic AI"
-warhol_graphic: "_brand/assets/2026-03-19-lead-principals-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, comic book illustration, a compass with the
-  needle pointing to the word PRINCIPLES, bold flat colors (canary yellow,
-  electric pink), thick black outlines, Ben-Day halftone dots, Lichtenstein-style
-  thought bubble 'CONVICTIONS NOT SOLUTIONS', 4-panel grid with each panel
-  in coral salmon rose and purple from brand gradient spectrum, retro pop art,
-  pixelated mosaic gradient background from soft coral (#F4A89A) through
-  rose pink (#E8699A) to deep orchid purple (#A855C7) in blocky pixel squares,
-  small circular profile photo of smiling man in backwards black cap and
-  white HUMAN tee in bottom-right corner with 3px white border
-linkedin_post_url: ""
-status: draft
+series: "The Leadership Operating System"
+series_order: 1
+---
+
+## TL;DR
+
+The best architecture decisions don't come from tools or trends — they come from principles. Preferences are situational; principles are non-negotiable. Drawing from Michael Gervais's high-performance psychology and Toto Wolff's F1 leadership, here's how I built a personal operating philosophy that guides every decision under pressure.
+
 ---
 
 ## The Question That Changed How I Architect
@@ -194,10 +187,8 @@ Before you dictate the architecture of systems, learn to dictate the architectur
 
 ## What's Next
 
-In the next leadership post, I'll explore **The Future of the CTO Role** — and how the rise of agentic AI is transforming the Chief Technology Officer from a technology gatekeeper into an organizational architect.
+In Part 2 of this series, I show what living by these principles produces: **[The 0.007% Pinnacle Effect — What Consistent Excellence Actually Looks Like](/page/_drafts/unstructured-ideas/2026-04-02-the-0007-pinnacle-effect/).**
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly insights.*
-
-*#AgenticArchitects #ArchitectLeadership #Principles #FindingMastery*
+*This is Part 1 of the **[The Leadership Operating System](/series/the-leadership-operating-system)** series. Next up: [The 0.007% Pinnacle Effect — What Consistent Excellence Actually Looks Like](/page/_drafts/unstructured-ideas/2026-04-02-the-0007-pinnacle-effect/).*

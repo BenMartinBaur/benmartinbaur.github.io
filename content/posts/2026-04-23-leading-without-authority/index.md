@@ -8,7 +8,7 @@ category: real
 tags:
   - Leadership
   - Strategy
-reading_time: "6 min read"
+reading_time: "7 min read"
 ---
 
 # Leading Without Authority — What 15 Years Taught Me About Influence
@@ -59,9 +59,9 @@ And slowly, things shifted.
 
 Not because I had new authority. Not because the org chart changed. But because the team started to see me as someone who was *in it with them* — not above them, not managing them from a dashboard, but actually invested in their success.
 
-That team grew to 36 people. We built cross-EMEA initiatives that changed how Microsoft approached End-User Computing in the region. We ran technical bootcamps that reached over 1,200 Cloud Solution Architects. In 2025, the impact of that work was part of why I received the Microsoft Pinnacle Award — an award given to 43 people out of 228,000+ employees.
+That team grew to 36 people. We built cross-EMEA initiatives that changed how Microsoft approached End-User Computing in the region. We ran technical bootcamps that reached over 1,200 Cloud Solution Architects. In 2025, the ripple effects of that work were recognised with a Microsoft Pinnacle Award — something I still see as a reflection of what the team built together, not anything I did alone.
 
-But I need to be honest: the award didn't come from having authority. It came from what happened in those messy, uncertain early days when I had none.
+But I need to be honest: that recognition didn't come from having authority. It came from what happened in those messy, uncertain early days when I had none.
 
 ---
 
@@ -93,6 +93,10 @@ There are books about "influence techniques" — reciprocity, social proof, all 
 
 Some of the most influential moments in my career were the ones nobody saw: a quiet word of support before someone's big presentation, connecting two people who should've been talking months ago, taking the blame when something didn't land.
 
+I won't pretend I've got this figured out. Just last month, I caught myself doing the broadcast-tower thing again — sending a strategy doc to a new cross-functional group before I'd had a single one-on-one. Old habits die hard. But I've learned that the correction is always the same: close the deck, pick up the phone, ask what's hard.
+
+If you're leading without authority right now, here's the smallest thing I can recommend: pick one person on your team you haven't really talked to. Call them. No agenda. Ask them what's hard right now. Then just listen.
+
 ---
 
 ## What I'd Tell a Younger Version of Myself
@@ -117,7 +121,11 @@ If you're in a position where you're trying to lead without authority *and* with
 
 ## The Invitation
 
-Today, as a Technical Architect in the Innovation Hub, I still lead without formal authority every single day. I work across teams, across functions, across customer organisations. No one has to listen to me. The ones who do, do so because — I hope — they trust that I'm bringing something honest to the table.
+Last week, I was grabbing coffee with a colleague who'd just been handed a cross-team initiative — no reporting lines, no budget, a room full of sceptics. She asked me: "How do you get people to follow you when they don't have to?"
+
+I told her about that Thursday phone call in 2022. And then I said the thing I wish someone had said to me: "Stop trying to lead. Start trying to understand."
+
+I still get it wrong. I still lead without formal authority every single day — across teams, functions, and customer organisations. No one has to listen to me. The ones who do, do so because — I hope — they trust that I'm bringing something honest to the table.
 
 Leading without authority isn't a career hack. It's not a skill you unlock at a certain level. It's a practice. A daily decision to show up, listen first, contribute genuinely, and trust that influence compounds over time.
 

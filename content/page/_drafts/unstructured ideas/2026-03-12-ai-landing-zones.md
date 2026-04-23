@@ -1,33 +1,26 @@
 ---
 layout: post
-title: "AI Landing Zones: Do You Actually Need One? (The Answer Will Surprise Most Architects)"
-description: "The debate around dedicated AI landing zones is missing the point. Here's what the Cloud Adoption Framework actually says — and what architects should do instead."
+title: "AI Doesn't Need Its Own Landing Zone — Here's What It Actually Needs"
+description: "The debate around dedicated AI landing zones is missing the point. Here's what the Cloud Adoption Framework actually says — and what architects should build instead."
 date: 2026-03-12
-category: technical
+draft: true
+image: featured.jpg
+category: strategy
 tags:
-  - Azure
   - AI
-  - Landing Zones
-  - Cloud Adoption Framework
-  - Agentic AI
-  - Azure AI Foundry
+  - Azure
+  - Strategy
+  - Framework
+  - Best Practices
 reading_time: "9 min read"
-pillar: architecture
-series: "Architects in the Age of Agentic AI"
-featured_image: ""
-warhol_graphic: "_brand/assets/2026-03-12-arch-ai-landing-zones-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, comic book illustration, AI brain icon merged
-  with cloud architecture diagram, robot agents standing on a landing zone
-  platform, bold flat colors (electric pink, cobalt blue), thick black outlines,
-  Ben-Day halftone dots, speech bubble 'JUST ANOTHER WORKLOAD?', 4-panel grid
-  with panels colored coral salmon rose and purple from brand gradient,
-  pixelated mosaic gradient background from soft coral (#F4A89A) through
-  rose pink (#E8699A) to deep orchid purple (#A855C7) in blocky pixel squares,
-  small circular profile photo of smiling man in backwards black cap and
-  white HUMAN tee in bottom-right corner with 3px white border
-linkedin_post_url: ""
-source_title: "AI Adoption - Cloud Adoption Framework"
+series: "The Architect's Foundation"
+series_order: 2
+---
+
+## TL;DR
+
+You don't need a separate AI landing zone. Microsoft's Cloud Adoption Framework is clear: AI is just another workload. But AI stresses your foundation in five unique ways — compute, data, lifecycle, orchestration, and responsible AI. The answer isn't a new landing zone. It's extending the one you already have.
+
 ---
 
 ## The Question Every Architect Is Asking
@@ -199,10 +192,8 @@ Add Azure Policy definitions that enforce content filtering, audit logging, and 
 
 ## What's Next
 
-In an upcoming post, I'll deep-dive into **Multi-Agent Architecture Patterns** — how to design your landing zone for constellations of agentic AI that communicate, delegate, and act autonomously.
+This concludes **The Architect's Foundation** series. If the foundation is *what you build*, the next question is *how you sustain it*. Head to **[The Leadership Operating System](/series/the-leadership-operating-system)** series to explore the principles, habits, and mindset that keep architects performing at their best.
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly architecture insights.*
-
-*#AgenticArchitects #AIArchitecture #AzureLandingZones #AILandingZone #CloudAdoptionFramework*
+*This is Part 2 of the **[The Architect's Foundation](/series/the-architects-foundation)** series. Previously: [The Most Important Architecture Decision You'll Make Before Writing a Single Line of Code](/page/_drafts/unstructured-ideas/2026-03-05-the-importance-of-landing-zones/).*

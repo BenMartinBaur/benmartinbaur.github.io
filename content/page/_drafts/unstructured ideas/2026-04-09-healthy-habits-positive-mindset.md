@@ -1,31 +1,23 @@
 ---
 layout: post
-title: "The Architect's Operating System: Healthy Habits, Awareness, and the Mindset That Sustains Excellence"
-description: "High performance without wellbeing is just a countdown to burnout. Here's the daily operating system I built — inspired by Michael Gervais, Toto Wolff, and hard-won personal experience."
+title: "Performance = Skill × Mindset — My Operating System for Sustainable Excellence"
+description: "High performance without wellbeing is just delayed burnout. Here's the daily operating system I built — grounded in body, mind, and awareness — to sustain excellence without crashing under load."
 date: 2026-04-09
-category: personal-development
+draft: true
+image: featured.jpg
+category: real
 tags:
-  - Personal Development
-  - Mindset
-  - Healthy Habits
-  - Mental Health
-  - High Performance
-  - Michael Gervais
-  - Finding Mastery
+  - Leadership
+  - Best Practices
 reading_time: "9 min read"
-pillar: personal-dev
-series: "Architects in the Age of Agentic AI"
-warhol_graphic: "_brand/assets/2026-04-09-pdev-habits-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, portrait of a smiling man in backwards black cap
-  and white HUMAN tee rendered in 4-panel Warhol color grid (coral, rose pink,
-  magenta, orchid purple matching brand gradient), each panel showing a different
-  mindset icon (brain, heart, eye, lightning bolt), Ben-Day halftone dots,
-  thick black outlines, speech bubble 'ARCHITECT YOUR MIND FIRST',
-  pixelated mosaic gradient background from soft coral (#F4A89A) to deep orchid
-  purple (#A855C7) in blocky pixel squares
-linkedin_post_url: ""
-status: draft
+series: "The Leadership Operating System"
+series_order: 3
+---
+
+## TL;DR
+
+High performance without wellbeing is just delayed burnout. Drawing from Michael Gervais's Finding Mastery framework and Toto Wolff's approach to vulnerability as strength, here's the daily operating system I built across three pillars — body, mind, and awareness — to sustain excellence without crashing under load.
+
 ---
 
 ## Performance Without Wellbeing Is Just Delayed Burnout
@@ -246,6 +238,4 @@ Before you architect systems, architect how you show up. Everything else follows
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly insights.*
-
-*#AgenticArchitects #PersonalDevelopment #Mindset #FindingMastery #HealthyHabits*
+*This is Part 3 of the **[The Leadership Operating System](/series/the-leadership-operating-system)** series. Previously: [The 0.007% Pinnacle Effect — What Consistent Excellence Actually Looks Like](/page/_drafts/unstructured-ideas/2026-04-02-the-0007-pinnacle-effect/). Next up: [You Can't Out-Hustle Biology — Why Nourishment Is a Leadership Decision](/page/_drafts/unstructured-ideas/2026-04-23-intentional-nourishment-you-cant-out-hustle-biology/).*

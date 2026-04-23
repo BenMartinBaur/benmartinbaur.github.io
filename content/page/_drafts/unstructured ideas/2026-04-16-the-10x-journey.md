@@ -1,34 +1,25 @@
 ---
 layout: post
-title: "The 10x Journey: My First 90 Days as an Enterprise Architect in Microsoft's Innovation Hub"
-description: "I joined the Office of the CTO in Microsoft's Innovation Hub to shape AI-driven transformation for Germany's most strategic customers. Here's what I've learned at 30, 60, and 90 days — and what it's teaching me about architecture at the edge of what's possible."
+title: "The 10x Journey — From Individual Deployments to Enterprise Impact"
+description: "The '10x' isn't about being a 10x engineer — it's about a 10x increase in impact surface area. Here's what the first 90 days in Microsoft's Innovation Hub taught me about architecture at scale."
 date: 2026-04-16
-category: personal-development
+draft: true
+image: featured.jpg
+category: strategy
 tags:
-  - Microsoft
-  - Enterprise Architecture
-  - Innovation Hub
-  - Office of the CTO
-  - AI Transformation
-  - Career
-  - 30-60-90
+  - AI
+  - Strategy
+  - Leadership
+  - Consulting
 reading_time: "10 min read"
-pillar: personal-dev
-series: "Architects in the Age of Agentic AI"
-featured_image: ""
-warhol_graphic: "_brand/assets/2026-04-16-pdev-10x-journey-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, comic book illustration, a rocket trajectory
-  labeled '10x' launching from a blueprint/architecture diagram toward the stars,
-  bold flat colors, thick black outlines, Ben-Day halftone dots, 4-panel grid
-  showing 30/60/90/BEYOND milestones in coral rose magenta and orchid purple
-  from brand gradient, speech bubble 'FROM GOOD TO 10x', pixelated mosaic
-  gradient background from soft coral (#F4A89A) to deep orchid purple (#A855C7)
-  in blocky pixel squares, small circular profile photo of smiling man in
-  backwards black cap and white HUMAN tee in bottom-right corner with 3px
-  white border
-linkedin_post_url: ""
-status: draft
+series: "The Strategic Ascent"
+series_order: 1
+---
+
+## TL;DR
+
+The "10x" isn't about being a 10x engineer — it's about a 10x increase in impact surface area. When I moved into Microsoft's Innovation Hub as an Enterprise Architect, the work shifted from individual deployments to enterprise-wide AI transformation. Here's what the first 90 days taught me about listening, pattern recognition, and leading with architecture.
+
 ---
 
 ## Why "10x"?
@@ -185,7 +176,7 @@ I refuse to sell a vision that doesn't connect to the customer's reality. And I 
 
 Here's the honest part: **this role change is going to shift what I write about.**
 
-AVDPunks will continue — Azure Virtual Desktop and Windows 365 are part of my heritage and I love that community. But the **Architects in the Age of Agentic AI** content is going to become much more architectural:
+AVDPunks will continue — Azure Virtual Desktop and Windows 365 are part of my heritage and I love that community. But the blog content is going to become much more architectural:
 
 - **Enterprise architecture patterns** for AI transformation at scale
 - **Cross-solution architecture** thinking — how cloud, AI, security, and data fit together
@@ -213,16 +204,9 @@ I choose preparation.
 
 ---
 
-## What's Coming in the 10x Series
+## What's Coming
 
-This post is the introduction. Here's what's next:
-
-| Post | Topic | Pillar |
-|------|-------|--------|
-| 10x: Architecture Patterns for AI Transformation | The repeatable patterns I'm seeing across strategic customers | Architecture |
-| 10x: Customer-Back Architecture Framework | How to start from outcomes, not technology | Leadership |
-| 10x: Cross-Solution Architecture Canvas | My reusable template for holistic enterprise architecture | Technical |
-| 10x: Lessons from the Innovation Hub | Quarterly reflections on what I'm learning | Personal Dev |
+This post is the introduction to **The Strategic Ascent** series. Next, I zoom out from my personal journey to the industry-wide pattern in [The CTO Role Is Splitting in Two — Which Path Are You On?](/page/_drafts/unstructured-ideas/2026-03-26-the-future-of-cto-roles/).
 
 ---
 
@@ -236,10 +220,8 @@ This post is the introduction. Here's what's next:
 
 ## What's Next
 
-In the next post: **The Architect's Operating System — Healthy Habits, Awareness, and the Mindset That Sustains Excellence.** Because performing at the 10x level requires an operating system that doesn't crash under load.
+In Part 2 of this series, I zoom out from the personal journey to the industry pattern: **[The CTO Role Is Splitting in Two — Which Path Are You On?](/page/_drafts/unstructured-ideas/2026-03-26-the-future-of-cto-roles/).**
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly insights on architecture, leadership, and personal growth.*
-
-*#AgenticArchitects #10xJourney #EnterpriseArchitect #InnovationHub #AITransformation #MicrosoftCTO*
+*This is Part 1 of the **[The Strategic Ascent](/series/the-strategic-ascent)** series. Next up: [The CTO Role Is Splitting in Two — Which Path Are You On?](/page/_drafts/unstructured-ideas/2026-03-26-the-future-of-cto-roles/).*

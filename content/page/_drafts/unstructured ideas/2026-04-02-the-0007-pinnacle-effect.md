@@ -1,31 +1,23 @@
 ---
 layout: post
-title: "The 0.007% — The Pinnacle Effect"
-description: "Only 0.007% of Microsoft employees are recognized with the Pinnacle Award. It stands for exceptional leadership, consistently outstanding results, and being a role model. Here's what it means — and what it demands."
+title: "The 0.007% Pinnacle Effect — What Consistent Excellence Actually Looks Like"
+description: "Only 0.007% of Microsoft employees receive the Pinnacle Award. It recognizes exceptional leadership, outstanding consistency, and authentic role modeling. Here's what it demands."
 date: 2026-04-02
-category: personal-development
+draft: true
+image: featured.jpg
+category: real
 tags:
-  - Microsoft
-  - Pinnacle Award
   - Leadership
-  - Role Model
-  - Personal Growth
-  - Excellence
+  - Best Practices
 reading_time: "9 min read"
-pillar: personal-dev
-series: "Architects in the Age of Agentic AI"
-featured_image: ""
-warhol_graphic: "_brand/assets/2026-04-02-pdev-pinnacle-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, bold graphic with the number '0.007%' huge in the
-  center rendered in gold and white, surrounded by a 4-panel Warhol color grid
-  (coral, rose pink, magenta, orchid purple matching brand gradient), portrait
-  of a smiling man in backwards black cap and white HUMAN tee in one panel with
-  thick black outlines and Ben-Day halftone dots, speech bubble 'THE PINNACLE
-  EFFECT', pixelated mosaic gradient background from soft coral (#F4A89A) to
-  deep orchid purple (#A855C7) in blocky pixel squares
-linkedin_post_url: ""
-status: draft
+series: "The Leadership Operating System"
+series_order: 2
+---
+
+## TL;DR
+
+Microsoft's Pinnacle Award recognizes 0.007% of employees. It doesn't reward a single brilliant moment — it rewards a pattern of exceptional leadership, outstanding results, and authentic role modeling. Here's what I learned about the difference between performance and consistency, and the principles that sustain excellence at the highest level.
+
 ---
 
 ## 0.007%
@@ -176,10 +168,8 @@ More on that in my next post.
 
 ## What's Next
 
-In the next post: **The 10x Journey — My First 90 Days as an Enterprise Architect in Microsoft's Innovation Hub.** How I'm applying these principles in a new role, shaping AI-driven transformation for strategic customers, and what I'm learning about architecture at the edge of what's possible.
+In Part 3 of this series, I reveal the operating system behind the consistency: **[Performance = Skill × Mindset — My Operating System for Sustainable Excellence](/page/_drafts/unstructured-ideas/2026-04-09-healthy-habits-positive-mindset/).**
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly insights on architecture, leadership, and personal growth.*
-
-*#AgenticArchitects #PinnacleAward #The0007Percent #ExceptionalLeadership #RoleModel*
+*This is Part 2 of the **[The Leadership Operating System](/series/the-leadership-operating-system)** series. Previously: [Principles Over Preferences — How I Make Architecture Decisions Under Pressure](/page/_drafts/unstructured-ideas/2026-03-19-the-importance-of-principals/). Next up: [Performance = Skill × Mindset — My Operating System for Sustainable Excellence](/page/_drafts/unstructured-ideas/2026-04-09-healthy-habits-positive-mindset/).*

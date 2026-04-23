@@ -1,32 +1,26 @@
 ---
 layout: post
-title: "Why Landing Zones Are the Most Important Architecture Decision You'll Ever Make"
-description: "Landing zones aren't just infrastructure — they're the foundation that determines whether your cloud journey succeeds or collapses under its own weight."
+title: "The Most Important Architecture Decision You'll Make Before Writing a Single Line of Code"
+description: "Landing zones aren't just infrastructure — they're the architecture decision that determines whether your cloud journey scales or collapses under its own weight."
 date: 2026-03-05
-category: technical
+draft: true
+image: featured.jpg
+category: build
 tags:
   - Azure
-  - Landing Zones
-  - Cloud Architecture
-  - Infrastructure as Code
-  - Cloud Adoption Framework
+  - Security
+  - Networking
+  - Best Practices
+  - Framework
 reading_time: "8 min read"
-pillar: technical
-series: "Architects in the Age of Agentic AI"
-featured_image: ""
-warhol_graphic: "_brand/assets/2026-03-05-tech-landing-zones-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, comic book illustration, city skyline built on
-  a solid geometric foundation block labeled 'LANDING ZONE', bold flat colors
-  (cobalt blue, turquoise), thick black outlines, Ben-Day halftone dots,
-  4-panel grid each panel different color from brand gradient spectrum,
-  speech bubble 'BUILD THE FOUNDATION FIRST', retro pop art poster,
-  pixelated mosaic gradient background from soft coral (#F4A89A) through
-  rose pink (#E8699A) to deep orchid purple (#A855C7) in blocky pixel squares,
-  small circular profile photo of smiling man in backwards black cap and
-  white HUMAN tee in bottom-right corner with 3px white border
-linkedin_post_url: ""
-source_title: "Azure Landing Zone Documentation"
+series: "The Architect's Foundation"
+series_order: 1
+---
+
+## TL;DR
+
+Landing zones are the foundational architecture decision that determines whether your cloud journey scales or collapses. They're not a product — they're the standardized, repeatable way you set up and manage your cloud environment. Get them right before your first workload, or pay 10x to fix them later.
+
 ---
 
 ## The Foundation Nobody Wants to Build
@@ -142,10 +136,8 @@ Landing zones aren't just an infrastructure concern. They're an **architecture d
 
 ## What's Next
 
-In the next post, I'll take this further: **AI Landing Zones — do you actually need a separate one?** (Spoiler: the answer might surprise you.)
+In Part 2 of this series, I take this further: **[AI Doesn't Need Its Own Landing Zone — Here's What It Actually Needs](/page/_drafts/unstructured-ideas/2026-03-12-ai-landing-zones/)** — where I explain the extension pattern that lets your existing foundation support AI workloads without starting over.
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly architecture insights.*
-
-*#AgenticArchitects #AIArchitecture #AzureLandingZones #CloudArchitecture*
+*This is Part 1 of the **[The Architect's Foundation](/series/the-architects-foundation)** series. Next up: [AI Doesn't Need Its Own Landing Zone — Here's What It Actually Needs](/page/_drafts/unstructured-ideas/2026-03-12-ai-landing-zones/).*

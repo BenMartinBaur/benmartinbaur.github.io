@@ -1,32 +1,24 @@
 ---
 layout: post
-title: "The Future of the CTO: How the Most Misunderstood Role in Tech Is Being Transformed by AI"
-description: "The CTO role is splitting in two. One path leads to irrelevance. The other leads to the most strategic position in the C-suite. Here's how AI is forcing the transformation."
+title: "The CTO Role Is Splitting in Two — Which Path Are You On?"
+description: "The CTO role is diverging. One path leads to irrelevance. The other leads to the most strategic position in the C-suite. AI is forcing the split."
 date: 2026-03-26
-category: leadership
+draft: true
+image: featured.jpg
+category: strategy
 tags:
-  - CTO
+  - AI
+  - Strategy
   - Leadership
-  - AI Strategy
-  - Digital Transformation
-  - C-Suite
-  - Agentic AI
 reading_time: "8 min read"
-pillar: leadership
-series: "Architects in the Age of Agentic AI"
-featured_image: ""
-warhol_graphic: "_brand/assets/2026-03-26-lead-cto-future-blog.png"
-warhol_graphic_brief: >
-  Andy Warhol pop art style, comic book illustration, a business suit
-  transforming into a digital wireframe with AI neural network overlay,
-  bold flat colors (canary yellow, cobalt blue), thick black outlines,
-  Ben-Day halftone dots, explosion bubble 'THE CTO IS DEAD LONG LIVE THE CTO',
-  4-panel grid with panels in coral salmon rose purple from brand gradient,
-  pixelated mosaic gradient background from soft coral (#F4A89A) through
-  rose pink (#E8699A) to deep orchid purple (#A855C7) in blocky pixel squares,
-  small circular profile photo of smiling man in backwards black cap and
-  white HUMAN tee in bottom-right corner with 3px white border
-linkedin_post_url: ""
+series: "The Strategic Ascent"
+series_order: 2
+---
+
+## TL;DR
+
+The CTO role is diverging. The Technical CTO — defined by technology mastery — is shrinking as AI commoditizes engineering decisions. The Strategic CTO — who redesigns how companies operate through technology — is expanding. Here are the four transformations that define the modern CTO, and what architects preparing for that path should invest in now.
+
 ---
 
 ## The CTO Is Having an Identity Crisis
@@ -163,10 +155,8 @@ If the answer is the former, you're on Path A. And Path A is shrinking.
 
 ## What's Next
 
-Next in the series: my personal journey — **From Community Builder to Microsoft Pinnacle Award: What I Learned About Showing Up When It Matters.**
+This concludes **The Strategic Ascent** series. If you're navigating your own 10x shift, the companion series — **[The Leadership Operating System](/series/the-leadership-operating-system)** — explores the principles, habits, and mindset that sustain the climb.
 
 ---
 
-*This post is part of the Architects in the Age of Agentic AI series. Follow along on LinkedIn for weekly insights on architecture, leadership, and personal growth.*
-
-*#AgenticArchitects #CTO #TechLeadership #AITransformation #FutureOfWork*
+*This is Part 2 of the **[The Strategic Ascent](/series/the-strategic-ascent)** series. Previously: [The 10x Journey — From Individual Deployments to Enterprise Impact](/page/_drafts/unstructured-ideas/2026-04-16-the-10x-journey/).*
