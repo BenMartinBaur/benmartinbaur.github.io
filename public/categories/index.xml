@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on The Architect | Ben Martin Baur</title>
-        <link>http://localhost:1315/categories/</link>
-        <description>Recent content in Categories on The Architect | Ben Martin Baur</description>
+        <title>Categories on B3N.B4UR_</title>
+        <link>https://benmartinbaur.github.io/categories/</link>
+        <description>Recent content in Categories on B3N.B4UR_</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1315/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://benmartinbaur.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Real</title>
+            <link>https://benmartinbaur.github.io/categories/real/</link>
+            <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/categories/real/</guid>
+            <description></description>
+        </item><item>
+            <title>Build</title>
+            <link>https://benmartinbaur.github.io/categories/build/</link>
+            <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/categories/build/</guid>
+            <description></description>
+        </item><item>
             <title>Documentation</title>
-            <link>http://localhost:1315/categories/documentation/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/categories/documentation/</guid>
+            <link>https://benmartinbaur.github.io/categories/documentation/</link>
+            <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/categories/documentation/</guid>
             <description></description>
         </item></channel>
 </rss>

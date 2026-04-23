@@ -10,7 +10,7 @@ tags:
   - Intune
   - Best Practices
   - Automation
-reading_time: "12 min read"
+reading_time: "15 min read"
 ---
 
 If you've ever inherited an Intune tenant where policies are named `Test Policy 2 - Copy (final_v3)` — you know the pain. Naming conventions aren't glamorous, but they're the foundation of a manageable, scalable endpoint environment. This post covers battle-tested naming patterns for **Microsoft Intune** and **Windows 365**, distilled from Microsoft documentation, MVP community guidance, and my own field experience deploying Cloud PCs at scale.
@@ -33,7 +33,7 @@ At the end you'll find a **modular Microsoft Graph PowerShell automation** that 
 | **Windows Update Ring** | `UPD-<Platform>-<Ring>` | `UPD-W365-Pilot` |
 | **Provisioning Policy** | `PP-<LicenseType>-<Region>-<UseCase>` | `PP-Enterprise-WEU-Developers` |
 | **Azure Network Connection** | `ANC-<Region>-<VNet>` | `ANC-WestEurope-Hub` |
-| **Cloud PC Device Name** | `CPC-<Prefix>-%RAND:5%` | `CPC-DEV-%RAND:5%` |
+| **Cloud PC Device Name** | `<Prefix>-%RAND:Y%` | `CPC-%RAND:5%` |
 | **Assignment Filter** | `FLT-<Platform>-<Property>-<Value>` | `FLT-W365-Model-CloudPC` |
 | **Security Baseline** | `SBL-<Platform>-<Version>` | `SBL-W365-24H1` |
 | **Scope Tag** | `TAG-<Department or Region>` | `TAG-EMEA-IT` |
@@ -81,6 +81,8 @@ Groups drive every assignment in Intune. A clean group naming standard is the si
 (user.assignedPlans -any (assignedPlan.servicePlanId -eq "your-w365-plan-id" -and assignedPlan.capabilityStatus -eq "Enabled"))
 ```
 
+> **Finding your service plan ID:** Run `Get-MgSubscribedSku | Select-Object -ExpandProperty ServicePlans | Where-Object { $_.ServicePlanName -like '*W365*' }` to list your tenant's Windows 365 plan GUIDs. Note: initial dynamic group population can take up to 24 hours for large tenants. For cost-conscious deployments, use a mix of dynamic groups (license-based membership) and assigned groups (pilot/exception populations) — each dynamic group requires Entra ID P1 licensing for all evaluated users.
+
 ### 2.2 Device Configuration Profiles
 
 **Pattern:** `CFG-<Platform>-<Category>-<Detail>`
@@ -112,7 +114,7 @@ Groups drive every assignment in Intune. A clean group naming standard is the si
 - `CMP-W365-Standard` — Standard compliance for Cloud PCs
 - `CMP-W365-Strict` — High-security compliance (e.g., finance, HR)
 
-> **Note for Cloud PCs:** BitLocker is not supported on Cloud PCs. Exclude this setting from compliance policies targeting Windows 365 devices.
+> **Note for Cloud PCs:** BitLocker is not applicable to Cloud PCs — they are protected by **Azure managed disk encryption** (server-side encryption at rest) at the storage layer. Exclude BitLocker compliance checks from policies targeting Windows 365 devices. The virtual TPM 2.0 is still present for other security functions.
 
 ### 2.4 Conditional Access Policies
 
@@ -126,6 +128,7 @@ Use a numbering scheme grouped by function:
 | `100–199` | Cloud PC / VDI policies |
 | `200–299` | Mobile / BYOD policies |
 | `300–399` | Application-specific policies |
+| `400–499` | Agent / automated workload policies |
 
 **Examples:**
 - `CA-001-BlockLegacyAuth` — Block legacy authentication globally
@@ -142,7 +145,7 @@ This is the most critical naming area for Windows 365.
 | Component | Values |
 |---|---|
 | `PP` | Fixed prefix for Provisioning Policy |
-| `LicenseType` | `Ent` (Enterprise), `FL-Ded` (Frontline Dedicated), `FL-Shared` (Frontline Shared), `Reserve` |
+| `LicenseType` | `Ent` (Enterprise), `FL-Ded` (Frontline Dedicated), `FL-Shared` (Frontline Shared), `Biz` (Business) |
 | `Region` | `WEU`, `NEU`, `EUS`, `WUS`, `SEA`, etc. |
 | `UseCase` | `Developers`, `GeneralWorkers`, `Kiosk`, `Frontline`, etc. |
 
@@ -162,7 +165,7 @@ Windows 365 supports device name templates in provisioning policies. The templat
 - Optionally include `%USERNAME:X%` for first X characters of username
 
 **Rules for Frontline Shared:**
-- Exactly 15 characters
+- 5–15 characters total
 - Prefix ≤ 7 characters
 - Must include `%RAND:Y%` where Y ≥ 8
 
@@ -172,7 +175,7 @@ Windows 365 supports device name templates in provisioning policies. The templat
 |---|---|---|
 | Enterprise General | `CPC-%RAND:5%` | `CPC-A7K2M` |
 | Enterprise by Use Case | `DEV-%RAND:5%` | `DEV-B3F9X` |
-| Frontline Shared | `FLR-%RAND:12%` | `FLR-A7K2M3B9X4F1` |
+| Frontline Shared | `FLR-%RAND:11%` | `FLR-A7K2M3B9X4F` |
 | Enterprise with Username | `%USERNAME:4%-%RAND:5%` | `JDOE-C8H2P` |
 
 ### 2.7 Azure Network Connections
@@ -188,7 +191,7 @@ Windows 365 supports device name templates in provisioning policies. The templat
 **Pattern:** `FLT-<Platform>-<Property>-<Value>`
 
 **Examples:**
-- `FLT-W365-Model-CloudPC` — Filter for Cloud PC device model
+- `FLT-W365-Model-CloudPC` — Filter for Cloud PC device model (`device.model -contains "Cloud PC"` matches both `"Cloud PC Enterprise"` and `"Cloud PC Business"` — use `-eq` for precise targeting)
 - `FLT-Win-OS-22H2` — Filter for Windows 22H2 devices
 - `FLT-W365-Ownership-Corporate` — Filter for corporate-owned Cloud PCs
 
@@ -207,7 +210,9 @@ Windows 365 supports device name templates in provisioning policies. The templat
 - `UPD-W365-Pilot` — Pilot update ring for Cloud PCs
 - `UPD-W365-Broad` — Broad rollout update ring
 
-> **Tip:** Consider Windows Autopatch for automated, ring-based update management on Cloud PCs.
+> **Tip:** Consider Windows Autopatch for automated, ring-based update management on Cloud PCs. If you enable Autopatch, it creates its own ring groups and policies — don't apply custom-named rings to the same device population. Choose one approach per device group: Autopatch-managed **or** custom-named rings, not both.
+
+> **Baseline versioning:** When Microsoft releases a new baseline version (e.g., 25H1), deploy the new baseline alongside the existing one (`SBL-W365-25H1`) and migrate group assignments gradually. Don't rename existing baselines — Intune tracks policies by internal ID, not name, and renaming obscures audit history.
 
 ---
 
@@ -253,7 +258,7 @@ At minimum, configure:
 
 ### 3.5 Scope Tags for Delegation
 
-Use scope tags when multiple teams manage different Cloud PC populations:
+Use scope tags when multiple teams manage different Cloud PC populations. **Important:** Scope tags alone don't enforce delegation — they must be paired with **custom Intune RBAC role assignments** that scope the admin to specific tags. Assign tags to both the policies/devices and the admin role assignment to enforce delegation boundaries.
 
 | Tag | Scope |
 |---|---|
@@ -305,7 +310,29 @@ W365-Baseline-Deployment/
 
 > **Important:** The scripts create policies in **report-only** / **not assigned** mode by default. Review and assign manually after validation.
 
-The deployment scripts are available in the companion repository. Each module follows the naming convention defined in this post and can be customized via the central `baseline-config.json` configuration file.
+The deployment scripts will be published in a companion repository — follow on [LinkedIn](https://www.linkedin.com/in/ben-martin-baur/) or check [GitHub](https://github.com/benmartinbaur) for the release. Each module follows the naming convention defined in this post and can be customized via the central `baseline-config.json` configuration file.
+
+> **Graph API throttling:** When running bulk policy creation, Microsoft Graph enforces per-app and per-tenant rate limits. Use `Retry-After` headers and exponential backoff. For bulk operations, batch requests using the Graph `$batch` endpoint (limit: 20 requests per batch).
+
+---
+
+## 6. Common Issues & Troubleshooting
+
+| Issue | Cause | Fix |
+|---|---|---|
+| **Cloud PC name collision** | `%RAND%` generated a duplicate NetBIOS name | Increase RAND value (e.g., `%RAND:8%` gives 2.8 trillion combinations). Windows 365 auto-retries, but collisions delay provisioning |
+| **Compliance shows "Not Evaluated"** | Multiple compliance policies with conflicting settings | When two policies target the same device with conflicting settings, Intune marks the setting as **Conflict** and neither applies. Use assignment filters and group targeting to avoid overlap. Check: Intune → Devices → Monitor → Assignment failures |
+| **Dynamic group empty after creation** | Entra ID replication delay | Allow up to 24 hours for initial population. Check: Entra ID → Groups → [Group] → Audit logs for membership changes |
+| **Security Baseline conflicts with Device Config** | Overlapping settings between `SBL-*` and `CFG-*` | Security Baselines take precedence over Device Configuration for the same setting. Avoid configuring the same CSP in both — use the baseline for security, config profiles for UX/network |
+| **Scope tags not enforcing delegation** | Missing RBAC role assignment | Scope tags are metadata only until paired with an Intune RBAC role assignment. Configure: Intune → Tenant Admin → Roles → Create custom role → assign scope tags |
+| **Provisioning policy fails in new region** | Entra ID replication lag | When creating groups and provisioning policies across regions, allow 5–15 minutes for Entra ID replication before assigning groups to provisioning policies in a different region |
+
+---
+
+## 7. Related Posts
+
+- [Azure Default Outbound Access — What It Means for AVD & Windows 365](/posts/2026-03-13-azure-default-outbound-access-avd/) — If you're using Azure Network Connections (ANC), this covers the networking fundamentals for Cloud PC egress
+- [Windows 365 for AI Agents — Why Cloud PCs Are the Enterprise Runtime for Agentic AI](/posts/2026-04-23-windows-365-for-ai-agents/) — Extending these naming conventions to agent Cloud PCs and automated workloads
 
 ---
 

@@ -1,117 +1,351 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on The Architect | Ben Martin Baur</title>
-        <link>http://localhost:1315/tags/</link>
-        <description>Recent content in Tags on The Architect | Ben Martin Baur</description>
+        <title>Tags on B3N.B4UR_</title>
+        <link>https://benmartinbaur.github.io/tags/</link>
+        <description>Recent content in Tags on B3N.B4UR_</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1315/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://benmartinbaur.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>AI</title>
-            <link>http://localhost:1315/tags/ai/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/ai/</guid>
+            <link>https://benmartinbaur.github.io/tags/ai/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/ai/</guid>
             <description></description>
         </item><item>
-            <title>Beginner</title>
-            <link>http://localhost:1315/tags/beginner/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/beginner/</guid>
-            <description></description>
-        </item><item>
-            <title>Business Strategy</title>
-            <link>http://localhost:1315/tags/business-strategy/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/business-strategy/</guid>
-            <description></description>
-        </item><item>
-            <title>Data Science</title>
-            <link>http://localhost:1315/tags/data-science/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/data-science/</guid>
-            <description></description>
-        </item><item>
-            <title>GitHub Copilot</title>
-            <link>http://localhost:1315/tags/github-copilot/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/github-copilot/</guid>
-            <description></description>
-        </item><item>
-            <title>Hugo</title>
-            <link>http://localhost:1315/tags/hugo/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/hugo/</guid>
-            <description></description>
-        </item><item>
-            <title>Jekyll</title>
-            <link>http://localhost:1315/tags/jekyll/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/jekyll/</guid>
-            <description></description>
-        </item><item>
-            <title>Machine Learning</title>
-            <link>http://localhost:1315/tags/machine-learning/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/machine-learning/</guid>
-            <description></description>
-        </item><item>
-            <title>Markdown</title>
-            <link>http://localhost:1315/tags/markdown/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/markdown/</guid>
-            <description></description>
-        </item><item>
-            <title>Reference</title>
-            <link>http://localhost:1315/tags/reference/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/reference/</guid>
-            <description></description>
-        </item><item>
-            <title>Shortcodes</title>
-            <link>http://localhost:1315/tags/shortcodes/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/shortcodes/</guid>
-            <description></description>
-        </item><item>
-            <title>Tutorial</title>
-            <link>http://localhost:1315/tags/tutorial/</link>
-            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/tutorial/</guid>
-            <description></description>
-        </item><item>
-            <title>Research</title>
-            <link>http://localhost:1315/tags/research/</link>
-            <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/research/</guid>
+            <title>Automation</title>
+            <link>https://benmartinbaur.github.io/tags/automation/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/automation/</guid>
             <description></description>
         </item><item>
             <title>Best Practices</title>
-            <link>http://localhost:1315/tags/best-practices/</link>
-            <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/best-practices/</guid>
+            <link>https://benmartinbaur.github.io/tags/best-practices/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/best-practices/</guid>
+            <description></description>
+        </item><item>
+            <title>Intune</title>
+            <link>https://benmartinbaur.github.io/tags/intune/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/intune/</guid>
             <description></description>
         </item><item>
             <title>Leadership</title>
-            <link>http://localhost:1315/tags/leadership/</link>
-            <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/leadership/</guid>
+            <link>https://benmartinbaur.github.io/tags/leadership/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/leadership/</guid>
+            <description></description>
+        </item><item>
+            <title>Security</title>
+            <link>https://benmartinbaur.github.io/tags/security/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/security/</guid>
             <description></description>
         </item><item>
             <title>Strategy</title>
-            <link>http://localhost:1315/tags/strategy/</link>
-            <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/strategy/</guid>
+            <link>https://benmartinbaur.github.io/tags/strategy/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/strategy/</guid>
+            <description></description>
+        </item><item>
+            <title>Windows 365</title>
+            <link>https://benmartinbaur.github.io/tags/windows-365/</link>
+            <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/windows-365/</guid>
+            <description></description>
+        </item><item>
+            <title>30-60-90</title>
+            <link>https://benmartinbaur.github.io/tags/30-60-90/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/30-60-90/</guid>
+            <description></description>
+        </item><item>
+            <title>AI Transformation</title>
+            <link>https://benmartinbaur.github.io/tags/ai-transformation/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/ai-transformation/</guid>
+            <description></description>
+        </item><item>
+            <title>Career</title>
+            <link>https://benmartinbaur.github.io/tags/career/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/career/</guid>
+            <description></description>
+        </item><item>
+            <title>Enterprise Architecture</title>
+            <link>https://benmartinbaur.github.io/tags/enterprise-architecture/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/enterprise-architecture/</guid>
+            <description></description>
+        </item><item>
+            <title>Innovation Hub</title>
+            <link>https://benmartinbaur.github.io/tags/innovation-hub/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/innovation-hub/</guid>
+            <description></description>
+        </item><item>
+            <title>Microsoft</title>
+            <link>https://benmartinbaur.github.io/tags/microsoft/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/microsoft/</guid>
+            <description></description>
+        </item><item>
+            <title>Office of the CTO</title>
+            <link>https://benmartinbaur.github.io/tags/office-of-the-cto/</link>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/office-of-the-cto/</guid>
+            <description></description>
+        </item><item>
+            <title>Finding Mastery</title>
+            <link>https://benmartinbaur.github.io/tags/finding-mastery/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/finding-mastery/</guid>
+            <description></description>
+        </item><item>
+            <title>Healthy Habits</title>
+            <link>https://benmartinbaur.github.io/tags/healthy-habits/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/healthy-habits/</guid>
+            <description></description>
+        </item><item>
+            <title>High Performance</title>
+            <link>https://benmartinbaur.github.io/tags/high-performance/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/high-performance/</guid>
+            <description></description>
+        </item><item>
+            <title>Mental Health</title>
+            <link>https://benmartinbaur.github.io/tags/mental-health/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/mental-health/</guid>
+            <description></description>
+        </item><item>
+            <title>Michael Gervais</title>
+            <link>https://benmartinbaur.github.io/tags/michael-gervais/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/michael-gervais/</guid>
+            <description></description>
+        </item><item>
+            <title>Mindset</title>
+            <link>https://benmartinbaur.github.io/tags/mindset/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/mindset/</guid>
+            <description></description>
+        </item><item>
+            <title>Personal Development</title>
+            <link>https://benmartinbaur.github.io/tags/personal-development/</link>
+            <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/personal-development/</guid>
+            <description></description>
+        </item><item>
+            <title>Excellence</title>
+            <link>https://benmartinbaur.github.io/tags/excellence/</link>
+            <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/excellence/</guid>
+            <description></description>
+        </item><item>
+            <title>Personal Growth</title>
+            <link>https://benmartinbaur.github.io/tags/personal-growth/</link>
+            <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/personal-growth/</guid>
+            <description></description>
+        </item><item>
+            <title>Pinnacle Award</title>
+            <link>https://benmartinbaur.github.io/tags/pinnacle-award/</link>
+            <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/pinnacle-award/</guid>
+            <description></description>
+        </item><item>
+            <title>Role Model</title>
+            <link>https://benmartinbaur.github.io/tags/role-model/</link>
+            <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/role-model/</guid>
+            <description></description>
+        </item><item>
+            <title>Consulting</title>
+            <link>https://benmartinbaur.github.io/tags/consulting/</link>
+            <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/consulting/</guid>
+            <description></description>
+        </item><item>
+            <title>Framework</title>
+            <link>https://benmartinbaur.github.io/tags/framework/</link>
+            <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/framework/</guid>
+            <description></description>
+        </item><item>
+            <title>Agentic AI</title>
+            <link>https://benmartinbaur.github.io/tags/agentic-ai/</link>
+            <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/agentic-ai/</guid>
+            <description></description>
+        </item><item>
+            <title>AI Strategy</title>
+            <link>https://benmartinbaur.github.io/tags/ai-strategy/</link>
+            <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/ai-strategy/</guid>
+            <description></description>
+        </item><item>
+            <title>C-Suite</title>
+            <link>https://benmartinbaur.github.io/tags/c-suite/</link>
+            <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/c-suite/</guid>
+            <description></description>
+        </item><item>
+            <title>CTO</title>
+            <link>https://benmartinbaur.github.io/tags/cto/</link>
+            <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/cto/</guid>
+            <description></description>
+        </item><item>
+            <title>Digital Transformation</title>
+            <link>https://benmartinbaur.github.io/tags/digital-transformation/</link>
+            <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/digital-transformation/</guid>
+            <description></description>
+        </item><item>
+            <title>Architecture Principles</title>
+            <link>https://benmartinbaur.github.io/tags/architecture-principles/</link>
+            <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/architecture-principles/</guid>
+            <description></description>
+        </item><item>
+            <title>Decision Making</title>
+            <link>https://benmartinbaur.github.io/tags/decision-making/</link>
+            <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/decision-making/</guid>
+            <description></description>
+        </item><item>
+            <title>Personal Philosophy</title>
+            <link>https://benmartinbaur.github.io/tags/personal-philosophy/</link>
+            <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/personal-philosophy/</guid>
+            <description></description>
+        </item><item>
+            <title>Azure</title>
+            <link>https://benmartinbaur.github.io/tags/azure/</link>
+            <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/azure/</guid>
+            <description></description>
+        </item><item>
+            <title>Azure Virtual Desktop</title>
+            <link>https://benmartinbaur.github.io/tags/azure-virtual-desktop/</link>
+            <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/azure-virtual-desktop/</guid>
+            <description></description>
+        </item><item>
+            <title>Networking</title>
+            <link>https://benmartinbaur.github.io/tags/networking/</link>
+            <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/networking/</guid>
+            <description></description>
+        </item><item>
+            <title>PowerShell</title>
+            <link>https://benmartinbaur.github.io/tags/powershell/</link>
+            <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/powershell/</guid>
+            <description></description>
+        </item><item>
+            <title>Azure AI Foundry</title>
+            <link>https://benmartinbaur.github.io/tags/azure-ai-foundry/</link>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/azure-ai-foundry/</guid>
+            <description></description>
+        </item><item>
+            <title>Cloud Adoption Framework</title>
+            <link>https://benmartinbaur.github.io/tags/cloud-adoption-framework/</link>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/cloud-adoption-framework/</guid>
+            <description></description>
+        </item><item>
+            <title>Landing Zones</title>
+            <link>https://benmartinbaur.github.io/tags/landing-zones/</link>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/landing-zones/</guid>
+            <description></description>
+        </item><item>
+            <title>Center of Excellence</title>
+            <link>https://benmartinbaur.github.io/tags/center-of-excellence/</link>
+            <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/center-of-excellence/</guid>
+            <description></description>
+        </item><item>
+            <title>Cloud Architecture</title>
+            <link>https://benmartinbaur.github.io/tags/cloud-architecture/</link>
+            <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/cloud-architecture/</guid>
+            <description></description>
+        </item><item>
+            <title>Infrastructure as Code</title>
+            <link>https://benmartinbaur.github.io/tags/infrastructure-as-code/</link>
+            <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/infrastructure-as-code/</guid>
+            <description></description>
+        </item><item>
+            <title>Technology</title>
+            <link>https://benmartinbaur.github.io/tags/technology/</link>
+            <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/technology/</guid>
+            <description></description>
+        </item><item>
+            <title>Business Strategy</title>
+            <link>https://benmartinbaur.github.io/tags/business-strategy/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/business-strategy/</guid>
+            <description></description>
+        </item><item>
+            <title>Data Science</title>
+            <link>https://benmartinbaur.github.io/tags/data-science/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/data-science/</guid>
+            <description></description>
+        </item><item>
+            <title>Hugo</title>
+            <link>https://benmartinbaur.github.io/tags/hugo/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/hugo/</guid>
+            <description></description>
+        </item><item>
+            <title>Machine Learning</title>
+            <link>https://benmartinbaur.github.io/tags/machine-learning/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/machine-learning/</guid>
+            <description></description>
+        </item><item>
+            <title>Markdown</title>
+            <link>https://benmartinbaur.github.io/tags/markdown/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/markdown/</guid>
+            <description></description>
+        </item><item>
+            <title>Reference</title>
+            <link>https://benmartinbaur.github.io/tags/reference/</link>
+            <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/reference/</guid>
+            <description></description>
+        </item><item>
+            <title>Research</title>
+            <link>https://benmartinbaur.github.io/tags/research/</link>
+            <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/research/</guid>
             <description></description>
         </item><item>
             <title>LinkedIn</title>
-            <link>http://localhost:1315/tags/linkedin/</link>
+            <link>https://benmartinbaur.github.io/tags/linkedin/</link>
             <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/linkedin/</guid>
+            <guid>https://benmartinbaur.github.io/tags/linkedin/</guid>
             <description></description>
         </item><item>
             <title>Social Media</title>
-            <link>http://localhost:1315/tags/social-media/</link>
+            <link>https://benmartinbaur.github.io/tags/social-media/</link>
             <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1315/tags/social-media/</guid>
+            <guid>https://benmartinbaur.github.io/tags/social-media/</guid>
+            <description></description>
+        </item><item>
+            <title>Shortcodes</title>
+            <link>https://benmartinbaur.github.io/tags/shortcodes/</link>
+            <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+            <guid>https://benmartinbaur.github.io/tags/shortcodes/</guid>
             <description></description>
         </item></channel>
 </rss>

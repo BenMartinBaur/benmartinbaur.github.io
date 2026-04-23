@@ -1,16 +1,16 @@
 ---
+layout: post
 title: "Business Envisioning Workshop — The Preparation Questionnaire I Send Every Customer"
 description: "A reusable pre-workshop questionnaire that turns a room full of opinions into a structured conversation about what actually matters."
 date: 2026-04-01
 image: featured.jpg
+category: strategy
 tags:
   - AI
   - Strategy
   - Framework
   - Consulting
-categories:
-  - strategy
-readingTime: 6
+reading_time: "6 min read"
 ---
 
 ## Why This Exists

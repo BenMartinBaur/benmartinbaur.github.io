@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let's get Real or Let's Not Play - Checklist"
-description: ""
+description: "A structured qualification checklist based on the ORDER framework from Khalsa & Illig. Opportunity, Resources, Decisions, Exact Solution, Results — walk every engagement through these before you commit."
 date: 2026-02-20
 image: featured.jpg
 category: strategy

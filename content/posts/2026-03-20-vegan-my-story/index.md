@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vegan my story"
-description: ""
+description: "A personal reflection on choosing veganism — not as a diet, but as a declaration of values. If you don't change it, you choose it."
 date: 2026-02-06
 image: featured.jpg
 category: real

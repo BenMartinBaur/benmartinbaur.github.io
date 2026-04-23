@@ -9,7 +9,6 @@ tags:
   - AI
   - Leadership
   - Strategy
-  - Innovation Hub
 reading_time: "7 min read"
 ---
 

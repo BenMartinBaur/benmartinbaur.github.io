@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Welcome to the boardroom"
-description: ""
+description: "AI has moved from the IT department to the boardroom. Here's what every C-level executive — from CEO to CHRO — is prioritising, and why a unified approach matters."
 date: 2026-02-15
 image: featured.jpg
 category: strategy
@@ -12,19 +12,7 @@ tags:
 reading_time: "2 min read"
 ---
 
-# Welcome to the board room
-
-AI Takes Center Stage
-Boardroom conversations have shifted from digital transformation to AI-led reinvention – reflecting AI’s new status as a top enterprise priority for growth and innovation.
-
-Every CxO is Involved
-From CEO to CHRO, all executives now have a stake in AI. Nearly 3/4 of CEOs claim they are their company’s main AI decision-maker, and CIOs are evolving into strategy architects who weave AI into business models.
-
-Unified, Cross‑Solution Approach
-AI is not a siloed IT project – it touches every “room of the house,” from Modern Work to Security. Microsoft’s AI Platform spans all solution areas to address each C-level leader’s concerns: innovation, security, productivity, compliance, cost and culture.
-
-Act Now – Govern & Transform
-Executives must lead boldly on AI or risk falling behind competitors. Without leadership and governance, “shadow AI” can proliferate, introducing data and compliance risks. The opportunity is immense, but it demands coordinated C-suite action.
+# Welcome to the Board Room: AI as a C-Level Imperative
 
 ## TL;DR
 
@@ -36,15 +24,6 @@ Executives must lead boldly on AI or risk falling behind competitors. Without le
 | CISO | Protects data & compliance; mitigates AI-driven security risks and regulatory challenges |
 | CFO | Focuses on cost optimisation, ROI, and risk management for AI investments |
 | CHRO | Enhances workforce productivity & skills with AI; fosters adaptive culture and change |
-
-# Welcome to the Board Room: AI as a C‑Level Imperative
-
-## TL;DR
-
-- **AI Takes Center Stage**: Boardroom conversations have shifted from digital transformation to **AI-led reinvention** – reflecting AI’s new status as a top enterprise priority for growth and innovation.
-- **Every CxO is Involved**: From CEO to CHRO, all executives now have a stake in AI. **Nearly 3/4 of CEOs** claim they are their company’s main AI decision-maker, and CIOs are evolving into **strategy architects** who weave AI into business models.
-- **Unified, Cross‑Solution Approach**: **AI is not a siloed IT project** – it touches every “room of the house,” from Modern Work to Security. Microsoft’s AI Platform spans all solution areas to address each C-level leader’s concerns: innovation, security, productivity, compliance, cost and culture.
-- **Act Now – Govern & Transform**: Executives must lead boldly on AI or risk falling behind competitors. Without leadership and governance, **“shadow AI”** can proliferate, introducing data and compliance risks. The opportunity is immense, but it demands coordinated C-suite action.
 
 ## The Shift in the Boardroom
 

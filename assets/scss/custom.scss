@@ -58,3 +58,103 @@ a:hover {
         color: #7B8CDE;
     }
 }
+
+/* --- CTA Block --- */
+
+.article-cta {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(249, 97, 103, 0.06) 0%, rgba(52, 73, 94, 0.04) 100%);
+    border: 1px solid rgba(249, 97, 103, 0.15);
+}
+
+.cta-inner {
+    text-align: center;
+}
+
+.cta-heading {
+    font-family: 'Space Grotesk', var(--sys-font-family), sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin: 0 0 0.4rem 0;
+    color: var(--card-text-color-main);
+}
+
+.cta-text {
+    font-size: 0.9rem;
+    color: var(--card-text-color-secondary);
+    margin: 0 0 1.2rem 0;
+}
+
+.cta-links {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.cta-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.cta-linkedin {
+    background: #F96167;
+    color: #fff;
+}
+
+.cta-linkedin:hover {
+    background: #e04f55;
+    color: #fff;
+}
+
+.cta-rss {
+    background: transparent;
+    color: #F96167;
+    border: 1.5px solid #F96167;
+}
+
+.cta-rss:hover {
+    background: #F96167;
+    color: #fff;
+}
+
+[data-scheme="dark"] {
+    .article-cta {
+        background: linear-gradient(135deg, rgba(123, 140, 222, 0.08) 0%, rgba(52, 73, 94, 0.06) 100%);
+        border-color: rgba(123, 140, 222, 0.2);
+    }
+
+    .cta-linkedin {
+        background: #7B8CDE;
+        color: #1a1a2e;
+    }
+
+    .cta-linkedin:hover {
+        background: #9FAAE8;
+        color: #1a1a2e;
+    }
+
+    .cta-rss {
+        color: #7B8CDE;
+        border-color: #7B8CDE;
+    }
+
+    .cta-rss:hover {
+        background: #7B8CDE;
+        color: #1a1a2e;
+    }
+}
