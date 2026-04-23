@@ -4,7 +4,7 @@ title: "Principles Over Preferences — How I Make Architecture Decisions Under 
 description: "Great architecture decisions don't come from tools or trends — they come from principles. Here's the personal operating philosophy that guides every call I make under pressure."
 date: 2026-03-19
 draft: true
-image: featured.jpg
+image: 2026-03-19-the-importance-of-principals-featured.jpg
 category: real
 tags:
   - Leadership
@@ -173,7 +173,7 @@ Gervais teaches a morning mindset routine that I've adapted for architects:
 
 > *"We have the power to dictate our own inner experience."* — Dr. Michael Gervais
 
-Before you dictate the architecture of systems, learn to dictate the architecture of your own thinking.
+Before I architect systems, I've learned to architect how I show up. Everything else follows from there.
 
 ---
 

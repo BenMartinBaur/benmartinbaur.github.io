@@ -106,8 +106,8 @@ If MHN is not an option, configure explicit outbound access using one of the sup
 
 | Method | Recommended? | Notes |
 |---|---|---|
-| **Azure NAT Gateway** | ✅ Recommended | Simple, scalable, no UDR needed. Does NOT support STUN-based UDP hole punching (RDP Shortpath via STUN will fall back to TURN relay). |
-| **Azure Standard Load Balancer** | ✅ Supported | Supports UDP over STUN. Requires outbound rules. |
+| **Azure NAT Gateway** | ✅ Recommended | Simple, scalable, no UDR needed. Does NOT support STUN-based UDP hole punching (RDP Shortpath via STUN will fall back to TURN relay). Supports up to 16 public IPs (64K SNAT ports each = 1M+ concurrent flows). |
+| **Azure Standard Load Balancer** | ✅ Supported | Supports UDP connectivity for STUN. Requires outbound rules configuration. |
 | **Azure Firewall / NVA** | ⚠️ Supported with caveats | Do NOT route RDP or long-lived connections through Azure Firewall — scale-in events can drop sessions. Use a direct method (NAT Gateway) for RDP alongside Firewall for filtering. |
 | **Standard Public IP on VM** | ⚠️ Supported | Assigning a public IP directly exposes the VM. Not recommended for AVD session hosts. |
 
@@ -200,7 +200,7 @@ The tool can deploy a Network Security Group pre-configured with outbound rules 
 |---|---|---|---|
 | `AzureActiveDirectory` | 443 | TCP | Authentication |
 | `WindowsVirtualDesktop` | 443 | TCP | AVD service traffic |
-| `WindowsVirtualDesktop` | 3478 | UDP | RDP relay (TURN) |
+| `51.5.0.0/16` | 3478 | UDP | RDP relay (TURN/STUN) — use IP range, not service tag, as relay endpoints may not be fully covered by `WindowsVirtualDesktop` tag |
 | `AzureMonitor` | 443 | TCP | Diagnostics |
 | `AzureCloud` | 443 | TCP | Portal, management |
 | `AzureFrontDoor.Frontend` | 443 | TCP | Marketplace |
@@ -224,6 +224,12 @@ The tool can deploy a Network Security Group pre-configured with outbound rules 
 | 4 | **Evaluate** Microsoft Hosted Network for Windows 365 to eliminate ANC egress management | 🟡 High |
 | 5 | **Document** your outbound architecture and NSG rules for compliance and operational clarity | 🟢 Standard |
 | 6 | **Communicate** to your teams that new VNet deployments after March 31 will need explicit outbound as part of provisioning | 🟢 Standard |
+
+> **Cost awareness:** NAT Gateway is billed per hour (~$0.045/hr or ~$32/month) plus data processing charges (~$0.045/GB). Each public IP adds ~$3.65/month. Factor this into your landing zone budgets — especially for multi-subscription AVD deployments. See the [Azure NAT Gateway pricing page](https://azure.microsoft.com/en-us/pricing/details/azure-nat-gateway/) for current rates.
+
+> **Scalability note:** A single NAT Gateway supports up to 16 public IPs, providing over 1 million concurrent SNAT ports. For large AVD deployments (1,000+ session hosts), monitor SNAT port utilization via Azure Monitor. If ports approach exhaustion, add additional public IPs to the NAT Gateway or consider distributing session hosts across multiple subnets with separate NAT Gateways.
+
+> **Naming alignment:** When deploying NAT Gateways, NSGs, and public IPs with the PowerShell tool, consider following the naming conventions from the [Intune & Windows 365 Naming Best Practices](/posts/2026-04-10-intune-w365-naming-best-practices/) post for consistency across your AVD and Windows 365 infrastructure.
 
 ---
 

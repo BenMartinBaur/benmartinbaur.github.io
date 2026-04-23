@@ -149,7 +149,7 @@ I'd lose credibility if I didn't include this section.
 
 **Context window limits are real.** Even with charters and reference files, agents lose the thread in long sessions. Toto sometimes forgets a decision made twenty minutes ago. Michael occasionally repeats feedback he already gave. The squad doesn't have true persistent memory across sessions — Scribe and Ralph help, but it's not seamless.
 
-**Voice consistency is still hard.** Quill does a good job matching my writing patterns, but there's a tells. AI-written drafts tend to be slightly more structured, slightly more balanced, slightly less willing to leave a rough edge. I edit every piece, and the editing is where the real voice comes back.
+**Voice consistency is still hard.** Quill does a good job matching my writing patterns, but there are tells. AI-written drafts tend to be slightly more structured, slightly more balanced, slightly less willing to leave a rough edge. I edit every piece, and the editing is where the real voice comes back.
 
 **It's slower than I expected.** Running content through three reviewers — even AI reviewers — takes time. The squad review of the full blog took an entire afternoon. Individual post reviews take 30–45 minutes when you actually engage with the feedback. This is faster than hiring humans. It's slower than just hitting publish.
 

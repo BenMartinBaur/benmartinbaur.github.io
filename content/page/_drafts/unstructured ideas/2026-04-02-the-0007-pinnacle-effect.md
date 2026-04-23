@@ -4,7 +4,7 @@ title: "The 0.007% Pinnacle Effect — What Consistent Excellence Actually Looks
 description: "Only 0.007% of Microsoft employees receive the Pinnacle Award. It recognizes exceptional leadership, outstanding consistency, and authentic role modeling. Here's what it demands."
 date: 2026-04-02
 draft: true
-image: featured.jpg
+image: 2026-04-02-the-0007-pinnacle-effect-featured.jpg
 category: real
 tags:
   - Leadership
@@ -67,7 +67,7 @@ You can't control outcomes. You can control effort, preparation, integrity, and 
 
 ### Pillar 2: Outstanding Results
 
-Results matter. Not effort. Not intention. **Results.**
+Results matter. And at this level, results are the product of sustained effort, clear intention, and disciplined execution — not luck.
 
 But let me be specific about what "results" means at the Pinnacle level. It's not just hitting your number. It's:
 

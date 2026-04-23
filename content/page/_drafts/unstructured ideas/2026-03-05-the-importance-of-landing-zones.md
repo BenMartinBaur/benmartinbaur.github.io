@@ -4,7 +4,7 @@ title: "The Most Important Architecture Decision You'll Make Before Writing a Si
 description: "Landing zones aren't just infrastructure — they're the architecture decision that determines whether your cloud journey scales or collapses under its own weight."
 date: 2026-03-05
 draft: true
-image: featured.jpg
+image: 2026-03-05-the-importance-of-landing-zones-featured.jpg
 category: build
 tags:
   - Azure

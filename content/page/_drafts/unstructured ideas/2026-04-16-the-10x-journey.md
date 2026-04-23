@@ -4,7 +4,7 @@ title: "The 10x Journey — From Individual Deployments to Enterprise Impact"
 description: "The '10x' isn't about being a 10x engineer — it's about a 10x increase in impact surface area. Here's what the first 90 days in Microsoft's Innovation Hub taught me about architecture at scale."
 date: 2026-04-16
 draft: true
-image: featured.jpg
+image: 2026-04-16-the-10x-journey-featured.jpg
 category: strategy
 tags:
   - AI

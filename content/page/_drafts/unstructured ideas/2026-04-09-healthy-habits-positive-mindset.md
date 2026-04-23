@@ -4,7 +4,7 @@ title: "Performance = Skill × Mindset — My Operating System for Sustainable E
 description: "High performance without wellbeing is just delayed burnout. Here's the daily operating system I built — grounded in body, mind, and awareness — to sustain excellence without crashing under load."
 date: 2026-04-09
 draft: true
-image: featured.jpg
+image: 2026-04-09-healthy-habits-positive-mindset-featured.jpg
 category: real
 tags:
   - Leadership
@@ -86,13 +86,13 @@ Now: phone stays on airplane mode until after the morning routine. 15 minutes. T
 
 **2. One deep breath with a long exhale.**
 
-Not meditation. Not a 20-minute session. One breath. Focus on the exhale. This activates the parasympathetic nervous system — literally shifting your biology from stress response to focused calm.
+One breath. Focus on the exhale.This activates the parasympathetic nervous system — literally shifting your biology from stress response to focused calm.
 
 **3. Gratitude anchoring — one thing.**
 
 Not a list of 10 things. One specific thing I'm genuinely grateful for in my work. Yesterday's architecture review that went well. A community member's DM that made me smile. The team member who stepped up.
 
-This isn't woo-woo. Gratitude research shows it shifts attention from **threat-scanning** (what could go wrong?) to **opportunity-scanning** (what's going right?). For architects who spend all day identifying risks and edge cases, this rebalancing is essential.
+Gratitude research shows it shifts attention from **threat-scanning** (what could go wrong?) to **opportunity-scanning** (what's going right?). For architects who spend all day identifying risks and edge cases, this rebalancing is essential.
 
 **4. Set an intention for HOW, not WHAT.**
 

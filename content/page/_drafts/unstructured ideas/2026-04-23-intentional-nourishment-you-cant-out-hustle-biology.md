@@ -4,7 +4,7 @@ title: "You Can't Out-Hustle Biology — Why Nourishment Is a Leadership Decisio
 description: "Elite performance runs on fuel, not adrenaline. Intentional nourishment is the most overlooked lever for sustained clarity, steadiness, and decision quality."
 date: 2026-04-23
 draft: true
-image: featured.jpg
+image: 2026-04-23-intentional-nourishment-you-cant-out-hustle-biology-featured.jpg
 category: real
 tags:
   - Leadership
@@ -64,7 +64,7 @@ That's the signal. Not a dramatic transformation — just the quiet evidence tha
 
 ---
 
-> **Author's note:** This post is intentionally the shortest in the series — a micro-practice entry point. Future updates will expand with specific fueling strategies, the neuroscience of decision fatigue, and how nourishment connects to the broader operating system covered in [Performance = Skill x Mindset](/page/_drafts/unstructured-ideas/2026-04-09-healthy-habits-positive-mindset/).
+> **Author's note:** This is a micro-practice — short by design, because the practice itself is simple. Future posts will expand into specific fueling strategies, the neuroscience of decision fatigue, and how nourishment connects to the mindset multiplier from [Performance = Skill × Mindset](/page/_drafts/unstructured-ideas/2026-04-09-healthy-habits-positive-mindset/).
 
 ---
 

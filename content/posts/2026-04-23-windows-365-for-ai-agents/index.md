@@ -54,7 +54,7 @@ This isn't RPA with a new label. The architecture is fundamentally different.
 | **Scaling** | Manual VM provisioning or dedicated infrastructure | Elastic Cloud PC provisioning via Windows 365 APIs |
 | **Auditability** | Custom logging, if any | Enterprise audit trail — sign-in logs, compliance state, device inventory |
 | **Multi-app workflows** | Typically single-application per bot | Agents navigate across applications and browsers within the same session |
-| **Update resilience** | Scripts break on UI changes — requires manual selector maintenance | AI vision adapts to layout changes without hardcoded selectors |
+| **Update resilience** | Scripts break on UI changes — requires manual selector maintenance | AI-driven visual understanding is significantly more resilient to layout changes than hardcoded selectors — though not infallible, it reduces maintenance dramatically |
 | **Governance model** | Separate from endpoint management | Unified with your existing Microsoft endpoint management stack |
 | **Lifecycle management** | Persistent VMs that accumulate drift | Stateless or policy-managed Cloud PCs — reprovision cleanly |
 
@@ -199,7 +199,7 @@ Agent Cloud PCs don't need a Start menu, notification center, or lock screen. Th
 
 | Profile Name | Category | What It Does |
 |---|---|---|
-| `CFG-W365-Agent-Restrictions` | Restrictions | Disables UI elements agents don't need — Start menu, Action Center, notification toasts, Cortana, File Explorer shell |
+| `CFG-W365-Agent-Restrictions` | Restrictions | Disables UI elements agents don't need — Start menu, Action Center, notification toasts, File Explorer shell |
 | `CFG-W365-Agent-Network` | Network | Configures proxy settings, DNS, and firewall rules for agent traffic. Restrict outbound to approved endpoints only |
 | `CFG-W365-Agent-Storage` | Restrictions | Blocks USB and external storage. Agents have no business mounting removable media |
 | `CFG-W365-Agent-SessionLock` | UX | Disables screen saver, lock screen timeout, and interactive logon prompts. Agent sessions must never hit a lock screen |
@@ -236,7 +236,8 @@ Start with the **Windows 365 Security Baseline (24H1)** as your foundation. Then
 |---|---|---|
 | **Disable interactive sign-in** | Block RDP-based human sign-in methods | Agent Cloud PCs should only be accessible via the Agent 365 orchestration API. No human should RDP into a running agent session |
 | **Restrict sign-in methods** | Disable password-based interactive logon | Agent identity should use certificate-based or managed identity authentication only |
-| **PowerShell execution policy** | Constrained Language Mode or AllSigned | Prevent unauthorized script execution on agent Cloud PCs |
+| **PowerShell Constrained Language Mode** | Enforce via WDAC/AppLocker code integrity policies | Prevents arbitrary script execution. Note: this is separate from the `Set-ExecutionPolicy` setting — CLM is enforced by code integrity policies, not the execution policy cmdlet |
+| **PowerShell execution policy** | AllSigned | Complements CLM by requiring all scripts to be signed. Use alongside WDAC for defense-in-depth |
 | **AppLocker / WDAC** | Allow only approved applications | Agent Cloud PCs should run a defined set of applications — nothing else |
 | **Windows Remote Management** | Disable WinRM if not needed | Reduce remote management attack surface |
 | **Audit policies** | Enhanced process creation auditing | Log every process launch. Critical for forensics if an agent Cloud PC is compromised |
@@ -259,7 +260,7 @@ Compare this to typical human Cloud PC rings where broad rollout might be 14–2
 - Automated validation — run the agent workflow post-update and verify it completes
 - Fast rollback — reprovision from a known-good image if the update breaks the workflow
 
-> **Tip:** Pair update rings with **proactive remediation scripts** (covered below) that validate agent functionality after each update cycle. If the agent's primary workflow fails post-update, the remediation script can flag the Cloud PC for reprovisioning.
+> **Tip:** Pair update rings with **remediation scripts** (covered below) that validate agent functionality after each update cycle. If the agent's primary workflow fails post-update, the remediation script can flag the Cloud PC for reprovisioning.
 
 ### Assignment Filters and Targeting
 
@@ -326,14 +327,14 @@ An unattended endpoint needs proactive monitoring — there's no human to notice
 
 **Intune Compliance Dashboard**
 
-Use the Intune compliance dashboard to monitor your agent fleet as a distinct population:
+Use the Intune compliance dashboard ([Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations)) to monitor your agent fleet as a distinct population:
 - Filter by `GRP-Agent-W365-AllAgents` to see agent-specific compliance state
 - Track non-compliant devices and remediation trends over time
 - Set up compliance-based Conditional Access (`CA-401-AgentRequireCompliance`) to automatically block non-compliant agent sessions
 
-**Proactive Remediation Scripts**
+**Remediation Scripts**
 
-Intune's proactive remediation feature lets you deploy detection + remediation script pairs that run on a schedule. For agent Cloud PCs, this is essential:
+Intune's [Remediations](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations) feature (formerly Proactive Remediations) lets you deploy detection + remediation script pairs that run on a schedule. For agent Cloud PCs, this is essential:
 
 | Script Package | Detection | Remediation | Schedule |
 |---|---|---|---|
@@ -435,6 +436,15 @@ With Windows 365 for Agents, the answer is yes. Same Entra ID. Same Intune manag
 
 If you're an enterprise architect evaluating this, here's my take: **start with one high-value, UI-dependent workflow** that's been on your automation backlog because APIs don't exist. Expense processing, claims adjudication, legacy ERP data entry — pick the one that costs the most manual hours. Run it as a proof of concept in a dedicated agent Cloud PC with your existing Intune policies applied. Measure the governance story as much as the automation ROI.
 
+### Cost & Scale Considerations
+
+Before scaling beyond a proof of concept, factor in:
+
+- **Windows 365 licensing** — each agent Cloud PC requires a Windows 365 license. Plan capacity based on concurrent agent sessions, not just total agents
+- **Compute sizing** — agent Cloud PCs running UI automation (especially AI vision models processing screenshots) may need higher-spec SKUs than typical knowledge worker Cloud PCs
+- **Network bandwidth** — multiple agents running browser-based workflows generate meaningful egress traffic. If using Azure Network Connections (ANC), review the [outbound access post](/posts/2026-03-13-azure-default-outbound-access-avd/) for NAT Gateway and NSG requirements
+- **Provisioning limits** — Windows 365 has per-tenant provisioning rate limits. For burst scenarios (spinning up 50+ agent Cloud PCs simultaneously), coordinate with your Microsoft account team
+
 The enterprises that get this right won't just automate faster. They'll automate *safely* — and that's the only kind of automation that scales.
 
 ---
@@ -447,7 +457,7 @@ The enterprises that get this right won't just automate faster. They'll automate
 - [Conditional Access for Cloud PCs — Microsoft Learn](https://learn.microsoft.com/en-us/windows-365/enterprise/set-conditional-access-policies)
 - [Deploy Security Baselines for Cloud PCs — Microsoft Learn](https://learn.microsoft.com/en-us/windows-365/enterprise/deploy-security-baselines)
 - [Assignment Filters in Intune — Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/fundamentals/filters)
-- [Proactive Remediations in Intune — Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations)
+- [Remediations in Intune — Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/fundamentals/remediations)
 - [Win32 App Management in Intune — Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/apps/apps-win32-app-management)
 - [Scope Tags in Intune — Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/fundamentals/scope-tags)
 - [Intune & Windows 365 Naming Best Practices — B3N.B4UR_](/posts/2026-04-10-intune-w365-naming-best-practices/)

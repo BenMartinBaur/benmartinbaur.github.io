@@ -4,7 +4,7 @@ title: "The CTO Role Is Splitting in Two — Which Path Are You On?"
 description: "The CTO role is diverging. One path leads to irrelevance. The other leads to the most strategic position in the C-suite. AI is forcing the split."
 date: 2026-03-26
 draft: true
-image: featured.jpg
+image: 2026-03-26-the-future-of-cto-roles-featured.jpg
 category: strategy
 tags:
   - AI

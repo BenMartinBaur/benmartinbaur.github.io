@@ -4,7 +4,7 @@ title: "AI Doesn't Need Its Own Landing Zone — Here's What It Actually Needs"
 description: "The debate around dedicated AI landing zones is missing the point. Here's what the Cloud Adoption Framework actually says — and what architects should build instead."
 date: 2026-03-12
 draft: true
-image: featured.jpg
+image: 2026-03-12-ai-landing-zones-featured.jpg
 category: strategy
 tags:
   - AI
