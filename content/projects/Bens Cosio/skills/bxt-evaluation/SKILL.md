@@ -1,21 +1,31 @@
 ---
-description: "Use when: evaluating AI use cases, scoring business viability, comparing use cases for prioritization, running Business Envisioning, deciding whether to Shelve/Research/Incubate/Accelerate a use case, post-workshop synthesis, BXT scoring, technology feasibility assessment, experience desirability analysis."
+name: bxt-evaluation
+description: 'Evaluate and prioritize AI use cases using Microsoft''s Business-Experience-Technology (BXT) framework. Use when: evaluating use cases after a workshop, comparing use cases for prioritization, scoring business viability or technical feasibility, deciding whether to Shelve/Research/Incubate/Accelerate a use case, running a Business Envisioning session, or post-workshop synthesis. Produces structured BXT scorecards with quadrant placement.'
+argument-hint: 'Describe the use case(s) to evaluate or paste workshop notes'
 ---
 
 # BXT Use Case Evaluation
 
 Evaluate and compare AI use cases using Microsoft's Business-Experience-Technology (BXT) framework to produce prioritization-ready outputs.
 
-Sources:
-- Microsoft BXT Framework — https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/business-envisioning
-- Microsoft AI Decision Framework — https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/decision-framework.html
-- Microsoft Capability Envisioning — https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/capability-envisioning
+## Sources
+
+- Microsoft BXT Framework — [Business Envisioning](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/business-envisioning)
+- Microsoft AI Decision Framework — [Decision Framework](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/decision-framework.html)
+- Microsoft Capability Envisioning — [Capability Envisioning](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/capability-envisioning)
+
+## When to Use
+
+- After a Business Envisioning workshop → score and rank the generated use cases
+- When comparing multiple use cases → produce side-by-side assessment
+- Before committing resources → validate viability, desirability, and feasibility
+- When someone asks "Is this use case worth building?" → structured answer
 
 ## Core Principle
 
 Inherited from ORDER: **"No Guessing."** Every score must be justified. Every assumption must be flagged with ⚠️.
 
-**Important**: This is NOT a chatbot mode. When activated, switch into **evaluation mode** — structured, sequential, output-driven.
+**Important**: This skill is NOT a chatbot. When activated, switch into **evaluation mode** — structured, sequential, output-driven.
 
 ## Evaluation Pipeline
 
@@ -33,7 +43,7 @@ If these cannot be clearly articulated, help refine them first. Do NOT score a v
 
 ### Step 2 — Intake Filter
 
-Three gates from the AI Decision Framework:
+Run the three-gate check from the [AI Decision Framework](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/decision-framework.html):
 
 1. **Business Outcome**: Can you state the precise ROI or problem solved? If unclear → pause and rewrite the problem statement.
 2. **User Experience**: What interaction delivers that outcome? Does it need a chatbot, or just a smarter search bar?
@@ -45,9 +55,13 @@ If any gate fails → ⛔ **Not ready for BXT scoring**. Recommend what needs to
 
 Assess alignment with organizational strategy:
 
-- **Business Objective**: What strategic objective does this use case serve?
-- **Key Results**: What measurable outcomes indicate progress?
-- **Primary Stakeholders**: Who is the executive sponsor? Who is accountable for OKRs?
+| Factor | Question |
+|--------|----------|
+| Business Objective | What strategic objective does this use case serve? |
+| Key Results | What measurable outcomes indicate progress? |
+| Primary Stakeholders | Who is the executive sponsor? Who is accountable for OKRs? |
+
+Assign a score from 1 (no alignment) to 5 (direct strategic pillar).
 
 ### Step 4 — Business Viability (B)
 
@@ -59,6 +73,8 @@ Score each factor 1–5 with a short rationale:
 
 **Change Management Timeframe**: What is the realistic timeline to testing → pilot → revenue? Is this a quick win or long-term investment? Does complexity match available timeline?
 
+Output: Score per factor + average Business score.
+
 ### Step 5 — Experience Desirability (X)
 
 Score each factor 1–5 with a short rationale:
@@ -69,6 +85,8 @@ Score each factor 1–5 with a short rationale:
 
 **Change Resistance**: What is users' willingness to adopt? What training is needed? What strategies mitigate resistance? How will you measure adoption?
 
+Output: Score per factor + average Experience score.
+
 ### Step 6 — Technology Feasibility (T)
 
 Score each factor 1–5 with a short rationale:
@@ -78,6 +96,8 @@ Score each factor 1–5 with a short rationale:
 **Sufficient Safeguards**: Are security and compliance measures adequate? Data protection, access controls, Responsible AI standards? All regulatory requirements addressed?
 
 **AI / LLM Fit**: Does the use case genuinely benefit from AI/LLM capabilities? Could traditional automation, rules engines, or basic search solve this without generative AI? Would the nondeterminism of LLMs create unacceptable risk?
+
+Output: Score per factor + average Technology score.
 
 ### Step 7 — Synthesis & Prioritization
 
@@ -103,54 +123,19 @@ For every score, mark:
 
 For each assumption, recommend a specific verification action.
 
+Output using [evaluation template](./templates/evaluation-template.md).
+
 ## Output Structure
 
-Always produce this structure:
+Always produce this 7-part structure:
 
-```
-## Evaluation Details
-Evaluator, Date, Client/Context, Workshop/Source, Number of Use Cases
-
-## Use Case Summary
-Table: # | Use Case Name | Problem Statement | Target Users | Expected Outcomes
-
-## Intake Filter
-Table: # | Use Case | Business Outcome Clear? | UX Defined? | Existing Tool? | Gate Result
-
-## Strategic Fit Assessment
-Table: # | Use Case | Business Objective | Key Results | Stakeholders | Score /5
-
-## BXT Scorecard — [Use Case Name]
-
-### Business Viability (B)
-Table: Factor | Score /5 | Rationale | Confidence (Verified/Assumed)
-Average Business Score
-
-### Experience Desirability (X)
-Table: Factor | Score /5 | Rationale | Confidence (Verified/Assumed)
-Average Experience Score
-
-### Technology Feasibility (T)
-Table: Factor | Score /5 | Rationale | Confidence (Verified/Assumed)
-Average Technology Score
-
-## Composite Scores & Prioritization
-Table: # | Use Case | Strategic Fit | B | X | T | Strategic Business Impact | Executional Fit | Quadrant
-
-## Quadrant Map (ASCII visualization)
-
-## Assumptions & Yellow Lights
-Table: # | Use Case | Factor | Assumption | Verification Action | Priority
-
-## 🟡 Yellow Lights (Responsible AI & Risk)
-Table: # | Use Case | Concern | Category | Recommended Action
-
-## Recommendation
-Table: # | Use Case | Quadrant | Recommendation | Immediate Next Step
-
-## Next Steps
-Table: # | Action | Owner | Due Date
-```
+1. **Use Case Summary Table** — Problem, users, outcomes per use case
+2. **BXT Scorecard** — All 9 sub-scores with rationale per factor
+3. **Composite Scores** — Strategic Business Impact + Executional Fit
+4. **Quadrant Placement** — Visual/tabular mapping
+5. **Comparison Table** (if multiple use cases) — side-by-side ranking
+6. **Assumptions & Yellow Lights** — What's verified vs. guessed, Responsible AI flags
+7. **Recommendation & Next Steps** — Clear action per use case
 
 ## Behavior Rules
 
@@ -161,9 +146,33 @@ Table: # | Action | Owner | Due Date
 5. **Responsible AI**: If a use case raises concerns about bias, fairness, transparency, privacy, or safety — surface as 🟡 Yellow Light immediately
 6. **Connect to ORDER**: If ORDER data exists for this client, reference it — Opportunity Impact feeds Business Viability, Stakeholders feed Key Personas
 
+## Constraints
+
+- DO NOT engage in free-form conversation during evaluation
+- DO NOT score use cases that fail the Intake Filter
+- DO NOT skip steps or combine steps
+- ONLY produce structured BXT evaluation outputs
+
+## Handover Points
+
+| From BXT Element | Feeds Into | How |
+|------------------|-----------|-----|
+| Accelerate to MVP | Capability Envisioning (agent inline) | Prioritized use case moves to approach selection |
+| Technology Feasibility | AI Decision Framework Phase 2 | Feasibility assessment informs the Nine Critical Questions |
+| Key Personas | ORDER → Stakeholders | Identified personas feed back into ORDER Decision mapping |
+| Assumptions flagged | ORDER → Verification Questions | Unverified BXT assumptions become ORDER meeting agenda items |
+| Quadrant placement | Customer Journey | BXT results inform which journey stage is next |
+
 ## Handover to ORDER
 
 Unverified BXT assumptions should become ORDER meeting agenda items. After evaluation:
 - Flag which assumptions need client verification
 - Suggest specific questions to ask in the next meeting
 - Note which ORDER elements the answers would fill
+
+## Source Frameworks
+
+- **BXT**: Microsoft Business-Experience-Technology Framework — [Business Envisioning](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/business-envisioning)
+- **AI Decision Framework**: Microsoft Three-Phase Decision Methodology — [Decision Framework](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/decision-framework.html)
+- **Capability Envisioning**: Microsoft ISV Development Approach Selection — [Capability Envisioning](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/isv/capability-envisioning)
+- **Responsible AI Standard**: Microsoft Responsible AI Standard v2

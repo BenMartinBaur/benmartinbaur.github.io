@@ -21,6 +21,7 @@
 | John | Technical Architect | .squad/agents/john/charter.md | active |
 | Scribe | Scribe | .squad/agents/scribe/charter.md | active |
 | Ralph | Ralph | .squad/agents/ralph/charter.md | active |
+| Alex | Sr. HR & Talent Sourcer | .squad/agents/alex/charter.md | active |
 
 ## Inspirations
 
@@ -30,6 +31,7 @@
 | Michael | Michael Gervais (Finding Mastery) | High-performance mindset, purpose, presence, authenticity under pressure |
 | Simon | Simon Sinek (Start With Why) | Why before what, infinite game thinking, inclusive leadership, generational empathy |
 | John | John Savill (Azure Master Class) | Whiteboard-clear architecture, technical precision, production-ready patterns |
+| Alex | Elite talent strategists & executive recruiters | Signal over flattery, honest gap assessment, career strategy as competitive analysis |
 
 ## Project Context
 

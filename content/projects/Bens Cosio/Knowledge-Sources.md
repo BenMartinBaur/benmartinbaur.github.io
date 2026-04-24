@@ -1,6 +1,6 @@
-# Innovation Hub Agent — Knowledge Sources
+# Ben's Cosio — Knowledge Sources
 
-Shared knowledge sources across all skills. Upload or connect these in Copilot Studio.
+Single source of truth for all knowledge sources across all skills. Upload or connect these in Copilot Studio.
 
 ---
 
@@ -8,9 +8,9 @@ Shared knowledge sources across all skills. Upload or connect these in Copilot S
 
 | Source | Type | Used By | Purpose |
 |--------|------|---------|---------|
-| Company CRM data (Dynamics 365 / Salesforce) | Dataverse connector / Plugin | ORDER, BXT | Pull account context, opportunity data, stakeholder maps |
-| Past meeting notes & transcripts | SharePoint / OneDrive connector | ORDER, BXT | Reference prior outcomes, commitments, unresolved gaps |
-| Account & Opportunity plans | SharePoint document library | ORDER, BXT | Strategic context per client relationship |
+| Company CRM data (Dynamics 365 / Salesforce) | Dataverse connector / Plugin | ORDER, BXT, Customer Journey | Pull account context, opportunity data, stakeholder maps |
+| Past meeting notes & transcripts | SharePoint / OneDrive connector | ORDER, BXT, Customer Journey | Reference prior outcomes, commitments, unresolved gaps |
+| Account & Opportunity plans | SharePoint document library | ORDER, BXT, Customer Journey | Strategic context per client relationship |
 | Hub output templates | Document upload | All skills | Ensure consistent, Hub-standard deliverables |
 
 ---
@@ -50,25 +50,40 @@ Shared knowledge sources across all skills. Upload or connect these in Copilot S
 
 ---
 
+## Customer Journey Skill — Knowledge Sources
+
+| Source | Type | Purpose |
+|--------|------|---------|
+| Innovation Hub Engagement Model | Internal reference | 4-stage pipeline definition, entry/exit criteria per stage |
+| Microsoft Common Envisioning Framework | Internal methodology | Business and Capability envisioning methodology |
+| LUMA Framework materials | Document upload | Human-centered design thinking for Business Envisioning stage |
+| Klaxoon workshop templates | Document upload | Standardized facilitation formats for envisioning workshops |
+| Prior engagement journey records | SharePoint / Document upload | Past customer journeys — what worked, typical timelines, common gaps |
+| Customer maturity assessment criteria | Document upload | How to assess AI/digital maturity for journey starting point |
+
+---
+
 ## Setup Priority
 
 ### Phase 1 — Minimum Viable Knowledge (start here)
 
 1. Upload *Let's Get Real or Let's Not Play* PDF → ORDER gets full methodology context
 2. Add the three Microsoft URLs as website knowledge sources → BXT gets framework grounding
-3. Connect SharePoint for meeting notes → both skills can reference history
+3. Connect SharePoint for meeting notes → all skills can reference history
 
 ### Phase 2 — Enhance Quality
 
-4. Upload your CRM connector → pre-populate account/opportunity data
+4. Upload your CRM connector → pre-populate account/opportunity data for ORDER and Customer Journey
 5. Add internal solution/pricing docs → ORDER Exact Solution produces realistic outputs
 6. Upload prior BXT evaluations → calibrates BXT scoring consistency
+7. Upload Innovation Hub engagement model docs → Customer Journey gets stage definitions
 
 ### Phase 3 — Scale & Refine
 
-7. Add Responsible AI PDF → strengthens Technology Feasibility assessment
-8. Upload competitor matrices and win/loss reports → sharpens ORDER Decision Process
-9. Upload successful output examples → train the agent on what "good" looks like for your Hub
+8. Add Responsible AI PDF → strengthens Technology Feasibility assessment
+9. Upload competitor matrices and win/loss reports → sharpens ORDER Decision Process
+10. Upload successful output examples → train the agent on what "good" looks like for your Hub
+11. Upload prior customer journey records → calibrates journey planning and timeline estimates
 
 ---
 

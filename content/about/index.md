@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "About Ben Martin Baur — Technical Architect at Microsoft Innovation Hub Germany"
+description: "Technical Architect at Microsoft's CTO Office. From the server room to the boardroom — I write about AI strategy, hands-on architecture, and what actually works at enterprise scale."
 date: 2026-02-28
 layout: "page"
 ---
@@ -19,9 +19,27 @@ Born on premise — living in the cloud. I started my career racking servers and
 
 ![AboutMe](aboutme.png) 
 
-## My Unfair Advantage
+## 💡 My Unfair Advantage
 
-Most tech bloggers are either deep engineers or strategy consultants. I am both — and I am sitting in Microsoft's CTO office with direct customer access. 🤯🤯🤯. Every piece of content I create (should) reinforce: "I've been in the room, I've built the thing, and here's what actually works."
+Most tech bloggers are either deep engineers or strategy consultants. I am both — and I am sitting in Microsoft's CTO office with direct customer access. Every piece of content I create reinforces: "I've been in the room, I've built the thing, and here's what actually works."
+
+---
+
+## 📖 About This Blog
+
+> *From the server room to the boardroom.*
+
+**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring. Every post falls into one of three lanes:
+
+- 🏗️ **Build** — Hands-on engineering. Azure walkthroughs, architecture patterns, PowerShell tools, and IaC templates.
+- 🗺️ **Strategy** — Frameworks & thinking. CAF vs. AI Adoption Framework, BXT, CoE models, cheatsheets, and decision trees.
+- 🎤 **Real** — Honest reflections. Career stories, leadership lessons, and what I actually learned from getting it wrong.
+
+Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you.
+
+I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
+
+👉 **Start here:** [Why 80% of AI Projects Fail](/posts/2026-04-23-why-ai-projects-fail/) · [Browse all posts](/)
 
 ---
 
@@ -53,7 +71,7 @@ In six years I grew from an individual contributor to leading a 36-person techni
 
 Along the way I reported into the COO of EMEA, co-founded Azure Bootcamps, the Windows Cloud Academy at scale, authored Azure framework documentation, and architected the largest Windows 365 and AVD deployments worldwide. 
 
-In 2025, I was recognised with the **Microsoft Pinnacle Award** — This awarded is recognizing 43 individuals (0.007%) across the entire company — for outstanding leadership, community impact, and customer outcomes.
+In 2025, I was recognised with the **Microsoft Pinnacle Award** — this award recognizes just 43 individuals (0.007%) across the entire company — for outstanding leadership, community impact, and customer outcomes.
 
 ### 🥷 Deep Technical Specialist — Microsoft *(2020 – 2021)*
 
@@ -93,19 +111,9 @@ Most AI transformations fail not because the technology isn't ready — but beca
 
 My leadership philosophy is simple: 
 
-````
-"I lead by example, inspire with passion and I use every day to hit refresh to deliver a world-class customer experience and to bring strategies to life."
-````
+> "I lead by example, inspire with passion and I use every day to hit refresh to deliver a world-class customer experience and to bring strategies to life."
 
 I care about making complex technology accessible and useful — not just technically possible. And I've found that the best way to grow is to empower others to exceed their own goals.
-
----
-
-## About This Blog
-
-**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring — from AI project strategy and leadership in technical roles to hands-on experiments with tools like GitHub Copilot.
-
-I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
 
 ---
 
