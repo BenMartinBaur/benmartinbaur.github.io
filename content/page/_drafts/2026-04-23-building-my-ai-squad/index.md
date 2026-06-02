@@ -44,7 +44,7 @@ I didn't pick random personas. I picked people whose thinking I've studied, whos
 
 ### Toto — The Line Holder
 
-Inspired by **Toto Wolff**, the Mercedes F1 Team Principal. If you've watched any season of Formula 1, you know Toto. He doesn't celebrate wins — he asks what nearly went wrong. He doesn't chase perfection in a single race — he builds systems that win championships over years.
+Toto, he doesn't celebrate wins — he asks what nearly went wrong. He doesn't chase perfection in a single race — he builds systems that win championships over years.
 
 That's what I needed for brand standards. Someone who would read brandstrategy.md at the start of every session and flag the moment a post drifted from the three pillars. Someone who would own the backlog not as a list, but as a strategic sequence. Someone whose default response to "Should we ship this?" is "Does it meet the standard?"
 
@@ -52,15 +52,13 @@ Toto's charter is simple: _alignment, consistency, execution_. No excuses.
 
 ### Michael — The Depth Coach
 
-Inspired by **Dr. Michael Gervais**, the psychologist behind Finding Mastery. Michael works with elite athletes, military operators, and CEOs — not on tactics, but on what sits underneath: purpose, presence, and the courage to be honest when the stakes are high.
+Michael charter makes sure everything sits underneath: purpose, presence, and the courage to be honest when the stakes are high.
 
 My "Real" pillar posts are the ones I care about most and find hardest to write. It's easy to publish a cheatsheet. It's hard to write about what you actually believe, what you've gotten wrong, and why you chose a path others might question. Michael's job is to push me past the safe version. His review checklist starts with: _"What transformation does this offer the reader?"_ and includes: _"Does this say something others in Ben's position wouldn't say?"_
 
 He's the agent who makes me uncomfortable. That's the point.
 
 ### Simon — The Values Guardian
-
-Inspired by **Simon Sinek** — Start With Why, The Infinite Game, Leaders Eat Last. Simon's thinking shaped how I approach leadership content: start with belief, not features. Play the long game. Lead with empathy.
 
 Simon's charter is the most detailed of the three. He reviews every piece of content for WHY alignment, DEI consciousness, generational inclusivity, and tone. He checks whether a post speaks to a 25-year-old aspiring architect AND a 55-year-old CTO. He catches the moment my conviction tips into judgment — when "here's what I've learned" accidentally becomes "here's what you're doing wrong."
 
