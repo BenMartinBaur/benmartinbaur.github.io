@@ -1,8 +1,107 @@
 /* ==========================================================================
-   B3N.B4UR_ — Custom Brand Styles
+   B3N.B4UR_ — Command Line-Inspired Redesign
    Accent: Coral Energy (#F96167) | Dark Accent: Soft Lavender (#7B8CDE)
-   Primary: #34495e (Slate) — unchanged from theme default
+   Fonts: Inter Tight (headings) · IBM Plex Mono (body/meta) · Space Grotesk (brand)
    ========================================================================== */
+
+/* --- Phase 1: Typography & Design Tokens --- */
+
+:root {
+    /* Font stacks */
+    --font-heading: "Inter Tight", Inter, "Segoe UI", system-ui, sans-serif;
+    --font-body: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-brand: "Space Grotesk", var(--font-heading);
+
+    /* Override theme font variables */
+    --base-font-family: var(--font-body);
+    --code-font-family: var(--font-body);
+
+    /* Typography scale */
+    --heading-weight: 600;
+    --heading-tracking: -0.03em;
+    --body-size: 0.9rem;
+    --meta-size: 0.75rem;
+    --meta-weight: 500;
+    --meta-tracking: 0.04em;
+
+    /* Surface tokens (Command Line-inspired) */
+    --body-background: #ffffff;
+    --card-background: #ffffff;
+    --card-border-radius: 0px;
+    --card-box-shadow: none;
+    --card-separator-color: #e5e5e5;
+
+    &[data-scheme="dark"] {
+        --body-background: #111111;
+        --card-background: #1a1a1a;
+        --card-separator-color: #2a2a2a;
+    }
+}
+
+/* Global typography */
+body {
+    font-family: var(--font-body);
+    font-size: var(--body-size);
+    letter-spacing: 0.01em;
+    line-height: 1.7;
+}
+
+/* Headings — Inter Tight editorial style */
+h1, h2, h3, h4, h5, h6,
+.article-title,
+.article-list--tile .article-title {
+    font-family: var(--font-heading);
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+    line-height: 1.15;
+}
+
+/* Article title sizing (Command Line uses ~42px for post titles) */
+.article-page .article-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* Card titles tighter */
+.article-list article .article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+/* Metadata — uppercase mono micro-labels */
+.article-category,
+.article-time,
+.article-tags,
+.article-subtitle,
+time {
+    font-family: var(--font-body);
+    font-size: var(--meta-size);
+    font-weight: var(--meta-weight);
+    letter-spacing: var(--meta-tracking);
+    text-transform: uppercase;
+}
+
+/* Card surfaces — flatten to Command Line aesthetic */
+.article-list article,
+.section-card {
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    border: 1px solid var(--card-separator-color);
+}
+
+/* Reduce card image corner rounding */
+.article-list article .article-image img {
+    border-radius: 0;
+}
+
+/* Sidebar brand element */
+.sidebar .site-name {
+    font-family: var(--font-brand);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
 
 /* --- Light Mode Accent Overrides --- */
 
@@ -156,5 +255,495 @@ a:hover {
     .cta-rss:hover {
         background: #7B8CDE;
         color: #1a1a2e;
+    }
+}
+
+/* ==========================================================================
+   Phase 2 — Card & Content Presentation
+   ========================================================================== */
+
+/* --- Article Cards — Tighter Padding, Cleaner Layout --- */
+
+.article-list article {
+    padding: 0;
+    overflow: hidden;
+}
+
+.article-list article .article-image {
+    margin: 0;
+    border-radius: 0;
+}
+
+.article-list article .article-details {
+    padding: 1.25rem 1.5rem;
+}
+
+/* Reduce spacing between header and title */
+.article-list article .article-details header {
+    margin-bottom: 0.6rem;
+}
+
+/* Tighter title-to-content spacing */
+.article-list article .article-title {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Image Ratios — Force 16:9 Aspect Ratio --- */
+
+.article-list article .article-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    background: var(--card-separator-color);
+}
+
+.article-list article .article-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Featured/hero images on single articles */
+.article-page .article-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    overflow: hidden;
+    background: var(--card-separator-color);
+    margin-bottom: 2rem;
+}
+
+.article-page .article-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Tag/Category Labels — Subtle Chip Styling --- */
+
+.article-category a {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.article-category a:hover {
+    background: rgba(249, 97, 103, 0.12);
+}
+
+[data-scheme="dark"] .article-category a {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+[data-scheme="dark"] .article-category a:hover {
+    background: rgba(123, 140, 222, 0.18);
+}
+
+/* Tag list styling (article footer tags) */
+.article-tags a {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.article-tags a:hover {
+    background: rgba(249, 97, 103, 0.12);
+}
+
+[data-scheme="dark"] .article-tags a {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+[data-scheme="dark"] .article-tags a:hover {
+    background: rgba(123, 140, 222, 0.18);
+}
+
+/* --- Date/Read-Time Blocks — Smaller, Separated with Middot --- */
+
+.article-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--card-text-color-secondary);
+    opacity: 0.7;
+}
+
+.article-time time::after {
+    content: " · ";
+    margin-left: 0.5rem;
+    opacity: 0.6;
+}
+
+.article-time time:last-child::after {
+    content: "";
+}
+
+/* Metadata row alignment */
+.article-list article .article-details footer {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--card-separator-color);
+}
+
+/* --- Section Headings — Tighter Spacing, Reduce Decorative Chrome --- */
+
+.section-card .section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Reduce decorative accent line */
+.section-card .section-title::after {
+    height: 2px;
+    width: 30px;
+}
+
+/* Widget section spacing */
+.section-card {
+    padding: 1.25rem;
+}
+
+/* Homepage/list page section headers */
+.main-container .section-header h2,
+.main-container .section-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+}
+
+/* --- Article Content — Comfortable Reading Width, Better Line-Height --- */
+
+.article-content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-content p,
+.article-content li {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+/* Code blocks within article content */
+.article-content pre {
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.article-content code {
+    font-family: var(--font-body);
+    font-size: 0.9em;
+}
+
+/* Blockquote styling */
+.article-content blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1.25rem;
+    font-style: normal;
+}
+
+/* Lists */
+.article-content ul,
+.article-content ol {
+    margin: 1.25rem 0;
+    padding-left: 1.75rem;
+}
+
+/* --- Dark Mode — Card/Tag/Chip Overrides --- */
+
+[data-scheme="dark"] {
+    /* Ensure card borders are visible in dark mode */
+    .article-list article,
+    .section-card {
+        border-color: var(--card-separator-color);
+        background: var(--card-background);
+    }
+
+    /* Image placeholder backgrounds */
+    .article-list article .article-image,
+    .article-page .article-image {
+        background: #0a0a0a;
+    }
+
+    /* Footer divider */
+    .article-list article .article-details footer {
+        border-top-color: var(--card-separator-color);
+    }
+
+    /* Meta text legibility */
+    .article-time {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    .article-list article .article-details {
+        padding: 1rem 1.25rem;
+    }
+
+    .article-content {
+        max-width: 100%;
+    }
+
+    .article-page .article-title {
+        font-size: 2rem;
+    }
+}
+
+/* ==========================================================================
+   Phase 5 — Polish, Dark Mode Tuning & Responsive Validation
+   ========================================================================== */
+
+:root {
+    --body-text-color: #1f2328;
+    --scrollbar-thumb: rgba(31, 35, 40, 0.24);
+    --scrollbar-thumb-hover: rgba(31, 35, 40, 0.38);
+    --scrollbar-track: rgba(15, 23, 42, 0.06);
+}
+
+:root[data-scheme="dark"] {
+    --body-background: #111111;
+    --card-background: #1a1a1a;
+    --body-text-color: rgba(255, 255, 255, 0.87);
+    --card-text-color-main: rgba(255, 255, 255, 0.87);
+    --card-text-color-secondary: rgba(255, 255, 255, 0.72);
+    --card-text-color-tertiary: rgba(255, 255, 255, 0.58);
+    --scrollbar-thumb: rgba(255, 255, 255, 0.18);
+    --scrollbar-thumb-hover: rgba(123, 140, 222, 0.42);
+    --scrollbar-track: rgba(255, 255, 255, 0.06);
+}
+
+body {
+    background-color: var(--body-background);
+    color: var(--body-text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.article-list article,
+.article-list--tile article,
+.section-card,
+.related-content article,
+.article-cta,
+.main article {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+
+.article-content a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+    text-decoration-color: rgba(249, 97, 103, 0.35);
+    text-decoration-skip-ink: auto;
+}
+
+:root[data-scheme="dark"] .article-content a {
+    text-decoration-color: rgba(123, 140, 222, 0.5);
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+}
+
+::selection {
+    background: #F96167;
+    color: #ffffff;
+}
+
+:root[data-scheme="dark"] {
+    .article-list article,
+    .article-list--tile article,
+    .section-card,
+    .related-content article,
+    .main article {
+        background-color: #1a1a1a;
+    }
+
+    .article-content,
+    .article-content p,
+    .article-content li,
+    .article-subtitle,
+    .article-title,
+    .article-title a,
+    .section-card .section-term,
+    .section-card .section-description,
+    .section-card .section-count {
+        color: rgba(255, 255, 255, 0.87);
+    }
+
+    .article-content pre,
+    .article-content code,
+    .article-content blockquote {
+        background: #161616;
+        border-color: #2a2a2a;
+    }
+
+    .article-content pre {
+        color: rgba(255, 255, 255, 0.87);
+        border: 1px solid #2a2a2a;
+    }
+
+    .article-content pre code {
+        background: transparent;
+        border: 0;
+        padding: 0;
+    }
+
+    .article-content code {
+        color: #f7c7ca;
+        padding: 0.15rem 0.35rem;
+        border: 1px solid #2a2a2a;
+        border-radius: 4px;
+    }
+
+    .article-content blockquote {
+        color: rgba(255, 255, 255, 0.82);
+    }
+
+    .article-cta {
+        background: linear-gradient(135deg, rgba(123, 140, 222, 0.1) 0%, rgba(26, 26, 26, 0.96) 100%);
+        border-color: rgba(123, 140, 222, 0.24);
+    }
+
+    .cta-heading {
+        color: rgba(255, 255, 255, 0.92);
+    }
+
+    .cta-text {
+        color: rgba(255, 255, 255, 0.72);
+    }
+}
+
+.article-page .article-title {
+    font-size: clamp(1.85rem, 5vw, 2.4rem);
+}
+
+@media (max-width: 399px) {
+    .article-page .article-title {
+        font-size: clamp(1.65rem, 9vw, 1.95rem);
+        line-height: 1.1;
+    }
+
+    .subsection-list {
+        margin-left: 0;
+        overflow-x: visible;
+    }
+
+    .subsection-list .article-list--tile,
+    .related-content > .flex {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        float: none;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .subsection-list .article-list--tile article,
+    .related-content article {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 150px;
+        margin-right: 0;
+    }
+}
+
+@media print {
+    .left-sidebar,
+    .right-sidebar,
+    .hamburger,
+    .article-cta,
+    .related-content,
+    footer,
+    .footer,
+    .widget,
+    .search-form {
+        display: none !important;
+    }
+
+    .main-container,
+    .main,
+    .article-page,
+    .article-content {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
     }
 }

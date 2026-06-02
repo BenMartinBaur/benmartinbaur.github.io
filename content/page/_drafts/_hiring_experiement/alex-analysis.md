@@ -240,7 +240,7 @@ Applying for this role would:
 ## 1. Headline (220 chars max)
 
 ```
-Technical Architect @ Microsoft CTO Office | From the Server Room to the Boardroom | AI Strategy → Enterprise Architecture | Pinnacle Award (43 of 228K) | Azure, AVD, Windows 365
+Technical Architect @ Microsoft CTO Office | From the Server Room to the Boardroom | AI Strategy → Enterprise Architecture | Pinnacle Award Winner (43 of 228K) | Azure, AVD, Windows 365, AI
 ```
 
 *Character count: 168*

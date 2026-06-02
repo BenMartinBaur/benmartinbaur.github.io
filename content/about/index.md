@@ -111,7 +111,7 @@ Most AI transformations fail not because the technology isn't ready — but beca
 
 My leadership philosophy is simple: 
 
-> "I lead by example, inspire with passion and I use every day to hit refresh to deliver a world-class customer experience and to bring strategies to life."
+> "“I lead by example, inspire with passion, and treat every day as a chance to reset, learn, and to unlock potential."
 
 I care about making complex technology accessible and useful — not just technically possible. And I've found that the best way to grow is to empower others to exceed their own goals.
 
