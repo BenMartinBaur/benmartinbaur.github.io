@@ -11,6 +11,11 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+# Doks / Thulite
+node_modules/
+resources/
+.netlify/
+.env
 # Squad: ignore runtime state (logs, inbox, sessions)
 .squad/orchestration-log/
 .squad/log/
