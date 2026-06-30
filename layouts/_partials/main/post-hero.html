@@ -1,0 +1,44 @@
+{{- $page := .page -}}
+{{- $variant := .variant | default "list" -}}
+{{- $hero := "" -}}
+{{- $imageName := $page.Params.image | default "" -}}
+
+{{- with $imageName -}}
+  {{- $resource := $page.Resources.GetMatch (printf "**%s" .) -}}
+  {{- if $resource -}}
+    {{- $hero = $resource.RelPermalink -}}
+  {{- else if hasPrefix . "http://" -}}
+    {{- $hero = . -}}
+  {{- else if hasPrefix . "https://" -}}
+    {{- $hero = . -}}
+  {{- else -}}
+    {{- $hero = . | relURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $hero "" -}}
+  {{- $images := $page.Resources.ByType "image" -}}
+  {{- $featured := $images.GetMatch "*feature*" -}}
+  {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+  {{- with $featured -}}
+    {{- $hero = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $quote := $page.Title | plainify | truncate 90 -}}
+{{- $support := ($page.Params.summary | default $page.Description | plainify | truncate 110) -}}
+
+<div class="post-hero post-hero--{{ $variant }}">
+  {{- if ne $hero "" -}}
+    <img class="post-hero__image" src="{{ $hero }}" alt="{{ $page.Title }}" loading="lazy" decoding="async">
+  {{- else -}}
+    <div class="post-hero__placeholder" role="img" aria-label="{{ printf "Placeholder visual for %s" $page.Title }}">
+      <span class="post-hero__corner post-hero__corner--tl" aria-hidden="true"></span>
+      <span class="post-hero__corner post-hero__corner--br" aria-hidden="true"></span>
+      <p class="post-hero__quote">"{{ $quote }}"</p>
+      {{- with $support -}}
+      <p class="post-hero__support">{{ . }}</p>
+      {{- end -}}
+    </div>
+  {{- end -}}
+</div>
