@@ -1,6 +1,6 @@
 # Michael — Real Pillar Batch Review
 **Date:** 2026-04-23
-**Agent:** Michael (Leadership Mindset Coach, inspired by Dr. Michael Gervais)
+**Agent:** Michael (Leadership Mindset Coach, focused on high-performance mindset)
 **Scope:** 4 × Leadership Operating System drafts + 1 × AI Squad meta post
 
 ---
@@ -73,7 +73,7 @@ This is the most authentic passage in the entire batch. It's specific, it's cost
 
 > *"Results matter. Not effort. Not intention. **Results.**"*
 
-This is too absolute and contradicts the growth-mindset philosophy that undergirds the entire series. It suggests that effort is irrelevant — which isn't what Pinnacle recognises, and it's not what Gervais teaches. The paragraph *after* this line clarifies that results mean systemic impact, but the blunt opener could alienate readers who are doing the effort and haven't yet seen the results. **Fixed:** reframed to honour both outcomes and the process that produces them.
+This is too absolute and contradicts the growth-mindset philosophy that undergirds the entire series. It suggests that effort is irrelevant — which isn't what Pinnacle recognises, and it's not what high-performance coaching teaches. The paragraph *after* this line clarifies that results mean systemic impact, but the blunt opener could alienate readers who are doing the effort and haven't yet seen the results. **Fixed:** reframed to honour both outcomes and the process that produces them.
 
 ### Specific Recommendations
 
@@ -111,13 +111,13 @@ This is the passage that earns the reader's trust. Everyone who's burned out rec
 
 ### Weakest Moment
 
-Defensive disclaimers: "This isn't woo-woo" and "Not meditation. Not a 20-minute session." These undermine the credibility you're building. If Toto Wolff can talk about 500 hours of therapy without disclaimers, you can talk about a single deep breath. **Fixed:** removed both phrases.
+Defensive disclaimers: "This isn't woo-woo" and "Not meditation. Not a 20-minute session." These undermine the credibility you're building. If an elite team principal can talk about extensive performance coaching without disclaimers, you can talk about a single deep breath. **Fixed:** removed both phrases.
 
 ### Specific Recommendations
 
 1. **Remove defensive disclaimers** — done (applied).
 2. **Condense the Wolff therapy section.** It's excellent content but repeats Post 2 significantly. A one-line reference with a link preserves the series flow without redundancy.
-3. **The Pete Carroll attribution** feels tangential. Gervais and Wolff are the through-lines; Carroll dilutes focus. Consider cutting or folding into a footnote.
+3. **The Pete Carroll attribution** feels tangential. The core mindset and leadership references are the through-lines; Carroll dilutes focus. Consider cutting or folding into a footnote.
 
 ### Verdict: **Ready** (with disclaimer removal applied)
 
@@ -217,7 +217,7 @@ A grammatical error in a post about AI writing quality. Small irony, easy fix. *
 
 1. **The through-line is strong.** Principles → consistency → operating system → nourishment builds logically. Post 4 is the weakest link and needs either deepening or absorption into Post 3.
 
-2. **Wolff/Gervais repetition.** The Wolff therapy story and Elberse quote appear in Posts 1, 2, and 3. Establish once (Post 2 is the natural home), then reference with a link. Repetition dilutes impact.
+2. **Mindset leadership repetition.** The leadership-therapy story and Elberse quote appear in Posts 1, 2, and 3. Establish once (Post 2 is the natural home), then reference with a link. Repetition dilutes impact.
 
 3. **The vulnerability gradient is right.** The series gets more personal as it progresses — principles → achievement → burnout → biology. This matches reader trust development. Don't break this gradient.
 
@@ -237,4 +237,4 @@ A grammatical error in a post about AI writing quality. Small irony, easy fix. *
 ---
 
 *Review by Michael — Leadership Mindset Coach, B3N.B4UR_ Squad*
-*"The best in the world are uncommonly consistent at putting their energy into what's within their control." — Dr. Michael Gervais*
+*"The best in the world are uncommonly consistent at putting their energy into what's within their control." — High-performance mindset principle*

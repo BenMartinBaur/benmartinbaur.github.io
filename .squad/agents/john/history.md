@@ -14,3 +14,7 @@
 **Cross-post gaps identified:** Cost considerations absent across all Build posts, troubleshooting guidance missing
 
 **Recommended future posts:** Security deep-dive for agent Cloud PCs, capacity planning guide, troubleshooting connectivity
+
+## Alignment Updates
+
+- 2026-06-29: Alignment now governs execution. Principles: unlock potential, inclusive and respectful behavior, share what we have learned, and behave like a 10x engineer. Role operational plan produced.

@@ -3,7 +3,7 @@
 ## Source Material: 8 Ideas from `_drafts/unstructured ideas/`
 
 ### Series 1: "The Architect's Foundation" (Build + Strategy)
-*Technical architecture series — your John Savill lane*
+*Technical architecture series — expert architecture lane*
 
 | Order | Draft | Pillar | Title Angle |
 |-------|-------|--------|-------------|
@@ -17,7 +17,7 @@
 ---
 
 ### Series 2: "The Leadership Operating System" (Real)
-*Your Michael Gervais lane — high-performance mindset for architects*
+*High-performance mindset lane for architects*
 
 | Order | Draft | Pillar | Title Angle |
 |-------|-------|--------|-------------|
@@ -35,7 +35,7 @@
 ---
 
 ### Series 3: "The Strategic Ascent" (Strategy + Real)
-*Your Simon Sinek lane — career and organizational transformation*
+*Purpose-first strategy lane — career and organizational transformation*
 
 | Order | Draft | Pillar | Title Angle |
 |-------|-------|--------|-------------|

@@ -1,0 +1,23 @@
+{
+  "skill_name": "innovation-hub-account-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build an FY27 Innovation Hub account plan for Contoso. Use TPID 8472619, pull customer priorities from Work IQ and opportunities from Dynamics CRM MCP, then combine with my attached meeting notes and xlsx. Search for Contoso online, retrieve their latest annual report, and map their strategy to our FY27 Frontier Transformation and Core pillars. I need one consolidated target-account view with H1/H2 deal focus, Hub contribution, industry summary, use case alignment, and strategic fit.",
+      "expected_output": "Complete account plan including: (1) 2–3 sentence company summary with industry, (2) strategy alignment table mapped to FY27 pillars, (3) use case table covering AI Business Solutions | Cloud & AI | Security, (4) qualification decision, (5) pipeline with H1/H2 timing, (6) AI readiness 4-pillar scores.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Assess whether Fabrikam is a Target Account. TPID is 5501284. Search for Fabrikam online to understand their industry and business focus. Review their annual report if available to understand their strategic priorities. There are two opportunities in CRM but ownership alignment with the account team is unclear in the notes. Use AI Readiness 4 pillars, map their strategy to FY27 pillars, and show what is missing to qualify.",
+      "expected_output": "Tabular qualification analysis that includes company industry/overview from web search, strategy alignment signals, use case opportunities, AI readiness assessment, and explicit gaps. Result should clearly state Target Account / Not Yet Target with missing conditions itemized.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Create the annual plan for Northwind with a strong platform lens. Search their website and annual report for industry signals and strategic priorities. Prioritize M365 Copilot as UI, IQ+Fabric grounding gaps, and scale/governance readiness. Map their strategic priorities to our Frontier Transformation pillars (AI in flow of human ambition, ubiquitous innovation, amplify intelligence, secure AI platform). Include 3–5 use cases, whitespace, and risks/gaps assessment tied to Hub and account-team co-owners.",
+      "expected_output": "Structured tables covering company overview/industry, FY27 strategy alignment, use cases by solution area, priorities, deals, whitespace, 4-pillar scoring, co-ownership model, and risks/gaps suitable for Loop and markdown export.",
+      "files": []
+    }
+  ]
+}

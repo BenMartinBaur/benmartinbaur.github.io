@@ -15,3 +15,7 @@
 - **SCSS architecture:** All Command Line-inspired styles are isolated in `assets/scss/custom.scss` with clear phase markers. Phase 1 covers typography/tokens, Phase 2 covers cards/content. Future phases can be appended without conflicts.
 - **Image handling in Stack theme:** Article card images require wrapper positioning (`position: relative` + `padding-bottom: 56.25%`) with absolutely positioned `img` tags to enforce aspect ratios while preserving Stack's template structure.
 - **Phase 5 implementation:** Added append-only SCSS polish for deeper dark mode surfaces, smoother theme-toggle transitions, understated global link treatment with richer article-link underlines, themed scrollbars/selection, minimal print cleanup, and sub-400px card/title safeguards without changing sidebar structure.
+
+## Alignment Updates
+
+- 2026-06-29: Alignment now governs execution. Principles: unlock potential, inclusive and respectful behavior, share what we have learned, and behave like a 10x engineer. Role operational plan produced.

@@ -128,3 +128,11 @@
 | **D** – Decision | ☐ Strong ☐ Partial ☐ Weak | ☐ Verified ☐ Guessing ⚠️ |
 | **E** – Exact Solution | ☐ Strong ☐ Partial ☐ Weak | ☐ Verified ☐ Guessing ⚠️ |
 | **R** – Results | ☐ Strong ☐ Partial ☐ Weak | ☐ Verified ☐ Guessing ⚠️ |
+
+---
+
+## New Opportunities Discovered
+| TAG (#NEW) | Discoverd by (Alias) | Solution Area | Opportuinity Name | Opportunity Description |
+|------------|----------------------|---------------|-------------------|-------------------------|
+| #NEW | bebaur | AI Business Solutions | Copilot Studio - New Business Workflows | Maker productivity pilot for the data engineering team |
+| #NEW | bebaur | Cloud & AI | Fabric - Medallion-pattern Fabric POC for priority workloads | Medallion-pattern implementation for 3 priority workloa |

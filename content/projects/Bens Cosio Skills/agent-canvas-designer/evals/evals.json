@@ -1,0 +1,29 @@
+{
+  "skill_name": "agent-canvas-designer",
+  "evals": [
+    {
+      "id": 1,
+      "name": "it-support-agent",
+      "prompt": "Here's a transcript from a customer workshop. The customer is an enterprise with 5000 employees. They want to automate IT support. In the transcript, they mention password resets, ticket creation, KB searches, and escalation to human support. Create an agent design canvas markdown file and PPTX for an IT Support Agent.\n\nTranscript:\nCustomer: We get about 200 password reset requests a day. Currently it takes 15 minutes per ticket to process manually. We also have a knowledge base with about 2000 articles on common issues. We'd like an agent that can search the KB, look up user info in Active Directory, reset passwords directly if simple cases, and create tickets for anything complex.\n\nArchitect: Who needs to approve password resets?\n\nCustomer: For self-service resets, the user's manager. For admin-triggered resets, IT security. We have Azure AD and ServiceNow.\n\nArchitect: What data sensitivity concerns?\n\nCustomer: Password reset logs must be audited. We can't expose internal employee IDs in public channels. User identity verification is critical.\n\nArchitect: What's success?\n\nCustomer: If we automate 80% of password resets and reduce average time to 2 minutes, that's a win. Secondary goal: reduce KB search time from 10 minutes to 30 seconds.",
+      "expected_output": "Markdown file containing 10 agent canvas sections (Goal, Triggers, Channels, Knowledge and Data, Tools and Integrations, Flows and Orchestration, Instructions and Behavior, Agent Architecture, Governance & Risk, Evaluation and Optimization) focused on IT support automation with password reset, KB search, ticket creation, and escalation. PPTX output with condensed 2-4 sentence summaries per section.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "name": "hr-onboarding-agent",
+      "prompt": "Create an agent canvas for an HR Onboarding Agent from this transcript:\n\nCustomer: We onboard about 50 new employees per month. Each onboarding involves 15+ tasks: IT setup, benefits enrollment, compliance training, manager introductions, equipment ordering. Right now, it's all manual email chains and spreadsheets. We want an agent to orchestrate the workflow, send reminders, collect signatures on policies, and flag blockers.\n\nArchitect: What systems do you use?\n\nCustomer: Workday for HR data, SharePoint for policies and documents, Teams for communication. We also have a custom equipment ordering system.\n\nArchitect: Who approves what?\n\nCustomer: HR manager approves the onboarding plan. Managers approve equipment. Compliance reviews training completion before day 1.\n\nArchitect: How do you handle delays?\n\nCustomer: Right now we lose track. We want alerts if any step is overdue. Target: 95% of employees fully onboarded within their first week.",
+      "expected_output": "Markdown canvas for HR Onboarding Agent with sections covering: job-to-be-done (orchestrate employee onboarding), triggers (new hire in Workday), channels (Teams, email), knowledge sources (policy docs in SharePoint, Workday employee data), tools (Workday API, SharePoint, Teams, custom equipment system), orchestration (sequential task workflow with human approvals), governance (compliance, audit trails). PPTX with 2-4 sentence summaries.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 3,
+      "name": "retail-store-assistant-agent",
+      "prompt": "A retail chain wants an agent for in-store associates. Transcript:\n\nCustomer: Our store associates spend 20% of their time answering customer questions about inventory, pricing, and returns. We have about 50 stores, 3000 employees. Our inventory system is Shopify, pricing is in a legacy system, and we have a return policy doc that keeps changing.\n\nArchitect: Where will the agent run?\n\nCustomer: Mostly on iPads at checkout and in the aisles. Some calls to our support line too.\n\nArchitect: What about returns?\n\nCustomer: That's tricky. Simple returns we can handle instantly. But store credits, exchange, or damage claims need manager approval. We want the agent to check policy, prepare the paperwork, escalate if needed.\n\nArchitect: Performance targets?\n\nCustomer: If we can reduce question resolution time from 5 minutes to 1 minute, and get 85% of returns handled without manager escalation, we'll be happy.",
+      "expected_output": "Markdown canvas for Retail Store Assistant Agent covering: goal (reduce associate time on Q&A and return processing), triggers (associate searches for product/policy or initiates return), channels (iPad app, phone IVR), knowledge (inventory API, pricing system, return policy docs), tools (Shopify API, manager approval workflow), orchestration (simple returns auto-approved, complex escalations to manager), success metrics (1-minute resolution, 85% auto-handle rate). PPTX summary.",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}

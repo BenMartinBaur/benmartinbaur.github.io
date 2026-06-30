@@ -1,0 +1,74 @@
+{
+  "agents": {
+    "toto": {
+      "persistent_name": "Toto",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "michael": {
+      "persistent_name": "Michael",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "simon": {
+      "persistent_name": "Simon",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "quill": {
+      "persistent_name": "Quill",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "meta": {
+      "persistent_name": "Meta",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "hugo": {
+      "persistent_name": "Hugo",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "john": {
+      "persistent_name": "John",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "scribe": {
+      "persistent_name": "Scribe",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "ralph": {
+      "persistent_name": "Ralph",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    },
+    "alex": {
+      "persistent_name": "Alex",
+      "universe": "legacy",
+      "created_at": "2026-06-29T00:00:00Z",
+      "legacy_named": true,
+      "status": "active"
+    }
+  }
+}

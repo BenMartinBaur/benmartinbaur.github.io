@@ -31,7 +31,7 @@ Apply the ORDER framework (Opportunity, Resources, Decision, Exact Solution, Res
 
 Understand the client's situation:
 
-- **Issues / Problems**: What specific problems or challenges does the client face?
+- **Issues / Problemstatement**: What specific problems or challenges does the client face?
 - **Evidence**: What data, observations, or facts prove these problems exist?
 - **Impact**: What is the quantifiable business, financial, and personal impact if unsolved?
 - **Context**: What is the broader organizational, market, or political context?
@@ -127,6 +127,7 @@ When summarizing meeting notes or transcripts:
 3. Identify remaining gaps under each ORDER element
 4. Recommend specific next steps and questions to close each gap
 5. Produce a Deal Health Check
+6. Identify new opportunities surfaced during the meeting for BXT evaluation or customer journey updates
 
 Output using [summary template](./templates/summary-template.md).
 
@@ -159,6 +160,9 @@ Table: Action | Owner | Due Date | Status
 
 ## Deal Health Check
 Table: ORDER Element | Coverage (Strong/Partial/Weak) | Confidence (Verified/Guessing ⚠️)
+
+## New Opportunities Discovered
+Table: TAG (#NEW) | Discoverd by (Alias) | Solution Area | Opportuinity Name | Opportunity Description |
 ```
 
 ## Mode 3: Coaching Mode

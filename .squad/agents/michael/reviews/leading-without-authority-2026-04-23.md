@@ -144,4 +144,4 @@ None of these require rethinking the post. They require 20 minutes of revision. 
 ---
 
 *Review by Michael — Leadership Mindset Coach, B3N.B4UR_ Editorial Squad*
-*Inspired by the work of Dr. Michael Gervais on mindset, presence, and finding your best when it matters most.*
+*Grounded in high-performance mindset principles on purpose, presence, and performing when it matters most.*

@@ -27,10 +27,10 @@
 
 | Agent | Inspired By | Philosophy Borrowed |
 |-------|-------------|---------------------|
-| Toto | Toto Wolff (Mercedes F1) | Relentless standards, team-first, "no excuses" culture, strategic patience |
-| Michael | Michael Gervais (Finding Mastery) | High-performance mindset, purpose, presence, authenticity under pressure |
-| Simon | Simon Sinek (Start With Why) | Why before what, infinite game thinking, inclusive leadership, generational empathy |
-| John | John Savill (Azure Master Class) | Whiteboard-clear architecture, technical precision, production-ready patterns |
+| Toto | Senior Strategist | Relentless standards, team-first, "no excuses" culture, strategic patience |
+| Michael | Elite Coach | High-performance mindset, purpose, presence, authenticity under pressure |
+| Simon | Senior Leader | Why before what, infinite game thinking, inclusive leadership, generational empathy |
+| John | Chief Archiect | Whiteboard-clear architecture, technical precision, production-ready patterns |
 | Alex | Elite talent strategists & executive recruiters | Signal over flattery, honest gap assessment, career strategy as competitive analysis |
 
 ## Project Context

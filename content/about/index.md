@@ -13,13 +13,13 @@ layout: "page"
 
 ## 👀 About Me 
 
-Hi, I'm Ben — a Technical Architect working in the Office of the CTO at the Microsoft Innovation Hub for Germany and Austria. With over 15 years of international experience in enterprise architecture, End-User Computing, and cloud technologies, I help customers to turn their vision into scalable architectures. Within the Innovation Hub, I operate at the intersection of technology strategy, AI transformation and customer impact.
+Hi, I'm Ben — a (10x 😋) Technical Architect working in the Office of the CTO at the Microsoft Innovation Hub for Germany and Austria. With over 15 years of international experience in enterprise architecture, End-User Computing, and cloud technologies, I help customers to turn their vision into scalable architectures. Within the Innovation Hub, I operate at the intersection of technology strategy, AI transformation and customer impact.
 
 Born on premise — living in the cloud. I started my career racking servers and managing on-prem infrastructure. Today I partner with Microsoft's most strategic enterprise customers, engineering teams and partners to shape end-to-end architectures. I think in systems — connecting technology, business, and people to deliver outcomes at scale.
 
 ![AboutMe](aboutme.png) 
 
-## 💡 My Unfair Advantage
+## 💡 My 10x Advantage
 
 Most tech bloggers are either deep engineers or strategy consultants. I am both — and I am sitting in Microsoft's CTO office with direct customer access. Every piece of content I create reinforces: "I've been in the room, I've built the thing, and here's what actually works."
 
@@ -38,8 +38,6 @@ Most tech bloggers are either deep engineers or strategy consultants. I am both 
 Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you.
 
 I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
-
-👉 **Start here:** [Why 80% of AI Projects Fail](/posts/2026-04-23-why-ai-projects-fail/) · [Browse all posts](/)
 
 ---
 
