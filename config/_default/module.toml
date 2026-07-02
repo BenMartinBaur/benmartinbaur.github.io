@@ -11,7 +11,9 @@
 [[mounts]]
   source = "content"
   target = "content"
-  excludeFiles = ["posts/**", "page/_drafts/**", "about/_drafts/**"]
+  # Guardrails: keep post content untouched, exclude drafts, and avoid section-level
+  # topic pages (topic discoverability is handled through tags + post series).
+  excludeFiles = ["posts/**", "topics/**", "page/_drafts/**", "about/_drafts/**"]
 
 [[mounts]]
   source = "content/posts"

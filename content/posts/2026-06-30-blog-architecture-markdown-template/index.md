@@ -9,6 +9,7 @@ tags:
   - Markdown
   - Documentation
   - Best Practices
+  - enterprise-architecture
 reading_time: "9 min read"
 ---
 

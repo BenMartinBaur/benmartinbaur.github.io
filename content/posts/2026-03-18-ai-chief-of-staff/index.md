@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How AI Became My Personal Chief of Staff Team"
-description: "I gave AI the job of brand strategist, communications manager, and content writer. Here's what happened when it audited my entire blog — and what we're building together."
+description: "An inside look at using AI as a personal chief of staff team for brand strategy, content operations, and blog decision-making grounded in real audits."
 date: 2026-03-18
 image: featured.jpg
 category: real
@@ -9,6 +9,7 @@ tags:
   - AI
   - Strategy
   - Leadership
+  - career-growth
 reading_time: "12 min read"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Technical Architect at Microsoft's CTO Office. From the server room to the boardroom — I write about AI strategy, hands-on architecture, and what actually works at enterprise scale."
+description: "AI Architect in Microsoft's Office of the CTO, translating enterprise AI strategy into scalable architecture and measurable outcomes."
 date: 2026-02-28
 layout: "page"
 ---
@@ -29,15 +29,16 @@ Most tech bloggers are either deep engineers or strategy consultants. I am both 
 
 > *From the server room to the boardroom.*
 
-**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring. Every post falls into one of three lanes:
+**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring. The evergreen focus is anchored in four themes:
 
-- 🏗️ **Build** — Hands-on engineering. Azure walkthroughs, architecture patterns, PowerShell tools, and IaC templates.
-- 🗺️ **Strategy** — Frameworks & thinking. CAF vs. AI Adoption Framework, BXT, CoE models, cheatsheets, and decision trees.
-- 🎤 **Real** — Honest reflections. Career stories, leadership lessons, and what I actually learned from getting it wrong.
+- 🧩 **Enterprise Architecture** — platform, cloud, and systems design patterns that scale.
+- 🧠 **AI Strategy** — operating models, decision frameworks, and value realization in enterprise AI.
+- 🧭 **Leadership at Scale** — cross-functional execution, influence, and team operating rhythms.
+- 🚀 **Career Growth** — practical lessons for architects and engineers building long-term impact.
 
 Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you.
 
-I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
+I built this blog using [Hugo](https://gohugo.io/), [Doks on Thulite](https://doks.thulite.io/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
 
 ---
 

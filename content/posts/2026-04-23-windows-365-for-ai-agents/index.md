@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Windows 365 for AI Agents — Why Cloud PCs Are the Enterprise Runtime for Agentic AI"
-description: "Traditional RPA hits a wall with UI-driven legacy apps. Windows 365 gives AI agents a full Cloud PC with enterprise identity, Intune management, and policy enforcement. Here's why that changes everything."
+description: "Why Windows 365 is a governed runtime for AI agents in UI-driven enterprise workflows, with architecture, identity, and compliance implications."
 date: 2026-04-23
 image: featured.jpg
 category: build
@@ -12,6 +12,7 @@ tags:
   - Security
   - Intune
   - Best Practices
+  - enterprise-architecture
 reading_time: "18 min read"
 ---
 

@@ -1,19 +1,19 @@
 ---
 title: "Recruiters"
-description: "Quick profile summary for recruiters and hiring leaders."
-summary: "Technical Architect in Microsoft’s Office of the CTO with experience across enterprise AI strategy and execution."
+description: "AI Architect in Microsoft's Office of the CTO, translating enterprise AI strategy into scalable architecture and measurable outcomes."
+summary: "Technical Architect in Microsoft's Office of the CTO with enterprise architecture, AI strategy, leadership at scale, and career growth focus."
 layout: "page"
 ---
 
 ## Ben Martin Baur
 
-Technical Architect in the Office of the CTO at Microsoft Innovation Hub Germany.
+AI Architect in the Office of the CTO at Microsoft Innovation Hub Germany, translating strategy into architecture and measurable outcomes.
 
 ### Snapshot
 
-- Enterprise architecture and AI transformation focus
-- Leadership and cross-functional operating model experience
-- Public writing across strategy, implementation, and career patterns
+- Enterprise Architecture and AI Strategy focus
+- Leadership at Scale with cross-functional operating model experience
+- Public writing and mentoring focused on Career Growth
 
 ### Links
 

@@ -1,6 +1,6 @@
 # Hugo
 title = "B3N.B4UR_"
-description = "Leadership, career development, and practical architecture patterns from enterprise AI field work."
+description = "AI Architect in Microsoft's Office of the CTO, translating enterprise AI strategy into scalable architecture and measurable outcomes."
 images = ["cover.png"]
 
 # mainSections
@@ -131,6 +131,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     suffix = "" # title hugo.toml (default)
   [seo.description]
     summaryFallback = "" # "" (default)
+    lengthIgnores = ['^/categories($|/)', '^/tags($|/)', '^/projects($|/)', '^/contributors$', '^/page$', '^/page/search$']
   [seo.favicons]
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
@@ -138,6 +139,8 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     type = "Person" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
     name = "Ben Martin Baur" # Name of Organization or Person
+    jobTitle = "Technical Architect, Office of the CTO"
+    worksFor = "Microsoft Innovation Hub Germany"
     sameAs = ["https://github.com/benmartinbaur", "https://www.linkedin.com/in/ben-martin-baur/"] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections

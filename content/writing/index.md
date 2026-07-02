@@ -1,6 +1,6 @@
 ---
 title: "Writing"
-description: ""
+description: "An index of active projects, documentation, and practical build notes that show how this blog and its supporting AI workflows are created."
 date: 2026-02-28
 layout: "page"
 tags:

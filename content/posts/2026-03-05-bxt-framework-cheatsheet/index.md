@@ -10,6 +10,7 @@ tags:
   - Strategy
   - Framework
   - Consulting
+  - ai-strategy
 reading_time: "7 min read"
 ---
 
