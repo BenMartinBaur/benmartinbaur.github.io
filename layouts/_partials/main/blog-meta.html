@@ -1,15 +1,21 @@
 {{ $contributors := .Params.contributors | default (slice) -}}
 {{ $last := sub (len $contributors) 1 -}}
+{{ $categoryTerms := .GetTerms "categories" -}}
 <p>
   <small>
     {{- time.Format (default ":date_long" .Site.Params.dateFormat) .PublishDate -}}
-    {{- with .Params.categories -}}
-      &nbsp;{{ i18n "in" }}&nbsp;
-      {{- range $index, $category := . -}}
-        {{ if gt $index 0 }}, {{ end -}}
+    {{- if gt (len $categoryTerms) 0 -}}
+      &nbsp;Category:&nbsp;
+      {{- range $index, $term := $categoryTerms -}}
+        {{- if gt $index 0 }}, {{ end -}}
+        <a class="stretched-link position-relative link-muted" href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+      {{- end -}}
+    {{- else -}}
+      {{- with .Params.category -}}
+        &nbsp;Category:&nbsp;
         <a class="stretched-link position-relative link-muted" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
-      {{- end }}
-    {{- end }}
+      {{- end -}}
+    {{- end -}}
     {{- if gt (len $contributors) 0 -}}
       &nbsp;{{ i18n "by" }}&nbsp;
       {{- range $index, $contributor := $contributors -}}

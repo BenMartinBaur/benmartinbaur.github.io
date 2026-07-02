@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "Welcome to the boardroom"
-description: "AI has moved from the IT department to the boardroom. Here's what every C-level executive — from CEO to CHRO — is prioritising, and why a unified approach matters."
+description: "AI has moved into the boardroom. This guide maps C-level priorities from CEO to CHRO and shows how to align strategy, governance, and execution."
 date: 2026-02-15
 image: featured.jpg
 category: strategy
@@ -9,6 +9,7 @@ tags:
   - AI
   - Strategy
   - Leadership
+  - ai-strategy
 reading_time: "2 min read"
 ---
 

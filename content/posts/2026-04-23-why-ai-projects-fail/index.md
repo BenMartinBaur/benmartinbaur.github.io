@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why 80% of AI Projects Fail — And What Leaders Can Do About It"
-description: "RAND Corporation research reveals 5 root causes behind AI project failure. Here are the patterns, the fixes, and why this is a leadership problem — not a technology problem."
+description: "RAND-backed insights into why most AI projects fail, with five preventable failure patterns and a practical leadership playbook to improve outcomes."
 date: 2026-04-23
 image: featured.jpg
 category: strategy
@@ -10,6 +10,7 @@ tags:
   - Strategy
   - Leadership
   - Best Practices
+  - ai-strategy
 reading_time: "8 min read"
 ---
 

@@ -9,6 +9,7 @@ tags:
   - AI
   - Leadership
   - Strategy
+  - career-growth
 reading_time: "7 min read"
 ---
 

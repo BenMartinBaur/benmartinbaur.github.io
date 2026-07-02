@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Intune & Windows 365 – Naming Conventions & Best Practices Cheatsheet"
-description: "A practical guide to naming conventions for devices, policies, groups, and provisioning policies in Microsoft Intune and Windows 365. Includes a modular Microsoft Graph automation to deploy baseline policies."
+description: "Naming conventions for Intune and Windows 365 that improve governance, troubleshooting, and automation, plus a reusable Microsoft Graph baseline."
 date: 2026-04-10
 image: featured.jpg
 category: build
@@ -10,6 +10,7 @@ tags:
   - Intune
   - Best Practices
   - Automation
+  - enterprise-architecture
 reading_time: "15 min read"
 ---
 

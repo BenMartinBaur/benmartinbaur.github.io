@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Adoption Framework vs. AI Adoption Framework — A Side-by-Side Comparison"
-description: "A phase-by-phase comparison of Microsoft's Cloud Adoption Framework and the AI Adoption Framework. Where they align, where they diverge, and what that means for your next engagement."
+description: "A practical comparison of Microsoft's Cloud Adoption Framework and AI Adoption Framework, showing where phases align, diverge, and how to apply each."
 date: 2026-03-06
 image: featured.jpg
 category: strategy
@@ -10,6 +10,7 @@ tags:
   - Strategy
   - Framework
   - Best Practices
+  - enterprise-architecture
 reading_time: "8 min read"
 ---
 

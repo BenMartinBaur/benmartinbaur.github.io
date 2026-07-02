@@ -10,6 +10,7 @@ tags:
   - Strategy
   - Center of Excellence
   - Leadership
+  - enterprise-architecture
 reading_time: "5 min read"
 ---
 

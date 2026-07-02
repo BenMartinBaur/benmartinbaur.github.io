@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let's get Real or Let's Not Play - Checklist"
-description: "A structured qualification checklist based on the ORDER framework from Khalsa & Illig. Opportunity, Resources, Decisions, Exact Solution, Results — walk every engagement through these before you commit."
+description: "A practical ORDER-based qualification checklist for consultants to validate opportunity, resources, decisions, solution fit, and measurable results."
 date: 2026-02-20
 image: featured.jpg
 category: strategy
@@ -9,6 +9,7 @@ tags:
   - Strategy
   - Framework
   - Consulting
+  - ai-strategy
 reading_time: "2 min read"
 ---
 

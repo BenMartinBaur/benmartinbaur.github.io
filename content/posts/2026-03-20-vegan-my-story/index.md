@@ -7,6 +7,7 @@ image: featured.jpg
 category: real
 tags:
   - Leadership
+  - leadership-at-scale
 reading_time: "2 min read"
 ---
 
