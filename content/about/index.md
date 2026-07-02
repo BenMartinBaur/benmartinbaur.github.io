@@ -36,7 +36,7 @@ Most tech bloggers are either deep engineers or strategy consultants. I am both 
 - 🧭 **Leadership at Scale** — cross-functional execution, influence, and team operating rhythms.
 - 🚀 **Career Growth** — practical lessons for architects and engineers building long-term impact.
 
-Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you.
+Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you. If you want the fastest way in, start with the [Themes map](/themes/) and then go to [CTO decision artifacts](/projects/enterprise-ai-decision-artifacts/).
 
 I built this blog using [Hugo](https://gohugo.io/), [Doks on Thulite](https://doks.thulite.io/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
 

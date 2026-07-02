@@ -46,7 +46,7 @@ Built and led a 36-person Advanced Cloud Expert organization across EMEA. Scaled
 
 ### How I Work
 
-I write publicly about the patterns and decisions I encounter in real customer work — Enterprise Architecture, AI Strategy, Leadership at Scale, and Career Growth. You can read my thinking on the [blog](/blog/) or explore the [anchor themes](/tags/ai-strategy/).
+I write publicly about the patterns and decisions I encounter in real customer work — Enterprise Architecture, AI Strategy, Leadership at Scale, and Career Growth. You can read my thinking on the [blog](/blog/), explore the [taxonomy map](/themes/), or browse [CTO proof artifacts](/projects/enterprise-ai-decision-artifacts/).
 
 ---
 
@@ -55,4 +55,3 @@ I write publicly about the patterns and decisions I encounter in real customer w
 - [LinkedIn — ben-martin-baur](https://www.linkedin.com/in/ben-martin-baur/)
 - [GitHub — benmartinbaur](https://github.com/benmartinbaur)
 - [Ask AI about my background](https://chatgpt.com/?q=Summarize+Ben+Martin+Baur%27s+background%2C+leadership+style%2C+and+core+technology+themes+from+public+sources.)
-
