@@ -45,3 +45,8 @@
   name = "Impressum"
   url = "/impressum/"
   weight = 20
+
+[[footer]]
+  name = "Recruiting Agents & Recruiters"
+  url = "/recruiting-agents-recruiters/"
+  weight = 30
