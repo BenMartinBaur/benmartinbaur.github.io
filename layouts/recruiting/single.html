@@ -1,0 +1,41 @@
+{{ define "main" }}
+<article class="row justify-content-center">
+  <div class="col-12 col-xl-12">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+    <div style="width: 100%; border: 1px solid var(--sl-color-border, #dedede); background: #fff;">
+      <iframe
+        id="recruiting-cv-frame"
+        src="/recruiting-agents-recruiters/cv.html"
+        title="Recruiting Agents and Recruiters CV"
+        loading="lazy"
+        style="width: 100%; height: 1200px; border: 0; display: block;"
+      ></iframe>
+    </div>
+  </div>
+</article>
+
+<script>
+  (() => {
+    const frame = document.getElementById("recruiting-cv-frame");
+    if (!frame) return;
+
+    const resizeFrame = () => {
+      try {
+        const doc = frame.contentWindow?.document;
+        if (!doc) return;
+        const bodyHeight = doc.body ? doc.body.scrollHeight : 0;
+        const htmlHeight = doc.documentElement ? doc.documentElement.scrollHeight : 0;
+        const nextHeight = Math.max(bodyHeight, htmlHeight, 900);
+        frame.style.height = `${nextHeight}px`;
+      } catch (e) {
+        // Same-origin expected; keep safe fallback if access is blocked.
+      }
+    };
+
+    frame.addEventListener("load", resizeFrame);
+    window.addEventListener("resize", resizeFrame);
+    setTimeout(resizeFrame, 150);
+  })();
+</script>
+{{ end }}
