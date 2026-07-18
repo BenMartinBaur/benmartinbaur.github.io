@@ -11,10 +11,10 @@
   <path d="M1158 600 H1122 M1158 600 V564" stroke="#1f2b3a" stroke-width="3" fill="none"/>
 
   <text x="600" y="286" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#1f2b3a">
-    "Stop Counting Tokens.
+    "Don't count every token.
   </text>
   <text x="600" y="354" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#1f2b3a">
-    Make Every Token Count."
+    Make every token count."
   </text>
 
   <text x="600" y="434" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="38" fill="#3e4b5e">
