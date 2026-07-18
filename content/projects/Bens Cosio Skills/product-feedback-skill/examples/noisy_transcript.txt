@@ -1,0 +1,7 @@
+Host: Thanks everyone for joining. We have 20 minutes today.
+Participant A: Before we start, can someone share the deck?
+Participant B: I liked the new logo colors.
+Participant C: We may need to reschedule next week due to vacation.
+Participant A: Also, my number is +1 555 987 0000 if anyone needs me.
+Host: Great, let's stop here.
+

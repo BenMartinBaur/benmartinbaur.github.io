@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Technical Architect at Microsoft's CTO Office. From the server room to the boardroom — I write about AI strategy, hands-on architecture, and what actually works at enterprise scale."
+description: "Technical Architect at Microsoft's CTO Office. I help enterprises move from AI excitement to AI impact through strategy, architecture, and execution."
 date: 2026-02-28
 layout: "page"
 ---
@@ -11,47 +11,45 @@ layout: "page"
 
 ---
 
-## 👀 About Me 
+## Who I Am
 
-Hi, I'm Ben — a (10x 😋) Technical Architect working in the Office of the CTO at the Microsoft Innovation Hub for Germany and Austria. With over 15 years of international experience in enterprise architecture, End-User Computing, and cloud technologies, I help customers to turn their vision into scalable architectures. Within the Innovation Hub, I operate at the intersection of technology strategy, AI transformation and customer impact.
+Hi, I’m Ben — a Technical Architect in Microsoft’s Office of the CTO for Germany and Austria. For 15+ years, I’ve worked across enterprise architecture, End-User Computing, and cloud transformation to help customers turn ambition into operating systems that scale.
 
-Born on premise — living in the cloud. I started my career racking servers and managing on-prem infrastructure. Today I partner with Microsoft's most strategic enterprise customers, engineering teams and partners to shape end-to-end architectures. I think in systems — connecting technology, business, and people to deliver outcomes at scale.
+Born on premise — living in the cloud. I started by racking servers and running on-prem environments. Today I partner with enterprise leadership, engineering teams, and field organizations to shape AI and cloud architectures that hold up in production.
 
-![AboutMe](aboutme.png) 
+![AboutMe](aboutme.png)
 
-## 💡 My 10x Advantage
+## My Advantage
 
-Most tech bloggers are either deep engineers or strategy consultants. I am both — and I am sitting in Microsoft's CTO office with direct customer access. Every piece of content I create reinforces: "I've been in the room, I've built the thing, and here's what actually works."
+Most technology voices are either deeply technical or purely strategic. I work in both rooms, every week, with direct customer exposure. That is the lens behind this site: what works in the boardroom, and what still works when you open the terminal.
 
 ---
 
-## 📖 About This Blog
+## About This Blog
 
 > *From the server room to the boardroom.*
 
-**B3N.B4UR_** is my space to think out loud. I write about the things I'm learning, the patterns I'm seeing, and the ideas I think are worth exploring. Every post falls into one of three lanes:
+**B3N.B4UR_** is where I document field-tested thinking. Every post sits in one of three lanes:
 
-- 🏗️ **Build** — Hands-on engineering. Azure walkthroughs, architecture patterns, PowerShell tools, and IaC templates.
-- 🗺️ **Strategy** — Frameworks & thinking. CAF vs. AI Adoption Framework, BXT, CoE models, cheatsheets, and decision trees.
-- 🎤 **Real** — Honest reflections. Career stories, leadership lessons, and what I actually learned from getting it wrong.
+1. 🏗️ **Build** — Architecture patterns, technical walkthroughs, and automation.
+2. 🗺️ **Strategy** — Frameworks, decision models, and enterprise transformation patterns.
+3. 🎤 **Real** — Leadership lessons, personal reflections, and hard-earned career insights.
 
-Whether you're a CTO evaluating AI strategy or an architect in the trenches — there's something here for you.
-
-I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack theme](https://stack.jimmycai.com/), and GitHub Copilot — a hands-on experiment in how AI tools are changing who can build what.
+If you are a CTO, architect, principal-track engineer, or emerging leader, this site is designed to be practical first.
 
 ---
 
-## 🗻 Impact at a Glance 
+## Impact at a Glance
 
-- **Led large scale End-User Computing projects from 75,000+ Cloud PCs & 100,000+ Virtual Machines** — Architected and won the largest Windows 365 and Azure Virtual Desktop environments worldwide
-- **36 Advanced Cloud Experts** — Built and led a cross-EMEA technical team, reporting into directly to the COO of SME&C EMEA.
-- **1,200+ Cloud Solution Architects** — Trained through technical bootcamps and readiness programs I designed and co-founded
-- **Formed and led 15+ cross-EMEA initiatives** — From go-to-market accelerators to strategic sales plays for Windows 365, Azure Virtual Desktop and High-Performance Computing workloads.
-- **Published author** — Contributed and authored several Azure Well-Architected Framework, Cloud Adoption Framework, and Architecture Center documentations
+- **75,000+ Cloud PCs and 100,000+ VMs** architected across major Windows 365 and AVD programs.
+- **36-person cross-EMEA technical organization** built and led across multiple markets.
+- **1,200+ Cloud Solution Architects** trained through bootcamps and readiness programs.
+- **15+ strategic cross-EMEA initiatives** delivered across GTM, field acceleration, and technical execution.
+- **Published framework contributions** across Azure Architecture Center and related guidance.
 
 ---
 
-## 🗺️ Career Journey
+## Career Journey
 
 ### Architect & Strategist — Microsoft *(2021 – Present)*
 
@@ -65,11 +63,11 @@ I built this blog from scratch using [Hugo](https://gohugo.io/), the [Stack them
 
 **Manager — Cloud Solution Architects & Advanced Cloud Experts** *(2021 – 2023)*
 
-In six years I grew from an individual contributor to leading a 36-person technical organisation across EMEA, and then moved into the Office of the CTO. Today I shape end-to-end architecture and AI transformation strategies for Microsoft's most strategic customers.
+In six years, I moved from individual contributor to leading a 36-person technical team across EMEA, then into the Office of the CTO to focus on enterprise architecture and AI transformation outcomes.
 
-Along the way I reported into the COO of EMEA, co-founded Azure Bootcamps, the Windows Cloud Academy at scale, authored Azure framework documentation, and architected the largest Windows 365 and AVD deployments worldwide. 
+Along the way, I reported into the COO of EMEA, co-founded Azure bootcamps and cloud academy programs, contributed to architecture documentation, and helped architect some of the largest Windows 365 and AVD deployments worldwide.
 
-In 2025, I was recognised with the **Microsoft Pinnacle Award** — this award recognizes just 43 individuals (0.007%) across the entire company — for outstanding leadership, community impact, and customer outcomes.
+In 2025, I was recognized with the **Microsoft Pinnacle Award** (43 out of 228,000+ employees) for leadership, customer impact, and community contribution.
 
 ### 🥷 Deep Technical Specialist — Microsoft *(2020 – 2021)*
 
@@ -85,7 +83,7 @@ A decade building the foundation: from nearly 8 years designing cloud infrastruc
 
 ---
 
-## 🏅 Recognition
+## Recognition
 
 **Microsoft Pinnacle Award FY25** — Awarded to only 43 individuals out of 228,000+ Microsoft employees (0.007%) annually. Recognises outstanding leadership and impact. Awarded for empowering internal and external communities to exceed their goals, and for architecting and winning the largest Windows 365 and Azure Virtual Desktop environments worldwide — 75,000+ Cloud PCs and 100,000+ Virtual Machines.
 
@@ -103,21 +101,21 @@ A decade building the foundation: from nearly 8 years designing cloud infrastruc
 
 ---
 
-## 🏎️ What Drives Me
+## What Drives Me
 
-Most AI transformations fail not because the technology isn't ready — but because they jump directly on a solution without understanding and defining their problem and then design the architecture. They jump to models and demos without solving for data gravity, governance, or change management. I've made it my job to fix that gap.
+Most AI transformations fail because teams jump to tools before defining the problem. They optimize demos before architecture, governance, and change are ready. My work is focused on closing that execution gap.
 
-My leadership philosophy is simple: 
+My leadership philosophy is simple:
 
-> "“I lead by example, inspire with passion, and treat every day as a chance to reset, learn, and to unlock potential."
+> "I lead by example, inspire with passion, and treat every day as a chance to reset, learn, and unlock potential."
 
-I care about making complex technology accessible and useful — not just technically possible. And I've found that the best way to grow is to empower others to exceed their own goals.
+I care about making complex technology useful, not just technically possible. The best outcomes happen when people are empowered to exceed what they thought they could do.
 
 ---
 
-## ✌️ Let's Connect
+## Let’s Connect
 
-I'm always interested in conversations about enterprise-scale architecture, AI transformation leadership, or roles where technology strategy meets customer impact. Beyond tech, I love to expand my professional network — reach out if you want to geek out about cloud solutions, DJing, or surfing.
+I’m always open to conversations on enterprise architecture, AI transformation, and leadership at scale.
 
 - [GitHub](https://github.com/benmartinbaur)
 - [LinkedIn](https://www.linkedin.com/in/ben-martin-baur/)

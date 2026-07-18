@@ -1,0 +1,45 @@
+{
+  "summary_markdown": "Customer admin requests bulk permission assignment for onboarding. Current per-user setup is manual and error-prone. Workaround exists (spreadsheet + copy) but creates mistakes and weekly overhead.",
+  "feedback": {
+    "what_help_is_needed": "Bulk assign permissions/role templates to multiple new users in one operation (e.g., CSV upload).",
+    "customer_scenario_and_desired_outcome": "When onboarding 30-50 new hires each month, admin configures each profile individually. Desired outcome is one-step role template application to selected users.",
+    "customer_impact": "Manual setup consumes about 2 hours weekly and introduces configuration mistakes.",
+    "workaround_details": "Customer keeps a spreadsheet and manually copies settings per profile. Workaround functions but is error-prone and inefficient.",
+    "priority": {
+      "severity": "medium",
+      "urgency": "medium",
+      "feature_area": "user-management-and-permissions",
+      "rationale": "Recurring operational drag and error risk, but no explicit hard outage or compliance breach."
+    },
+    "quality_assessment": {
+      "label": "good",
+      "overall_quality_score": 3.8,
+      "component_scores": {
+        "what_help_is_needed": 4.0,
+        "customer_scenario_and_desired_outcome": 3.7,
+        "customer_impact": 3.8,
+        "workaround_details": 3.6
+      },
+      "confidence": "high"
+    },
+    "evidence": [
+      {
+        "quote": "We need a way to bulk assign permissions. Right now we open each profile one by one.",
+        "supports": ["what_help_is_needed", "customer_scenario_and_desired_outcome"]
+      },
+      {
+        "quote": "Usually 30 to 50 new hires. It takes about 2 hours each week.",
+        "supports": ["customer_impact", "priority"]
+      },
+      {
+        "quote": "We keep a spreadsheet and copy settings manually. It works but we make mistakes.",
+        "supports": ["workaround_details", "customer_impact"]
+      }
+    ],
+    "open_questions": [
+      "Which permission sets are most frequently assigned together?",
+      "Is there an audit/compliance requirement for assignment history?"
+    ]
+  }
+}
+

@@ -1,0 +1,49 @@
+{
+  "summary_markdown": "Finance approvers face consistent timeout failures during month-end close when filtering large datasets. The issue has persisted for 4 months, impacts 12 approvers, delays reimbursements, and causes SLA misses. Current CSV split/re-upload workaround is costly and unreliable.",
+  "feedback": {
+    "what_help_is_needed": "Fix approval-page timeout and support performant filtering + bulk approval for large close-cycle volumes.",
+    "customer_scenario_and_desired_outcome": "During month-end close, approvers review 400+ items and filter by cost center. Current page times out at ~45 seconds. Desired outcome is sub-5-second filtering and reliable bulk approval for 500 items to complete close on schedule.",
+    "customer_impact": "Issue recurs each close cycle over 4 months, affects 12 approvers, causes 1-2 day SLA delays, and delayed reimbursements for ~180 employees last month.",
+    "workaround_details": "Team exports CSV, splits by region, and re-uploads smaller batches. Two analysts spend ~6 additional hours each close, and large regions still fail.",
+    "priority": {
+      "severity": "high",
+      "urgency": "high",
+      "feature_area": "approvals-performance",
+      "rationale": "Recurring close-cycle failure with measurable operational and employee payout impact; workaround is expensive and unreliable."
+    },
+    "quality_assessment": {
+      "label": "excellent",
+      "overall_quality_score": 4.7,
+      "component_scores": {
+        "what_help_is_needed": 4.6,
+        "customer_scenario_and_desired_outcome": 4.8,
+        "customer_impact": 4.9,
+        "workaround_details": 4.5
+      },
+      "confidence": "high"
+    },
+    "evidence": [
+      {
+        "quote": "The approval page times out after around 45 seconds when filtering by cost center.",
+        "supports": ["what_help_is_needed", "customer_scenario_and_desired_outcome"]
+      },
+      {
+        "quote": "Every close cycle, for the last 4 months. We have 12 approvers across regions.",
+        "supports": ["customer_impact", "priority"]
+      },
+      {
+        "quote": "We miss our internal SLA by 1-2 days and delay payouts. Last month this blocked about 180 employees.",
+        "supports": ["customer_impact", "priority"]
+      },
+      {
+        "quote": "We export CSV, split by region, and re-upload... two analysts about 6 extra hours.",
+        "supports": ["workaround_details", "customer_impact"]
+      }
+    ],
+    "open_questions": [
+      "Is timeout behavior tied to specific browser/session settings?",
+      "What is the acceptable reliability target (e.g., p95 latency/error rate)?"
+    ]
+  }
+}
+

@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://benmartinbaur.github.io/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/tags/best-practices/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/tags/leadership/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/tags/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/_drafts/2026-06-02-from-server-room-to-boardroom-career-patterns-that-scale/02-the-first-1000-days/</loc>
+    <lastmod>2026-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/tags/strategy/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/_drafts/2026-06-02-from-server-room-to-boardroom-career-patterns-that-scale/01-what-makes-a-maker/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://benmartinbaur.github.io/tags/ai/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/tags/automation/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/tags/best-practices/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/page/_drafts/2026-04-23-building-my-ai-squad/</loc>
@@ -20,25 +38,13 @@
     <loc>https://benmartinbaur.github.io/tags/intune/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://benmartinbaur.github.io/tags/leadership/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://benmartinbaur.github.io/posts/2026-04-23-leading-without-authority/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/page/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/posts/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/tags/security/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/tags/strategy/</loc>
-    <lastmod>2026-04-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/tags/</loc>
     <lastmod>2026-04-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/posts/2026-04-23-why-ai-projects-fail/</loc>
@@ -74,6 +80,9 @@
     <loc>https://benmartinbaur.github.io/posts/2026-03-18-ai-chief-of-staff/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://benmartinbaur.github.io/projects/</loc>
+    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://benmartinbaur.github.io/categories/real/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -104,25 +113,7 @@
     <loc>https://benmartinbaur.github.io/posts/2026-03-05-bxt-framework-cheatsheet/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://benmartinbaur.github.io/projects/bens-cosio/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/categories/build/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://benmartinbaur.github.io/about/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/categories/documentation/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/projects/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/tags/technology/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/writing/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/posts/2026-03-20-lets-get-real-cheatsheet/</loc>
@@ -135,6 +126,9 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/tags/data-science/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/categories/documentation/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://benmartinbaur.github.io/tags/hugo/</loc>
@@ -208,10 +202,6 @@
   </url><url>
     <loc>https://benmartinbaur.github.io/page/_drafts/_engagement_model/engagement/</loc>
   </url><url>
-    <loc>https://benmartinbaur.github.io/page/_drafts/_hiring_experiement/alex-analysis/</loc>
-  </url><url>
-    <loc>https://benmartinbaur.github.io/page/_drafts/_hiring_experiement/jobs/</loc>
-  </url><url>
     <loc>https://benmartinbaur.github.io/page/_drafts/_leadership_lessons/_lesson/</loc>
   </url><url>
     <loc>https://benmartinbaur.github.io/page/_drafts/_leadership_lessons/_lesson2/</loc>
@@ -226,10 +216,88 @@
   </url><url>
     <loc>https://benmartinbaur.github.io/page/_drafts/_way_to_principal/</loc>
   </url><url>
+    <loc>https://benmartinbaur.github.io/page/_drafts/in-progress/autopilot-device-preparation-automatic-mode-windows-365/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/_drafts/in-progress/copilot-studio-computer-use-agents-guide/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/_drafts/in-progress/windows-365-ai-enabled-cloud-pcs/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/page/recuiting/cv-ben-martin-baur/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/agent-canvas-designer/references/pptx-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/agent-canvas-designer/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/architecture-requirement-playbook/assets/architecture-requirements-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/architecture-requirement-playbook/references/good-vs-excellent-rubric/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/architecture-requirement-playbook/references/standards-alignment/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/architecture-requirement-playbook/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/bxt-evaluation/assets/evaluation-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/bxt-evaluation/references/handover-points/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/bxt-evaluation/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/customer-debrief/assets/customer-debrief-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/customer-debrief/references/innovation-hub-brand/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/customer-debrief/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/innovation-hub-account-planning/assets/account-plan-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/innovation-hub-account-planning/assets/loop-page-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/innovation-hub-account-planning/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/order-meeting/assets/prep-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/order-meeting/assets/summary-template/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/order-meeting/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/guardrails/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/readme/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/references/guardrails/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/references/output-contract/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/references/rubric/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/rubric/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/skill/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/skill_prompt/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/projects/bens-cosio-skills/product-feedback-skill/usage/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-00-token-economics-series-intro/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-01-token-economics-now/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-02-where-token-waste-hides/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-03-cost-per-ai-outcome/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-04-four-optimization-levers/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-05-model-routing-playbook/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/linkedin/post-06-context-control-checklist/</loc>
+  </url><url>
     <loc>https://benmartinbaur.github.io/page/archives/</loc>
   </url><url>
     <loc>https://benmartinbaur.github.io/page/privacy/</loc>
   </url><url>
     <loc>https://benmartinbaur.github.io/page/search/</loc>
+  </url><url>
+    <loc>https://benmartinbaur.github.io/writing/</loc>
   </url>
 </urlset>
