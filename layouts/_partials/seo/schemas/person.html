@@ -1,0 +1,25 @@
+{{- $base := site.BaseURL -}}
+{{- $name := site.Params.seo.schemas.name -}}
+{{- $logo := site.Params.seo.schemas.logo | default "favicon-512x512.png" -}}
+{{- $jobTitle := site.Params.seo.schemas.jobTitle | default "Technical Architect" -}}
+{{- $worksFor := site.Params.seo.schemas.worksFor | default "Microsoft Innovation Hub Germany" -}}
+{{- $images := site.Params.seo.schemas.images | default (slice "cover.png") -}}
+{{- $primaryImage := index $images 0 -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" $base
+  "url" $base
+  "name" $name
+  "jobTitle" $jobTitle
+  "worksFor" (dict "@type" "Organization" "name" $worksFor)
+  "image" (slice ($primaryImage | absURL))
+  "logo" (dict "@type" "ImageObject" "url" ($logo | absURL))
+-}}
+
+{{- with site.Params.seo.schemas.sameAs -}}
+  {{- $schema = merge $schema (dict "sameAs" .) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

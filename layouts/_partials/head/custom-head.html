@@ -1,0 +1,26 @@
+{{- $isAbout := or (eq .Section "about") (hasPrefix .RelPermalink "/about/") -}}
+{{- if $isAbout -}}
+  {{- $person := dict
+    "@type" "Person"
+    "name" site.Params.seo.schemas.name
+    "url" site.BaseURL
+    "jobTitle" (site.Params.seo.schemas.jobTitle | default "Technical Architect")
+    "worksFor" (dict "@type" "Organization" "name" (site.Params.seo.schemas.worksFor | default "Microsoft Innovation Hub Germany"))
+  -}}
+  {{- with site.Params.seo.schemas.sameAs -}}
+    {{- $person = merge $person (dict "sameAs" .) -}}
+  {{- end -}}
+  {{- with site.Params.seo.schemas.images -}}
+    {{- $person = merge $person (dict "image" (index . 0 | absURL)) -}}
+  {{- end -}}
+  {{- $aboutPage := dict
+    "@context" "https://schema.org"
+    "@type" "AboutPage"
+    "@id" .Permalink
+    "url" .Permalink
+    "name" .Title
+    "description" ((.Description | default site.Params.description) | plainify)
+    "mainEntity" $person
+  -}}
+<script type="application/ld+json">{{ $aboutPage | jsonify | safeJS }}</script>
+{{- end -}}

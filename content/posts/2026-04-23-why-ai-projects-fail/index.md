@@ -10,6 +10,7 @@ tags:
   - Strategy
   - Leadership
   - Best Practices
+  - ai-strategy
 reading_time: "8 min read"
 ---
 

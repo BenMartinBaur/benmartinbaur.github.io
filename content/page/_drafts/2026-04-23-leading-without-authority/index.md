@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Leading Without Authority — What 15 Years Taught Me About Influence"
-description: "You don't need a title to lead. Here's what I learned managing a 36-person team across 4 countries, winning a Pinnacle Award, and discovering that credibility is the only currency that compounds."
+description: "Leadership lessons from building influence without formal authority, earned through credibility, relationships, and consistent delivery across teams."
 date: 2026-04-23
 image: featured.jpg
 category: real
 tags:
   - Leadership
   - Strategy
+  - leadership-at-scale
 reading_time: "7 min read"
 ---
 

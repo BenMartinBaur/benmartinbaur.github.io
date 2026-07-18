@@ -54,7 +54,7 @@ Watermark-free gradient backgrounds for reuse by any AI or design tool:
 - Contains: template specs, layout rules, decorative elements per pillar, and a **copy-paste prompt** for generating new featured images with any AI
 
 ### Custom SCSS Created
-- File: `assets/scss/custom.scss`
+- File: `assets/scss/common/_custom.scss`
 - Coral Energy (#F96167) accent for blockquotes, hovers, category labels
 - Soft Lavender (#7B8CDE) for dark mode links and tags
 
