@@ -85,6 +85,23 @@ Items the AI Chief of Staff team will execute, ordered by priority.
 
 ## 🔴 H2 2026 Content Program (NEW)
 
+### Agent Workforce Transformation Series (P1 - STRATEGY PILLAR)
+- **Priority:** 🔴 P1 — positions Ben as thought leader on agent architecture and governance
+- **Timeline:** 3 posts over 8 weeks (Sept 26, Oct 24, Nov 21)
+- **Owner:** Meta (frameworks) + Hugo (technical examples) + Simon (validation)
+- **Cadence:** Blog (2500+ words) → LinkedIn article (1) → LinkedIn extracts (4-5 per post, spread weekly)
+- **Arc:**
+  - [ ] **#1 Sept 26:** "Why Agents Need Identities — Strategic Framework for Enterprise AI Workforce" (least privilege, identity binding, autonomous decision-making)
+  - [ ] **#2 Oct 24:** "Building the Foundation — Architecture Patterns for Least Privilege Agent Binding" (tool binding, capability gates, RBAC at scale)
+  - [ ] **#3 Nov 21:** "Governing at Scale — Operating Model for Agent Workforce Transformation" (monitoring, compliance, incident triage, audit trails)
+- **GitHub Deliverables:**
+  - [ ] Agent identity taxonomy (reference YAML)
+  - [ ] Least privilege decision tree (Copilot Studio example templates)
+  - [ ] Governance checklist (runnable compliance framework)
+- **Dependencies:** Ben validates strategic framing by Sept 1; coordinate with Copilot Studio field team
+- **Why:** Unique blend of governance + architecture; positions Ben as trusted advisor for agent-scale deployments
+- **Success:** Blog posts avg 2500+ words, 6+ min reads; LinkedIn series reaches 15K+ impressions; GitHub governance checklist forked 20+ times
+
 ### Landing Page Redesign (FOUNDATION)
 - **Priority:** 🔴 P1 — unblock all other initiatives
 - **Timeline:** 3 weeks (complete by Aug 1, 2026)
@@ -124,15 +141,15 @@ Items the AI Chief of Staff team will execute, ordered by priority.
 - **Why:** Addresses career development audience; shows how product impact drives career velocity
 - **Success:** Practitioner interviews feel authentic, 800+ words per feature, Simon's DEI review flags zero concerns
 
-### WaveMaker Model — Technical Leadership Framework (STRATEGY PILLAR)
-- **Priority:** 🟡 P2 — launches new signature framework
+### B3N.B4UR_ Leadership Acceleration Model — Technical Leadership Framework (STRATEGY PILLAR)
+- **Priority:** 🟡 P2 — launches new signature framework (inspired by proven methodologies)
 - **Timeline:** 6 weeks (Sept 12 publish)
 - **Owner:** Meta (framework architecture) + Simon (examples validation) + Hugo (repo)
 - **Deliverables:**
-  - [ ] Blog post: 3000+ words, WaveMaker framework deep-dive (Meta)
+  - [ ] Blog post: 3000+ words, B3N.B4UR_ Leadership Model framework deep-dive (Meta)
   - [ ] LinkedIn article republish (Meta)
   - [ ] 4x LinkedIn short-form posts (1 per role: Initiators, Connectors, Builders, Amplifiers) (Meta)
-  - [ ] GitHub cheatsheet: "WaveMaker Self-Assessment" PDF + interactive YAML decision tree (Hugo)
+  - [ ] GitHub cheatsheet: "Leadership Acceleration Self-Assessment" PDF + interactive YAML decision tree (Hugo)
 - **Framework Elements:**
   - Initiators (see gap, raise flag first)
   - Connectors (build coalitions, stakeholder buy-in)
@@ -140,7 +157,7 @@ Items the AI Chief of Staff team will execute, ordered by priority.
   - Amplifiers (scale, share patterns)
 - **Dependencies:** Ben validates framework definitions by Aug 15
 - **Why:** Turns internal mental model into repeatable framework; customer advisory boards will reference this
-- **Success:** Framework is 100% internally coherent; Ben uses "WaveMaker" language in 3+ customer calls by Dec
+- **Success:** Framework is 100% internally coherent; Ben uses framework language in 3+ customer calls by Dec
 
 ### Copilot Studio Best Practices Series (BUILD PILLAR)
 - **Priority:** 🔴 P1 — addresses market gap, differentiates from surface-level content

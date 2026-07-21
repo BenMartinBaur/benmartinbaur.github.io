@@ -108,12 +108,12 @@ Build a cohesive, pillar-aligned H2 2026 content roadmap that addresses three ma
 
 ---
 
-### Initiative 4: The WaveMaker Model — Technical Leadership in AI (THOUGHT LEADERSHIP)
+### Initiative 4: The B3N.B4UR_ Leadership Acceleration Model — Technical Leadership in AI (THOUGHT LEADERSHIP)
 
 **Pillar:** 🗺️ Strategy (primary) + 🎤 Real (secondary)  
-**Why:** "Wavemaker" is Ben's internal model for leaders who create systemic change. Should be published as a coherent framework.
+**Why:** Ben has a proven mental model for leaders who create systemic change. Publishing it as the B3N.B4UR_ Leadership Acceleration Model creates an own-brand framework for enterprise leaders.
 
-**What:** Standalone blog post + LinkedIn article series that introduces the WaveMaker model:
+**What:** Standalone blog post + LinkedIn article series that introduces the B3N.B4UR_ Leadership Acceleration Model:
 
 **The Framework:**
 - **Initiators:** Leaders who see a gap and raise the flag first
@@ -127,7 +127,7 @@ Build a cohesive, pillar-aligned H2 2026 content roadmap that addresses three ma
 - 1 x 3000-word blog post (strategy pillar, framework deep-dive)
 - 1 x LinkedIn article (republish from blog)
 - 4 x LinkedIn short-form posts (one per role, with real examples anonymised)
-- 1 x Cheatsheet: "WaveMaker Self-Assessment" (downloadable PDF, GitHub-hosted)
+- 1 x Cheatsheet: "Leadership Acceleration Self-Assessment" (downloadable PDF, GitHub-hosted)
 
 **Timeline:** September – October  
 **Owner:** Meta (framework architecture) + Simon (examples curation)  
@@ -176,7 +176,7 @@ PHASE 0 (Now)
 └─ Research & Outline Work    [Parallel, Weeks 1-4]
    ├─ Leadership Essentials    (interviews, frameworks)
    ├─ Your Career × Product    (practitioner research)
-   ├─ WaveMaker Model          (internal synthesis)
+   ├─ Leadership Acceleration Model (internal synthesis)
    └─ Copilot Studio Series    (customer interviews + tooling audit)
 
 PHASE 1 (August-September)
@@ -187,7 +187,7 @@ PHASE 1 (August-September)
 └─ LinkedIn Cadence Resumes             [3x/week starting Aug 1]
 
 PHASE 2 (September-October)
-├─ WaveMaker Framework Blog             [Sept 12]
+├─ Leadership Acceleration Model Blog   [Sept 12]
 ├─ Leadership Essentials #2             [Sept 19]
 ├─ Your Career × Product #2             [Sept 26]
 ├─ Copilot Studio #2                    [Oct 3]
@@ -226,7 +226,7 @@ PHASE 4 (November-December)
 | Landing Page | High | Medium | High | None | 🔴 **1** |
 | Leadership Essentials | High | High | Medium | Interviews only | 🔴 **2** |
 | Copilot Studio Series | High | High | Medium | Customer examples | 🔴 **2** |
-| WaveMaker Model | High | Medium | Medium | Internal synthesis | 🟡 **3** |
+| Leadership Acceleration Model | High | Medium | Medium | Internal synthesis | 🟡 **3** |
 | Your Career × Product | Medium | Medium | Medium | Practitioner interviews | 🟡 **3** |
 
 ---
@@ -280,7 +280,7 @@ Every piece of content must pass:
 **Research & Planning (Complete for all 5 initiatives)**
 - [ ] Leadership Essentials: interview 2 practitioners (Quill)
 - [ ] Your Career × Product: identify 3 interview subjects (Simon)
-- [ ] WaveMaker: finalize framework definitions with Ben (Meta)
+- [ ] Leadership Acceleration Model: finalize framework definitions with Ben (Meta)
 - [ ] Copilot Studio: audit field playbooks, customer wins (Michael + Hugo)
 
 **LinkedIn Reset (Resume)**
@@ -307,7 +307,7 @@ Every piece of content must pass:
 - [ ] Leadership Essentials #1 LIVE (Aug 15)
 - [ ] Your Career × Product #1 LIVE (Aug 22)
 - [ ] Copilot Studio #1 LIVE (Aug 29)
-- [ ] WaveMaker Framework outline complete, Ben review (Sept 5)
+- [ ] Leadership Acceleration Model outline complete, Ben review (Sept 5)
 
 **LinkedIn Cadence (Ramp)**
 - [ ] 3 posts/week → 5 posts/week (mixed series + hot takes)
@@ -320,7 +320,7 @@ Every piece of content must pass:
 **Next Wave Drafts (In progress)**
 - [ ] Leadership Essentials #2 outline (Quill)
 - [ ] Your Career × Product #2 outline (Simon)
-- [ ] WaveMaker blog post draft v1 (Meta)
+- [ ] Leadership Acceleration Model blog post draft v1 (Meta)
 
 ---
 
@@ -329,12 +329,12 @@ Every piece of content must pass:
 **Content Ships**
 - [ ] Leadership Essentials #2 LIVE (Sept 19)
 - [ ] Your Career × Product #2 LIVE (Sept 26)
-- [ ] WaveMaker Framework Blog LIVE (Oct 3)
+- [ ] Leadership Acceleration Model Blog LIVE (Oct 3)
 - [ ] Copilot Studio #2 LIVE (Oct 10)
-- [ ] WaveMaker LinkedIn article LIVE (Oct 3 republish)
+- [ ] Leadership Acceleration Model LinkedIn article LIVE (Oct 3 republish)
 
 **LinkedIn Acceleration**
-- [ ] 6 posts/week (peak cadence: 2 Leadership Essentials extracts + 1 WaveMaker + 1 Copilot + 2 hot takes)
+- [ ] 6 posts/week (peak cadence: 2 Leadership Essentials extracts + 1 Leadership Acceleration + 1 Copilot + 2 hot takes)
 - [ ] LinkedIn article #2 published (Sept 19 or Oct 3)
 
 **Final Series Drafts**
@@ -357,7 +357,7 @@ Every piece of content must pass:
 | **Michael** | Landing page copy, customer pattern synthesis, Copilot Studio research | 40% |
 | **Simon** | DEI review all content, Your Career × Product interviews & narrative | 30% |
 | **Quill** | Leadership Essentials deep narrative structuring, interviews | 35% |
-| **Meta** | WaveMaker framework, checklists & tools, technical scaffolding | 25% |
+| **Meta** | Leadership Acceleration Model framework, checklists & tools, technical scaffolding | 25% |
 | **Hugo** | Landing page build, GitHub repos, Copilot Studio technical depth | 35% |
 | **Toto** | Coordination, brand alignment, quality gates, cadence enforcement | 20% (tracking) |
 
@@ -402,7 +402,7 @@ Every piece of content must pass:
 ## Decision Log
 
 ### 1. Why Five Initiatives Instead of Fewer?
-**Decision:** Parallel execution on Leadership (Real), Career (Real), WaveMaker (Strategy), Copilot (Build), Landing Page (Infrastructure).  
+**Decision:** Parallel execution on Leadership (Real), Career (Real), Leadership Acceleration (Strategy), Copilot (Build), Landing Page (Infrastructure).  
 **Rationale:** Achieves pillar balance (40/30/30), fills three market gaps, distributes work across team strengths, maintains 2x/month blog cadence.  
 **Alternative Rejected:** Sequential execution would leave gaps; parallel with strong cadence coordination allows reuse (1 blog → 8 LinkedIn posts).
 
@@ -411,9 +411,9 @@ Every piece of content must pass:
 **Rationale:** Enterprise adoption curve, strategic Microsoft priority, customer demand in CTO Office, differentiated positioning (Ben can cover enterprise governance not covered elsewhere).  
 **Alternative Rejected:** LangChain is well-covered; Ben's angle is enterprise systems, not open-source depth.
 
-### 3. Why Publish WaveMaker as Framework vs. Personal Story?
+### 3. Why Publish Leadership Acceleration Model as Framework vs. Personal Story?
 **Decision:** Standalone framework (strategy pillar) + personal narrative (real pillar follow-up).  
-**Rationale:** Frameworks are more searchable, more shareable, more repeatable in customer conversations. Narrative comes later when framework is proven.  
+**Rationale:** Frameworks are more searchable, more shareable, more repeatable in customer conversations. Narrative comes later when framework is proven. Own-brand framework is higher-value than external source attribution.  
 **Alternative Rejected:** Pure narrative would be lower discoverability; Ben's authority is pattern-driven, not memoir-driven.
 
 ### 4. Why LinkedIn Republish Instead of Fresh Content?

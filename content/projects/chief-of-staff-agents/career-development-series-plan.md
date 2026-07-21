@@ -12,7 +12,7 @@
 This document defines a dual-track career development content series for B3N.B4UR_ that addresses two complementary narratives:
 
 1. **"Your Career x Your Product"** — How technical leaders build career capital by shipping products that matter
-2. **"WaveMaker"** — Microsoft's internal leadership accelerator program, adapted for public audience as a model for career progression
+2. **"B3N.B4UR_ Leadership Acceleration"** — A proven model for career progression from solid engineer to visionary leader, inspired by industry best practices and adapted for public audience
 
 Together, these eight posts form a **competency ladder** that takes engineers from individual contributor through staff-level influence, grounded in Ben's lived experience bridging engineering, architecture, and executive strategy.
 
@@ -39,16 +39,16 @@ Together, these eight posts form a **competency ladder** that takes engineers fr
 
 ---
 
-### Series 2: WaveMaker — Building Your Leadership Engine (4 posts)
+### Series 2: B3N.B4UR_ Leadership Acceleration Model — Building Your Leadership Engine (4 posts)
 
-**Thesis:** Microsoft's WaveMaker program codifies how to accelerate from solid engineer to visionary leader. This series reverse-engineers the framework for any tech leader, regardless of employer.
+**Thesis:** A proven leadership acceleration framework codifies how to advance from solid engineer to visionary leader. This series reverse-engineers the model for any tech leader, regardless of employer.
 
 | Post # | Title | Competency Tier | Core Framework | Audience |
 |--------|-------|-----------------|---------------|----------|
-| 5 | **WaveMaker 101: The Five Dimensions of Technical Leadership** | Senior IC → Staff | Introduces WaveMaker competency model: Impact, Influence, Innovation, Integrity, Insight. Real examples from Ben's cohort. | Anyone asking "what does senior technical leadership actually mean?" |
+| 5 | **Leadership Acceleration 101: The Five Dimensions of Technical Leadership** | Senior IC → Staff | Introduces leadership acceleration model: Impact, Influence, Innovation, Integrity, Insight. Real examples from Ben's cohort. | Anyone asking "what does senior technical leadership actually mean?" |
 | 6 | **Impact @ Scale: How to Think in Systems** | Staff → Principal | Deep dive into Impact dimension. Moving from "I fixed a problem" to "I architected a capability." Systems thinking as a career differentiator. | Architects learning to think cross-org |
 | 7 | **Influence Multipliers: Turning Your Ideas Into Movement** | Principal → Executive | Influence dimension: how to get 200 engineers to move in the same direction without micromanagement. Strategy, storytelling, and sponsorship. | Technical leaders frustrated with execution speed |
-| 8 | **Leading From Integrity: Values as Your Competitive Advantage** | Any tier | The WaveMaker anchor: integrity as non-negotiable. Why honest feedback, admitting unknowns, and ethical stands compound into unfair advantage. | Senior technical leaders thinking about legacy |
+| 8 | **Leading From Integrity: Values as Your Competitive Advantage** | Any tier | The leadership model anchor: integrity as non-negotiable. Why honest feedback, admitting unknowns, and ethical stands compound into unfair advantage. | Senior technical leaders thinking about legacy |
 
 **Thread:** Series 2 provides the **competency model** that underpins Series 1. Read Series 2 first to understand the framework; apply Series 1 to build the narrative.
 
@@ -215,7 +215,7 @@ The eight posts are scaffolded so readers can enter at their level and climb:
            Post 3 →/ Board  \← Post 6 (Impact @ Scale)
                   /  Building \
                  /              \
-          Staff / Senior IC      Post 5 (WaveMaker Framework)
+          Staff / Senior IC      Post 5 (Leadership Acceleration Framework)
                  △
                 /‾\
       Post 1 →/ Shipping  \ ← Post 2 (Influence)
@@ -294,7 +294,7 @@ All posts should reference / link to:
 |-------|-----------|----------------|------------------|-------|
 | **Jul** | Post 1: "From Code to Consequence" | 3x excerpts + hot takes | N/A | Anchor post; establish "shipping matters" |
 | **Aug** | Post 2: "Architecture of Influence" | 3x excerpts + framework | Republish Post 1 | Series 1 momentum builds |
-| **Sep** | Post 5: "WaveMaker 101" | 3x excerpts + framework | Republish Post 2 | Shift to Series 2; re-engage Series 1 readers |
+| **Sep** | Post 5: "Leadership Acceleration 101" | 3x excerpts + framework | Republish Post 2 | Shift to Series 2; re-engage Series 1 readers |
 | **Oct** | Post 4: "CTO Playbook" (or Post 6/7) | 3x excerpts | Republish Post 5 | Capstone post; call forward to Part 2 |
 
 **Buffer Strategy:** Write Posts 3, 6, 7, 8 in September/October; batch publish in Nov-Dec if cadence accelerates.
@@ -366,15 +366,15 @@ These are **aspirational benchmarks** based on Ben's existing blog performance, 
 
 ---
 
-**Decision 2: "WaveMaker" as Public Framework (vs. Keeping It Internal)**
+**Decision 2: "B3N.B4UR_ Leadership Acceleration Model" as Own-Brand Framework (vs. Proprietary Source Attribution)**
 
-**Rationale:** WaveMaker is (presumably) an internal Microsoft program. Making it public — as a generalizable model — is higher-value than "here's what Microsoft did." It becomes Ben's intellectual property while honoring the original program.
+**Rationale:** Leadership acceleration models have proven value across many organizations. Developing our own framework — grounded in Ben's direct experience and customer patterns — is higher-value than attributing to an external program. It becomes Ben's intellectual property while honoring the principles and patterns that proved effective elsewhere.
 
 ---
 
 **Decision 3: Posts in Publication Order, Not Competency Hierarchy Order**
 
-**Rationale:** Posts 1–4 (Your Career) publish first because they're more narrative / accessible. Posts 5–8 (WaveMaker) follow with deeper framework. This maximizes early engagement before shifting to abstraction.
+**Rationale:** Posts 1–4 (Your Career) publish first because they're more narrative / accessible. Posts 5–8 (Leadership Acceleration Model) follow with deeper framework. This maximizes early engagement before shifting to abstraction.
 
 ---
 
