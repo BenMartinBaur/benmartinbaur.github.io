@@ -101,7 +101,7 @@ try {
   )
   for (const [name, route] of routes) {
     const reportPath = path.join(outputDir, `${name}.json`)
-    await run(
+    const exitCode = await run(
       process.execPath,
       [
         lighthouseCli,
@@ -109,10 +109,22 @@ try {
         '--output=json',
         `--output-path=${reportPath}`,
         '--quiet',
-        '--chrome-flags=--headless --disable-gpu --no-first-run',
+        '--chrome-flags=--headless --disable-gpu --no-first-run --no-sandbox',
       ],
-      { env: environment, stdio: 'ignore' },
+      { env: environment },
     )
+    try {
+      await access(reportPath)
+    } catch {
+      throw new Error(
+        `Lighthouse failed for ${name} with exit code ${exitCode} and produced no report.`,
+      )
+    }
+    if (exitCode !== 0) {
+      console.warn(
+        `Lighthouse exited with code ${exitCode} for ${name}, but the report was generated.`,
+      )
+    }
 
     const report = JSON.parse(await readFile(reportPath, 'utf8'))
     for (const category of [
