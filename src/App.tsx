@@ -787,6 +787,13 @@ function PostPage({ post }: { post: Post }) {
                 />
               )
             },
+            pre({ children, ...props }) {
+              return (
+                <pre {...props} tabIndex={0}>
+                  {children}
+                </pre>
+              )
+            },
           }}
         >
           {post.markdown}
