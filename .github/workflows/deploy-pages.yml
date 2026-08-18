@@ -28,8 +28,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - run: npx playwright install --with-deps chromium
-      - name: Export Chromium path
-        run: echo "CHROME_PATH=$(node -e 'const { chromium } = require(\"playwright\"); process.stdout.write(chromium.executablePath())')" >> "$GITHUB_ENV"
       - run: npm run quality
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
