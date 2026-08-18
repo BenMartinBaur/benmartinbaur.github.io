@@ -1,40 +1,42 @@
 {
-  "name": "doks-site",
-  "version": "1.9.1",
-  "description": "Doks theme",
-  "author": "Thulite",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thuliteio/doks.git"
+  "name": "benmartinbaur-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
   },
   "scripts": {
-    "create": "hugo new",
-    "dev": "hugo server --disableFastRender --noHTTPCache",
-    "format": "prettier **/** -w -c",
-    "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
+    "dev": "vite",
+    "build": "tsc -b && vite build && node scripts/generate-static-routes.mjs && node scripts/verify-static-build.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test:static": "node --test tests/static-build.test.mjs",
+    "test:e2e": "playwright test",
+    "test:lighthouse": "node scripts/run-lighthouse.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "audit:dependencies": "npm audit --omit=dev --audit-level=high",
+    "quality:static": "npm run lint && npm run build && npm run test:static && npm run check:links && npm run audit:dependencies",
+    "quality": "npm run quality:static && npm run test:e2e && npm run test:lighthouse"
   },
   "dependencies": {
-    "@tabler/icons": "^3.36.1",
-    "@thulite/doks-core": "^1.9.3",
-    "@thulite/images": "^3.3.4",
-    "@thulite/inline-svg": "^1.2.2",
-    "@thulite/seo": "^2.4.3",
-    "sharp": "^0.35.3",
-    "thulite": "^2.6.5"
-  },
-  "overrides": {
-    "minimatch": "^10.2.2",
-    "glob": "^13.0.6"
+    "lucide-react": "^1.31.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.2",
-    "@changesets/cli": "^2.29.8",
-    "prettier": "^3.8.1",
-    "vite": "^7.3.1"
-  },
-  "engines": {
-    "node": ">=24.13.0"
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "lighthouse": "^13.4.1",
+    "oxlint": "^1.75.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
   }
 }

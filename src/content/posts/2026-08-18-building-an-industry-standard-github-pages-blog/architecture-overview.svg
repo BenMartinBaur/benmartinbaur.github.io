@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">B3N.B4UR_ publishing architecture</title>
+  <desc id="description">Markdown page bundles flow through Vite and React, static route generation, quality gates, GitHub Actions, and GitHub Pages.</desc>
+  <rect width="1200" height="630" fill="#050505"/>
+  <g stroke="#474747" stroke-width="1" opacity="0.65">
+    <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/>
+    <path d="M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/>
+  </g>
+  <text x="72" y="78" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="18" font-weight="700" letter-spacing="3">B3N.B4UR_ / PUBLISHING PIPELINE</text>
+  <text x="72" y="126" fill="#dedede" font-family="Segoe UI, Calibri, sans-serif" font-size="34" font-weight="700">From Markdown to a verified GitHub Pages artifact.</text>
+  <g font-family="Segoe UI, Calibri, sans-serif">
+    <g transform="translate(70 235)">
+      <rect width="160" height="120" rx="10" fill="#292929" stroke="#5f5f5f"/>
+      <text x="80" y="48" text-anchor="middle" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="14">01 / CONTENT</text>
+      <text x="80" y="80" text-anchor="middle" fill="#dedede" font-size="19" font-weight="700">Markdown</text>
+      <text x="80" y="103" text-anchor="middle" fill="#919191" font-size="13">Page bundles</text>
+    </g>
+    <g transform="translate(250 286)" fill="none" stroke="#919191" stroke-width="2">
+      <path d="M0 10h42"/>
+      <path d="M34 2l8 8-8 8"/>
+    </g>
+    <g transform="translate(310 235)">
+      <rect width="160" height="120" rx="10" fill="#292929" stroke="#5f5f5f"/>
+      <text x="80" y="48" text-anchor="middle" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="14">02 / BUILD</text>
+      <text x="80" y="80" text-anchor="middle" fill="#dedede" font-size="19" font-weight="700">Vite + React</text>
+      <text x="80" y="103" text-anchor="middle" fill="#919191" font-size="13">Design and assets</text>
+    </g>
+    <g transform="translate(490 286)" fill="none" stroke="#919191" stroke-width="2">
+      <path d="M0 10h42"/>
+      <path d="M34 2l8 8-8 8"/>
+    </g>
+    <g transform="translate(550 235)">
+      <rect width="160" height="120" rx="10" fill="#292929" stroke="#fd8ea1"/>
+      <text x="80" y="48" text-anchor="middle" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="14">03 / STATIC</text>
+      <text x="80" y="80" text-anchor="middle" fill="#dedede" font-size="19" font-weight="700">Route generator</text>
+      <text x="80" y="103" text-anchor="middle" fill="#919191" font-size="13">HTML, SEO, feeds</text>
+    </g>
+    <g transform="translate(730 286)" fill="none" stroke="#919191" stroke-width="2">
+      <path d="M0 10h42"/>
+      <path d="M34 2l8 8-8 8"/>
+    </g>
+    <g transform="translate(790 235)">
+      <rect width="160" height="120" rx="10" fill="#292929" stroke="#5f5f5f"/>
+      <text x="80" y="48" text-anchor="middle" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="14">04 / QUALITY</text>
+      <text x="80" y="80" text-anchor="middle" fill="#dedede" font-size="19" font-weight="700">Automated gates</text>
+      <text x="80" y="103" text-anchor="middle" fill="#919191" font-size="13">Browser + Lighthouse</text>
+    </g>
+    <g transform="translate(970 286)" fill="none" stroke="#919191" stroke-width="2">
+      <path d="M0 10h42"/>
+      <path d="M34 2l8 8-8 8"/>
+    </g>
+    <g transform="translate(1030 235)">
+      <rect width="120" height="120" rx="10" fill="#fd8ea1" stroke="#fd8ea1"/>
+      <text x="60" y="48" text-anchor="middle" fill="#1a1a1a" font-family="Consolas, Courier New, monospace" font-size="14">05 / LIVE</text>
+      <text x="60" y="78" text-anchor="middle" fill="#1a1a1a" font-size="17" font-weight="700">GitHub</text>
+      <text x="60" y="101" text-anchor="middle" fill="#1a1a1a" font-size="17" font-weight="700">Pages</text>
+    </g>
+  </g>
+  <g transform="translate(70 440)">
+    <rect width="1080" height="100" rx="10" fill="#292929" stroke="#474747"/>
+    <text x="28" y="38" fill="#fd8ea1" font-family="Consolas, Courier New, monospace" font-size="14">VERIFIED OUTPUT</text>
+    <text x="28" y="70" fill="#dedede" font-family="Segoe UI, Calibri, sans-serif" font-size="18">Clean routes · Static metadata · Sitemap · RSS · Robots · Accessibility · Performance budgets · Rollback</text>
+  </g>
+</svg>

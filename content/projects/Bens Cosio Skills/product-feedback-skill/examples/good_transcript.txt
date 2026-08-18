@@ -1,9 +1,0 @@
-CSM: Can you describe the issue with onboarding new agents?
-Customer Admin: We need a way to bulk assign permissions. Right now we open each profile one by one.
-CSM: How many users per month?
-Customer Admin: Usually 30 to 50 new hires. It takes about 2 hours each week.
-CSM: Is there a workaround?
-Customer Admin: We keep a spreadsheet and copy settings manually. It works but we make mistakes.
-CSM: What would success look like?
-Customer Admin: Upload a CSV and apply the same role template to selected users in one action.
-

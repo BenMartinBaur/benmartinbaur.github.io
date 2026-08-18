@@ -1,7 +1,0 @@
-{{- $author := .Get "author" -}}
-<blockquote>
-  {{ .Inner | markdownify }}
-  {{ with $author }}
-  <footer>— {{ . }}</footer>
-  {{ end }}
-</blockquote>
