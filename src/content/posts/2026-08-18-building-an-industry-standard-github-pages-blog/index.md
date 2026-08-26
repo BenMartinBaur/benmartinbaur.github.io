@@ -215,7 +215,7 @@ Lighthouse runs against Home, Article, Privacy, and Recruiting. The release budg
 | Accessibility | 100 |
 | Best Practices | 100 |
 | SEO | 100 |
-| First Contentful Paint | 1.8 seconds or less |
+| First Contentful Paint | 2.0 seconds or less |
 | Largest Contentful Paint | 2.5 seconds or less |
 | Total Blocking Time | 200 milliseconds or less |
 | Cumulative Layout Shift | 0.10 or less |

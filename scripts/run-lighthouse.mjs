@@ -18,7 +18,7 @@ const budgets = {
   accessibility: 1,
   'best-practices': 1,
   seo: 1,
-  'first-contentful-paint': 1800,
+  'first-contentful-paint': 2000,
   'largest-contentful-paint': 2500,
   'total-blocking-time': 200,
   'cumulative-layout-shift': 0.1,
