@@ -13,11 +13,6 @@ const routes = [
     heading: 'About Ben Martin Baur',
   },
   {
-    path: '/posts/building-an-industry-standard-github-pages-blog/',
-    title: 'Building an Industry-Standard Blog on GitHub Pages | B3N.B4UR_',
-    heading: 'Building an Industry-Standard Blog on GitHub Pages',
-  },
-  {
     path: '/privacy/',
     title: 'Privacy | B3N.B4UR_',
     heading: 'Datenschutzerklärung',
@@ -47,6 +42,21 @@ for (const route of routes) {
     )
   })
 }
+
+test('draft post route falls back to the canonical home page', async ({ page }) => {
+  await page.goto('/posts/building-an-industry-standard-github-pages-blog/')
+  await expect(page).toHaveTitle('B3N.B4UR_ — Be. Extrodenary. Now.')
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Be.')
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://benmartinbaur.github.io/',
+  )
+  await expect(
+    page.getByRole('heading', {
+      name: 'Building an Industry-Standard Blog on GitHub Pages',
+    }),
+  ).toHaveCount(0)
+})
 
 test('home and search link to canonical article routes', async ({ page }) => {
   await page.goto('/')
