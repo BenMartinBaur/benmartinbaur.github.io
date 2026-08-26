@@ -13,6 +13,17 @@ const routes = [
     heading: 'About Ben Martin Baur',
   },
   {
+    path: '/posts/bxt-framework-cheatsheet/',
+    title:
+      'The BXT Framework Cheatsheet — Business, Experience, Technology | B3N.B4UR_',
+    heading: 'The BXT Framework Cheatsheet',
+  },
+  {
+    path: '/posts/lets-get-real-cheatsheet/',
+    title: 'ORDER - Cheatsheet | B3N.B4UR_',
+    heading: 'ORDER - Cheatsheet',
+  },
+  {
     path: '/privacy/',
     title: 'Privacy | B3N.B4UR_',
     heading: 'Datenschutzerklärung',
