@@ -9,7 +9,7 @@ tags:
   - Vite
   - Markdown
   - Web Architecture
-draft: false
+draft: true
 ---
 
 A personal blog can look finished long before it is ready to operate.
