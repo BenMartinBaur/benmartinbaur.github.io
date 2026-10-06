@@ -308,6 +308,33 @@
   animation: triangle-breathe 5s ease-in-out infinite;
 }
 
+.triangle-chase {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: triangle-chase-run 3.6s linear infinite;
+}
+
+.triangle-chase-primary {
+  stroke-width: 1.6;
+  stroke-dasharray: 34 255.5;
+  opacity: 0.95;
+}
+
+.triangle-chase-secondary {
+  stroke-width: 1;
+  stroke-dasharray: 20 269.5;
+  opacity: 0.4;
+  animation-duration: 4.6s;
+  animation-delay: -1.6s;
+}
+
+@keyframes triangle-chase-run {
+  to {
+    stroke-dashoffset: -289.5;
+  }
+}
+
 .hero-copy {
   position: relative;
   z-index: 2;
