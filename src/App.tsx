@@ -501,11 +501,31 @@ function Hero() {
                 <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
+            <filter
+              id="triangle-chase-glow"
+              x="-150%"
+              y="-150%"
+              width="400%"
+              height="400%"
+            >
+              <feGaussianBlur stdDeviation="2.4" />
+            </filter>
           </defs>
           <polygon
             points="50,2 98,86 2,86"
             fill="var(--cp-triangle)"
             filter="url(#triangle-glow)"
+          />
+          <polygon
+            className="triangle-chase triangle-chase-secondary"
+            points="50,2 98,86 2,86"
+            fill="none"
+          />
+          <polygon
+            className="triangle-chase triangle-chase-primary"
+            points="50,2 98,86 2,86"
+            fill="none"
+            filter="url(#triangle-chase-glow)"
           />
         </svg>
       </div>
